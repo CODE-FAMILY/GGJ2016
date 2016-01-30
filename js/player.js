@@ -84,7 +84,6 @@ function char(){
 			this.item += 1;
 		}
 	}
-	this.damage = 1;
 	
     this.click = function(){
         this.score += this.power;

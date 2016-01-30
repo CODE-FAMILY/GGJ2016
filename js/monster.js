@@ -30,7 +30,7 @@ function monster(name,hp,drop,imageName,lvl){
 //Methods
 	this.takeDmg = function() {
 		hp -= playa.getDmg();
-		document.getElementById("health").style.width = (this.hp / (this.cons)) + "%";
+		document.getElementById("meter").style.width = (this.hp / (this.cons)) + "%";
 	}
 	this.die = function() {
 		//this.enemyImg.parentNode.removeChild(this.name);
