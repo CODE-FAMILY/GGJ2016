@@ -1,10 +1,4 @@
 //Enemy Objects
-/*var commonEnemy = monster();
-commonEnemy.name = name;
-commonEnemy.hp = 100;
-commonEnemy.lvl = 1;
-commonEnemy.drop = drop;*/
-
 //Monsters
 var skeleton = new monster("Skeletor", 100, 1, "image/skeletonImg.png");
 var ghost = new monster("Ghost", 100, 3, "ghostImg.png");
