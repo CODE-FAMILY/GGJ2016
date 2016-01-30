@@ -3,20 +3,26 @@
 	<head>
 		<title>Simple Clicker</title>
 		<link rel="stylesheet" href="index.css">
-		<script src="js/alert.js"></script>
-		<script src="js/basic.js"></script>
 		<script src="js/css-popup.js"></script>
 		<script src="js/item.js"></script>
+		<script src="js/player.js"></script>
+		<script src="js/alert.js"></script>
+		<script src="js/basic.js"></script>
 		<script src="js/itemObj.js"></script>
 		<script src="js/menu.js"></script>
-		<script src="js/player.js"></script>
 	</head>
 	<body>
 		<h1>Simple Clicker</h1>
 		<script>
 			tempPopUp();
-		</script
+		</script>
 
+		<button onclick="click()">Click here to add score</button>
+		<script>
+		console.log(playa.getScore());
+		</script>
+
+		
 		<!-- Game -->
 		<div class ="Game">
 			<div class ="Inventory">
