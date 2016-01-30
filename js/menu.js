@@ -3,7 +3,7 @@
 function tempPopUp(){
     document.write("<div id=\"blanket\" style=\"display:none\"> </div>");
     document.write("<div id=\"popUpDiv\" style=\"display:none\">");
-    document.write("<a href=\"#\" onclick=\"popup('popUpDiv')\" >Click to Close CSS Pop Up</a>");
+    document.write("<button href=\"#\" onclick=\"popup('popUpDiv')\" >Click to Close CSS Pop Up</button>");
     document.write("</div>");
     document.write("<button href=\"#\" onclick=\"popup('popUpDiv')\">Upgrade</button>");
 }
