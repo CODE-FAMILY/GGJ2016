@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Simple Clicker</title>
+		<title>The Summoning</title>
 		<link rel="stylesheet" href="index.css">
 		<script src="js/css-popup.js"></script>
 		<script src="js/item.js"></script>
@@ -11,16 +11,17 @@
 		<script src="js/menu.js"></script>
 	</head>
 	<body>
-		<h1>Simple Clicker</h1>
-		<script>
-			tempPopUp();
-		</script>
+		<h1>The Summoning</h1>
 		
 		<!-- Game -->
 		<div class ="Game">
 			<!-- Inventory Pane -->
 			<div class ="Inventory">
-				<p>Inventory</p>
+				<div class="ItemFrame"></div>
+				
+				<script id="Inv" class="btnInv"> summonMenu();</script>
+				<script id="Upg" class="btnUpg"> summonMenu();</script>
+				<script id="Sum" class="btnSum"> summonMenu();</script>
 			</div>
 			
 			<!-- Creature Pane -->
@@ -42,7 +43,7 @@
 			
 			<!-- Quest Pane -->
 			<div class ="Quest">
-				<p>Quest + 1</p>
+				<p>Quest</p>
 			</div>
 		</div>
 	</body>

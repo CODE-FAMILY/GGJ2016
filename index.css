@@ -55,6 +55,17 @@ button.CreatureImg {
 	
 }
 
+button.btnInv {
+	background-color: blue;
+}
+
+button.btnUpg {
+	background-color: green;
+}
+
+button.btnSum {
+	background-color: red;
+}
 
 #blanket {
 background-color:#111;
@@ -75,4 +86,16 @@ width:400px;
 height:400px;
 border:5px solid #000;
 z-index: 9002;
+}
+
+#Sum {
+	z-index: 9002;
+}
+
+#Inv {
+	z-index: 9002;
+}
+
+#Upg {
+	z-index: 9002;
 }
