@@ -50,7 +50,7 @@ function char(){
 		return this.item;
 	}
 	this.getDmg = function(){
-		return this.power * this.speed;
+		return this.power * this.power;
 	}
 	
 //Methods
@@ -63,13 +63,13 @@ function char(){
 	this.setHpBar = function(){
 		document.getElementById("health").style.width = (this.hp / (this.cons)) + "%";
 	}
-	/*
+
 	this.addPower = function(){
 		if (this.power < 5){
 			this.power += 1;
 		}
+		console.log("Hello power time");
 	}
-    */
 	this.addCons = function(){
 		if (this.cons < 5){
 			this.cons += 1;

@@ -29,8 +29,8 @@ function monster(name,hp,drop,imageName,lvl){
 	
 //Methods
 	this.takeDmg = function() {
-		hp -= playa.getDmg();
-		document.getElementById("monstHealth").style.width = (this.hp / (this.cons)) + "%";
+		this.hp -= playa.getDmg();
+		document.getElementById("monstHealth").style.width = (this.hp / (this.cons))*100 + "%";
         console.log("shit happened");
 	}
 	this.die = function() {
