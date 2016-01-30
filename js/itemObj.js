@@ -1,3 +1,5 @@
+var playa = player();
+
 var fist = item();
 fist.name = "Fist";
 fist.power = 1;
@@ -51,3 +53,9 @@ rayGun.name = "Ray-Gun";
 rayGun.power = 2;
 rayGun.speed = 5;
 rayGun.cond = 5;
+
+var commonEnemy = monster();
+    commonEnemy.name = name;
+    commonEnemy.hp = 100;
+    commonEnemy.lvl = 1;
+    commonEnemy.drop = drop;

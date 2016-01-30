@@ -1,6 +1,6 @@
 function char(){
     //basic
-    this.name = "example";
+    this.name = "Ritualist";
     this.hp = 100;
 	this.score = 0;
 	
@@ -42,6 +42,10 @@ function char(){
     //methods
     this.click = function(){
         this.score = this.score + this.power;
+		if (commonEnemy.hp <= 0) {
+			//Kill enemy
+			//Rise new enemy
+		}
     }
 	
 	this.setDamage = function() {

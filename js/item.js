@@ -3,9 +3,11 @@ function item() {
 	this.name = "example";
 	this.power = 1;
 	this.speed = 1;
-	this.cond = 3;
+	this.cond = 5;
 	
-		
+	this.getName = function() {
+		return this.name;
+	}
 	this.getPower = function() {
 		return this.power;
 	}
