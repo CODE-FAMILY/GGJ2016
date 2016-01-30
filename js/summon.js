@@ -24,7 +24,6 @@ function summonRand(type) {
             }
             break;
         case 2:
-            console.log("chose Pokeball");
             if(boss != 1){
                 console.log("chose Pokeball - Minion");
             }
@@ -33,7 +32,6 @@ function summonRand(type) {
             }
             break;
         case 3:
-            console.log("chose Tome of Death");
             if(boss != 1){
                 console.log("chose Tome of Death - Minion");
             }
