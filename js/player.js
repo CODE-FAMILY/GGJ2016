@@ -15,7 +15,7 @@ function char(){
     }    
     
     //items
-    var weapons = ["Fist", "Dagger", "Sword", "Whip", "Wand", "Pistol", "Rifle", "Rocket Launcher", "Ray Gun"];
+    var weapons = [];
 	//var potions = [];
 	//var artifacts = [];
     
@@ -24,7 +24,7 @@ function char(){
 	this.cons = 1;
 	this.speed = 1;
 	this.item = 1;
-	this.damage;
+	this.damage = 1;
 		
 	this.getPower = function() {
 		return this.power;
@@ -45,7 +45,11 @@ function char(){
     }
 	
 	this.setDamage = function() {
-		this.damage = this.power * this.power * 10;
+		this.damage = this.power * this.power;
+	}
+	
+	this.addItem = function() {
+		weapons.push("item");
 	}
 }
 
