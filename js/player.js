@@ -66,23 +66,29 @@ function char(){
 
 	this.addPower = function(){
 		if (this.power < 5){
-			this.power += 1;
+			if (this.points >= Math.pow(this.power, 3) * 100){
+				this.power += 1;
+				document.getElementById("power").innerHTML = this.power + "/5 Cost: " + (Math.pow(this.power, 3) * 100);
+			}
 		}
 		console.log("Hello power time");
 	}
 	this.addCons = function(){
-		if (this.cons < 5){
+		if (this.points >= Math.pow(this.cons, 3) * 100){
 			this.cons += 1;
+			document.getElementById("cons").innerHTML = this.cons + "/5 Cost: " + (Math.pow(this.cons, 3) * 100);
 		}
 	}
 	this.addSpeed = function(){
-		if (this.speed < 5){
+		if (this.points >= Math.pow(this.speed, 3) * 100){
 			this.speed += 1;
+			document.getElementById("speed").innerHTML = this.speed + "/5 Cost: " + (Math.pow(this.speed, 3) * 100);
 		}
 	}
 	this.addItem = function(){
-		if (this.item < 5){
+		if (this.points >= Math.pow(this.item, 3) * 100){
 			this.item += 1;
+			document.getElementById("item").innerHTML = this.item + "/5 Cost: " + (Math.pow(this.item, 3) * 100);
 		}
 	}
 	
