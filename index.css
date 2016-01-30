@@ -150,3 +150,13 @@ z-index: 9002;
   position: relative;
   overflow: hidden;
 }
+
+.red > span {
+  background-color: #f0a3a3;
+  background-image: linear-gradient(to bottom, #f0a3a3, #f42323);
+}
+
+.orange > span {
+  background-color: #f1a165;
+  background-image: linear-gradient(to bottom, #f1a165, #f36d0a);
+}

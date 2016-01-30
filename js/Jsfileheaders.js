@@ -1,6 +1,6 @@
 function header(){
     document.write("<script src=\"js/css-popup.js\"></script>");
-    document.write("<script src=\"js/item.js.js\"></script>");
+    document.write("<script src=\"js/item.js\"></script>");
     document.write("<script src=\"js/player.js\"></script>");
     document.write("<script src=\"js/enemyObj.js\"></script>");
     document.write("<script src=\"js/highscores.js\"></script>");
