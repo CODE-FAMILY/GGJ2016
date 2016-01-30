@@ -3,9 +3,9 @@
 function tempPopUp(){
     document.write("<div id=\"blanket\" style=\"display:none\"> </div>");
     document.write("<div id=\"popUpDiv\" style=\"display:none\">");
-    document.write("     <a href=\"#\" onclick=\"popup('popUpDiv')\" >Click to Close CSS Pop Up</a>");
+    document.write("<button href=\"#\" onclick=\"popup('popUpDiv')\" >Click to Close CSS Pop Up</button>");
     document.write("</div>");
-    document.write("<a href=\"#\" onclick=\"popup('popUpDiv')\">Click to Open CSS Pop Up</a>");
+    document.write("<button href=\"#\" onclick=\"popup('popUpDiv')\">Upgrade</button>");
 }
 
 function upgrade() {
@@ -14,7 +14,7 @@ function upgrade() {
     var speed = "   <p>"+playa.getSpeed()+"/5</p>";
     document.write("<div id=\"blanket\" style=\"display:none\"> </div>");
     document.write("<div id=\"popUpDiv\" style=\"display:none\">");
-    document.write("     <a href=\"#\" onclick=\"popup('popUpDiv')\" >Click to Close</a>");
+    document.write("<a href=\"#\" onclick=\"popup('popUpDiv')\" >Click to Close</a>");
     document.write(power);
     document.write(cons);
     document.write(speed);

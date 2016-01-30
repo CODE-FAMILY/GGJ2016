@@ -3,18 +3,28 @@ function toggle(div_id) {
 	if ( el.style.display == 'none' ) {	el.style.display = 'block';}
 	else {el.style.display = 'none';}
 }
-function blanket_size(popUpDivVar) {
-	if (typeof window.innerWidth != 'undefined') {
+function blanket_size(popUpDivVar) 
+{
+	if (typeof window.innerWidth != 'undefined') 
+	{
 		viewportheight = window.innerHeight;
-	} else {
+	} 
+	else 
+	{
 		viewportheight = document.documentElement.clientHeight;
 	}
-	if ((viewportheight > document.body.parentNode.scrollHeight) && (viewportheight > document.body.parentNode.clientHeight)) {
+	if ((viewportheight > document.body.parentNode.scrollHeight) && (viewportheight > document.body.parentNode.clientHeight))
+	{
 		blanket_height = viewportheight;
-	} else {
-		if (document.body.parentNode.clientHeight > document.body.parentNode.scrollHeight) {
+	} 
+	else 
+	{
+		if (document.body.parentNode.clientHeight > document.body.parentNode.scrollHeight) 
+		{
 			blanket_height = document.body.parentNode.clientHeight;
-		} else {
+		} 
+		else 
+		{
 			blanket_height = document.body.parentNode.scrollHeight;
 		}
 	}
@@ -43,7 +53,8 @@ function window_pos(popUpDivVar) {
 	window_width=window_width/2-200;//200 is half popup's width
 	popUpDiv.style.left = window_width + 'px';
 }
-function popup(windowname) {
+function popup(windowname) 
+{
 	blanket_size(windowname);
 	window_pos(windowname);
 	toggle('blanket');
