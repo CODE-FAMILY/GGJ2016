@@ -6,6 +6,7 @@ var zombie = new monster("Zombie", 100, 5, "image/zombieImg.png");
 var zombieNazi = new monster("Nazi Zombie", 100, 6, "image/zombieNaziImg.png");
 var mermaid = new monster("Mermaid", 100, 4, "image/mermaidImg/png");
 var minitaur = new monster("Minitaur", 100, 3, "image/minitaurImg.png");
+var centaur = new monster("Centaur", 100, 2, "image/centaurImg.png");
 var unicorn = new monster("Unicorn", 100, 4, "image/unicornImg.png");
 var teletubby = new monster("Teletubby", 100, 8, "image/teletubbyImg.png");
 var bunny = new monster("Bunny", 100, 7, "image/bunnyImg.png");
