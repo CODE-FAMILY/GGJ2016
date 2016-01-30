@@ -59,11 +59,32 @@ function char(){
 	}
 	this.enemyLvlUp = function(){
 		this.enemyLvl += 1;
+	}	
+	this.setHpBar = function(){
+		document.getElementById("health").style.width = (this.hp / (this.cons)) + "%";
 	}
 	
-	this.setHpBar = function(){
-		document.getElementById("health").style.width = (this.hp / (this.cons * 100));
+	this.addPower = function(){
+		if (this.power < 5){
+			this.power += 1;
+		}
 	}
+	this.cons = function(){
+		if (this.cons < 5){
+			this.cons += 1;
+		}
+	}
+	this.speed = function(){
+		if (this.speed < 5){
+			this.speed += 1;
+		}
+	}
+	this.item = function(){
+		if (this.item < 5){
+			this.item += 1;
+		}
+	}
+	this.damage = 1;
 	
     this.click = function(){
         this.score += this.power;
