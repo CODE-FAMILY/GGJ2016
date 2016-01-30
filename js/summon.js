@@ -13,15 +13,33 @@ function summonMenu() {
 }
 
 function summonRand(type) {
+    var boss = Math.random() % 5;
     switch(type){
         case 1:
-            console.log("chose Pentagram");
+            if(boss != 1){
+                console.log("chose Pentagram - Minion");
+            }
+            else{
+                console.log("chose Pentagram - Boss");
+            }
             break;
         case 2:
             console.log("chose Pokeball");
+            if(boss != 1){
+                console.log("chose Pokeball - Minion");
+            }
+            else{
+                console.log("chose Pokeball - Boss");
+            }
             break;
         case 3:
             console.log("chose Tome of Death");
+            if(boss != 1){
+                console.log("chose Tome of Death - Minion");
+            }
+            else{
+                console.log("chose Tome of Death - Boss");
+            }
             break;
     }
 }
