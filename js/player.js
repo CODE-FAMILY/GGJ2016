@@ -59,7 +59,7 @@ function char(){
 	}
 	this.enemyLvlUp = function(){
 		this.enemyLvl += 1;
-	}	
+	}
 	this.setHpBar = function(){
 		document.getElementById("health").style.width = (this.hp / (this.cons)) + "%";
 	}
@@ -69,17 +69,17 @@ function char(){
 			this.power += 1;
 		}
 	}
-	this.cons = function(){
+	this.addCons = function(){
 		if (this.cons < 5){
 			this.cons += 1;
 		}
 	}
-	this.speed = function(){
+	this.addSpeed = function(){
 		if (this.speed < 5){
 			this.speed += 1;
 		}
 	}
-	this.item = function(){
+	this.addItem = function(){
 		if (this.item < 5){
 			this.item += 1;
 		}
@@ -96,7 +96,6 @@ function char(){
 			//this.points += 100;
 			//commonEnemy.die();
 		//}
-		this.setHpBar();
     }
 	
 	this.setDmg = function(){
@@ -129,40 +128,5 @@ function char(){
 	
 	this.randCall = function() {
 		Math.floor((Math.random() * 10) + 1); //Random from 1 to 10
-	}
-}
-
-function monster(name,hp,drop,imageName,lvl){
-    this.name = name;
-    this.lvl = lvl;
-	this.hp = hp;
-    this.drop = drop;
-	var enemyImg = document.createElement("imageName");
-
-//Getters
-	this.getName = function(){
-		return this.name;
-	}
-    this.getHp = function(){
-        return this.hp;
-    }  
-	this.getLvl = function() {
-		return this.lvl;
-	}
-	this.getDrop = function() {
-		return this.drop;
-	}
-	
-//Setters
-	this.setHp = function() {
-		this.hp = Math.floor((Math.random() * this.lvl + 1) * hp);
-	}
-	
-//Methods
-	this.takeDmg = function() {
-		hp -= playa.getDmg();
-	}
-	this.die = function() {
-		//this.enemyImg.parentNode.removeChild(this.name);
 	}
 }
