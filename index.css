@@ -4,6 +4,13 @@ body {
 	margin: 0px;
 }
 
+hr {
+	background-color: #2a2b2e;
+	width: 3px;
+	display: absolute;
+}
+
+/*Game Areas*/
 div.Game {
 	background-color: #2a2b2e;
 	position: center;
@@ -17,14 +24,14 @@ div.Inventory {
 	float: left;
 	width: 630px;
 	height: 350px;
-	border-radius: 12px;
+	border-top-left-radius: 12px;
 }
 
 div.Creature {
 	float: right;
 	width: 630px;
 	height: 350px;
-	border-radius: 12px;
+	border-top-right-radius: 12px;
 }
 
 div.Health {
@@ -32,7 +39,7 @@ div.Health {
 	width: 630px;
 	height: 350px;
 	margin-top: 8px;
-	border-radius: 12px;
+	border-bottom-left-radius: 12px;
 }
 
 div.Quest {
@@ -40,8 +47,14 @@ div.Quest {
 	width: 630px;
 	height: 350px;
 	margin-top: 8px;
-	border-radius: 12px;
+	border-bottom-right-radius: 12px;
 }
+
+/*Buttons /  Image Clicks*/
+button.CreatureImg {
+	
+}
+
 
 #blanket {
 background-color:#111;
