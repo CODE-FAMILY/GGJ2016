@@ -1,8 +1,10 @@
 //Enemy Objects
+var commonEnemy;
+
 //Monsters
 var skeleton = new monster("Skeletor", 100, 1, "image/skeletonImg.png");
 var ghost = new monster("Ghost", 100, 3, "ghostImg.png");
-var zombie = new monster("Zombie", 100, 5, "image/zombieImg.png");
+var zombie = new monster("Zombie", 100, 5, "image/zombieImg.png",playa.enemyLvl);
 var zombieNazi = new monster("Nazi Zombie", 100, 6, "image/zombieNaziImg.png");
 var mermaid = new monster("Mermaid", 100, 4, "image/mermaidImg/png");
 var minitaur = new monster("Minitaur", 100, 3, "image/minitaurImg.png");

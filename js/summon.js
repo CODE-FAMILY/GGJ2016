@@ -14,9 +14,11 @@ function summonMenu() {
 
 function summonRand(type) {
     var boss = Math.floor((Math.random() * 5) + 1);
+    var select;
     switch(type){
         case 1:
             if(boss != 1){
+                
                 console.log("chose Pentagram - Minion");
             }
             else{
@@ -40,4 +42,5 @@ function summonRand(type) {
             }
             break;
     }
+    commonEnemy = new monster("Zombie", 100, 5, "image/zombieImg.png",playa.enemyLvl);
 }

@@ -30,7 +30,10 @@
                     <span id="monstHealth" style="width: 75%"></span>
                 </div>
 				<div>
-					<img src="images/Placeholder.png"></img>
+					<script>
+                        var monsterImage = "<img src=\""+commonEnemy.image+"\"></img>"
+                        docutment.write(monsterImage);
+                    </script>
 				</div>
 			
 				<!-- Score Calc -->
@@ -41,11 +44,12 @@
 			
 			<!-- Health Pane --> 
 			<div class ="Health">
-				<div class="meter" style="width: 50%">
-                    <span id="health" style="width: 75%"></span>
+                <img src="images/skullHp.png" style="width: 10%;height: 15%;float: left"></img>
+				<div class="meter" style="width: 80%;float:left">
+                    <span id="health" style="width: 100%"></span>
                 </div>
 				
-                <div id="score">Score: 0</div>
+                <p id="score" syle="">Score: 0</p>
 				
 				<script id="HScore" class="btnHScore"> </script>
 			</div>

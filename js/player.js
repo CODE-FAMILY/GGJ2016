@@ -34,7 +34,7 @@ function char(){
 	this.cons = 1;
 	this.speed = 1;
 	this.item = 1;
-	this.damage = 1;
+	//this.damage = 1;
 		
 //Skill Getters
 	this.getPower = function() {
@@ -50,7 +50,7 @@ function char(){
 		return this.item;
 	}
 	this.getDmg = function(){
-		return this.damage;
+		return this.power * this.speed;
 	}
 	
 //Methods
@@ -63,12 +63,13 @@ function char(){
 	this.setHpBar = function(){
 		document.getElementById("health").style.width = (this.hp / (this.cons)) + "%";
 	}
-	
+	/*
 	this.addPower = function(){
 		if (this.power < 5){
 			this.power += 1;
 		}
 	}
+    */
 	this.addCons = function(){
 		if (this.cons < 5){
 			this.cons += 1;
@@ -89,18 +90,19 @@ function char(){
         this.score += this.power;
         this.points += this.power;
 		document.getElementById("score").innerHTML = ("Score: " + this.getScore());
-		//commonEnemy.takeDmg();
-		//if (commonEnemy.hp <= 0){
-			//this.score += 100;
-			//this.points += 100;
-			//commonEnemy.die();
-		//}
+		commonEnemy.takeDmg();
+		if (commonEnemy.hp <= 0){
+			this.score += 100;
+			this.points += 100;
+			commonEnemy.die();
+		}
     }
 	
+    /*
 	this.setDmg = function(){
 		this.damage = this.power * this.power;
 	}
-	
+	*/
 	this.addHp = function(health){
 		if (this.hp + health > this.cons) {
 			this.hp = this.cons * 100;
