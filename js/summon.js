@@ -13,7 +13,7 @@ function summonMenu() {
 }
 
 function summonRand(type) {
-    var boss = Math.random() % 5;
+    var boss = Math.floor((Math.random() * 5) + 1);
     switch(type){
         case 1:
             if(boss != 1){
