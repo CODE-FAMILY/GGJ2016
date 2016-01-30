@@ -2,7 +2,8 @@ function char(){
     //basic
     this.name = "Ritualist";
     this.hp = 100;
-	this.score = 0;
+	this.score = 0; //max
+    this.points = 0; //points - upgradeCost
 	
 	this.getScore = function(){
 		return this.score;
@@ -42,6 +43,7 @@ function char(){
     //methods
     this.click = function(){
         this.score = this.score + this.power;
+        this.points += this.power;
 		if (commonEnemy.hp <= 0) {
 			//Kill enemy
 			//Rise new enemy
