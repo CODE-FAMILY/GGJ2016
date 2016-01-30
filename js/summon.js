@@ -42,5 +42,6 @@ function summonRand(type) {
             }
             break;
     }
-    commonEnemy = new monster("Zombie", 100, 5, "image/zombieImg.png",playa.enemyLvl);
+    commonEnemy = zombie.clone();
+    document.getElementById("monstImage").src = (commonEnemy.enemyImg);
 }

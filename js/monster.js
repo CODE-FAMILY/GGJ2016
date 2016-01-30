@@ -5,7 +5,7 @@ function monster(name,hp,drop,imageName,lvl){
 	this.hp = hp;
 	this.cons = hp;
     this.drop = drop;
-	var enemyImg = imageName;
+	this.enemyImg = imageName;
 
 //Getters
 	this.getName = function(){
@@ -36,4 +36,17 @@ function monster(name,hp,drop,imageName,lvl){
 	this.die = function() {
 		//this.enemyImg.parentNode.removeChild(this.name);
 	}
+    
+    this.clone = function(){
+        var second = new monster(this.name,this.hp,this.drop,this.enemyImg,this.lvl);
+        /*
+        second.name = this.name;
+        second.lvl = this.lvl;
+        second.hp = this.hp;
+        second.cons = this.cons;
+        second.drop = this.drop;
+        second.enemyImg = this.enemyImg;
+        */
+        return second;
+    }
 }
