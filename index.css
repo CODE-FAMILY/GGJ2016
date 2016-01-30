@@ -68,25 +68,25 @@ button.btnSum {
 }
 
 #blanket {
-background-color:#111;
-opacity: 0.65;
-*background:none;
-position:absolute;
-z-index: 9001;
-top:0px;
-left:0px;
-width:100%;
+	background-color:#111;
+	opacity: 0.65;
+	*background:none;
+	position:absolute;
+	z-index: 9001;
+	top:0px;
+	left:0px;
+	width:100%;
 }
 
 #popUpDiv {
-position:absolute;
-/*background:url(pop-back.jpg) no-repeat;*/
-background-color: black;
-color: #f3f3f3;
-width:400px;
-height:400px;
-border:5px solid #000;
-z-index: 9002;
+	position:absolute;
+	/*background:url(pop-back.jpg) no-repeat;*/
+	background-color: black;
+	color: #f3f3f3;
+	width:400px;
+	height:400px;
+	border:5px solid #000;
+	z-index: 9002;
 }
 
 #summonPopUp {
@@ -95,8 +95,8 @@ z-index: 9002;
     background-color: black;
     width:400;
     height:400;
-    border:5px solid #000;
-	z-index: 9005;
+    border: 5px solid #000;
+    z-index: 9005;
 }
 
 #Inv {
@@ -154,6 +154,12 @@ z-index: 9002;
 .red > span {
   background-color: #f0a3a3;
   background-image: linear-gradient(to bottom, #f0a3a3, #f42323);
+}
+
+.orange {
+	width: 50%;
+	text-align: center;
+	float: left
 }
 
 .orange > span {
