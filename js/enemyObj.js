@@ -14,7 +14,7 @@ var bunny = new monster("Bunny", 100, 7, "image/bunnyImg.png");
 //Bosses
 var pikachu = new monster("Pikachu", 1000, 0, "image/pikachuImg.png");
 var trump = new monster("Trump", 1000, 0, "image/trumpImg.png");
-var hllary = new monster("Hillary", 1000, 0, "image/hillaryImg.png");
+var dragon = new monster("Dragon", 1000, 0, "image/dragonImg.png");
 var graham = new monster("Dr. Graham", 1000, 0, "image/grahamImg.png");
 var howard = new monster("Dr. Howard", 1000, 0, "image/howardImg.png");
 var hitler = new monster("Hitler", 1000, 0, "image/hitlerImg.png");
@@ -22,7 +22,7 @@ var santa = new monster("Santa", 1000, 0, "image/snataImg.png");
 
 //Sets
 var pentMonsters = [mermaid, centaur, minitaur, unicorn];
-var pentBoss = [trump, hillary];
+var pentBoss = [trump, dragon];
 
 var pokeMonsters = [teletubby, bunny];
 var pokeBoss = [pikachu, santa];

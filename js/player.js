@@ -31,7 +31,7 @@ function char(){
     
 //Skills
 	this.power = 1;
-	this.cons = 100;
+	this.cons = 1;
 	this.speed = 1;
 	this.item = 1;
 	this.damage = 1;
@@ -61,6 +61,10 @@ function char(){
 		this.enemyLvl += 1;
 	}
 	
+	this.setHpBar = function(){
+		document.getElementById("health").style.width = (this.hp / (this.cons * 100));
+	}
+	
     this.click = function(){
         this.score += this.power;
         this.points += this.power;
@@ -71,6 +75,7 @@ function char(){
 			//this.points += 100;
 			//commonEnemy.die();
 		//}
+		this.setHpBar();
     }
 	
 	this.setDmg = function(){
@@ -79,9 +84,9 @@ function char(){
 	
 	this.addHp = function(health){
 		if (this.hp + health > this.cons) {
-			this.hp = this.cons;
+			this.hp = this.cons * 100;
 		} else {
-			this.hp += this.cons;
+			this.hp += health;
 		}
 	}
 	
