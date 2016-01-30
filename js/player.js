@@ -4,6 +4,7 @@ function char(){
     this.hp = 100;
 	this.score = 0; //max
     this.points = 0; //points - upgradeCost
+	this.killCount = 0;
 	this.enemyLvl = 1;
 	
 //Basic Getters
@@ -48,19 +49,22 @@ function char(){
 	this.getItem = function() {
 		return this.item;
 	}
-	this.getDamage = function(){
+	this.getDmg = function(){
 		return this.damage;
 	}
 	
 //Methods
+	this.addKill = function(){
+		this.killCount += 1;
+	}
 	this.enemyLvlUp = function(){
 		this.enemyLvl += 1;
 	}
 	
     this.click = function(){
-        this.score = this.score + this.power;
+        this.score += this.power;
         this.points += this.power;
-		document.getElementById("score").innerHTML = (this.getScore());
+		document.getElementById("score").innerHTML = ("Score: " + this.getScore());
 		//commonEnemy.takeDmg();
 		//if (commonEnemy.hp <= 0){
 			//this.score += 100;
@@ -69,7 +73,7 @@ function char(){
 		//}
     }
 	
-	this.setDamage = function(){
+	this.setDmg = function(){
 		this.damage = this.power * this.power;
 	}
 	
@@ -130,9 +134,9 @@ function monster(name,hp,drop,imageName){
 	
 //Methods
 	this.takeDmg = function() {
-		hp = hp - playa.getDmg();
+		hp -= playa.getDmg();
 	}
 	this.die = function() {
-		this.enemyImg.parentNode.removeChild(enemyImg);
+		//this.enemyImg.parentNode.removeChild(this.name);
 	}
 }
