@@ -1,4 +1,4 @@
-var playa = player();
+var playa = char();
 
 var fist = item();
 fist.name = "Fist";
