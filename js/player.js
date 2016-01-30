@@ -47,7 +47,7 @@ function char(){
     this.click = function(){
         this.score = this.score + this.power;
         this.points += this.power;
-		console.log(playa.getPoints());
+		document.getElementById("score").innerHTML = (this.getScore());
 		//if (commonEnemy.hp <= 0) {
 			//Kill enemy
 			//Rise new enemy
