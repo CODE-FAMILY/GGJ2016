@@ -42,15 +42,20 @@ function char(){
 	this.getItem = function() {
 		return this.item;
 	}
+	this.getDamage = function() {
+		return this.damage;
+	}
 	
     //methods
     this.click = function(){
         this.score = this.score + this.power;
         this.points += this.power;
 		document.getElementById("score").innerHTML = (this.getScore());
+		//commonEnemy.takeDmg();
 		//if (commonEnemy.hp <= 0) {
-			//Kill enemy
-			//Rise new enemy
+			//this.score += 100;
+			//this.points += 100;
+			//commonEnemy.die();
 		//}
     }
 	
@@ -67,11 +72,12 @@ function char(){
 	}
 }
 
-function monster(name,hp,lvl,drop){
+function monster(name,hp,drop,imageName){
     this.name = name;
-    this.hp = hp;
-    this.lvl = hp;
+    this.hp = Math.floor((Math.random() + 1) * hp);
+    this.lvl = Math.floor(hp/100);
     this.drop = drop;
+	var enemyImg = document.createElement("imageName");
 	
 	this.getName = function(){
 		return this.name;
@@ -84,5 +90,11 @@ function monster(name,hp,lvl,drop){
 	}
 	this.getDrop = function() {
 		return this.drop;
+	}
+	this.takeDmg = function() {
+		hp = hp - playa.getDmg();
+	}
+	this.die = function() {
+		this.enemyImg.parentNode.removeChild(enemyImg);
 	}
 }
