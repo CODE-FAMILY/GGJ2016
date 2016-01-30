@@ -1,6 +1,7 @@
-var playa = char();
+var playa = new char();
+//playa.hp = 100;
 
-var fist = item();
+/*var fist = item();
 fist.name = "Fist";
 fist.power = 1;
 fist.speed = 1;
@@ -58,4 +59,4 @@ var commonEnemy = monster();
     commonEnemy.name = name;
     commonEnemy.hp = 100;
     commonEnemy.lvl = 1;
-    commonEnemy.drop = drop;
+    commonEnemy.drop = drop;*/

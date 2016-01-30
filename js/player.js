@@ -8,6 +8,9 @@ function char(){
 	this.getScore = function(){
 		return this.score;
 	}
+	this.getPoints = function() {
+		return this.points;
+	}
 	this.getName = function(){
 		return this.name;
 	}
@@ -44,10 +47,11 @@ function char(){
     this.click = function(){
         this.score = this.score + this.power;
         this.points += this.power;
-		if (commonEnemy.hp <= 0) {
+		console.log(playa.getPoints());
+		//if (commonEnemy.hp <= 0) {
 			//Kill enemy
 			//Rise new enemy
-		}
+		//}
     }
 	
 	this.setDamage = function() {
@@ -56,6 +60,10 @@ function char(){
 	
 	this.addItem = function() {
 		weapons.push("item");
+	}
+	
+	this.randCall = function() {
+		Math.floor((Math.random() * 10) + 1); //Random from 1 to 10
 	}
 }
 
@@ -72,7 +80,7 @@ function monster(name,hp,lvl,drop){
         return this.hp;
     }  
 	this.getLvl = function() {
-		return this.getLvl;
+		return this.lvl;
 	}
 	this.getDrop = function() {
 		return this.drop;
