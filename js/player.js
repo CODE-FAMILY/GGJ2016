@@ -72,10 +72,10 @@ function char(){
 	}
 }
 
-function monster(name,hp,drop,imageName){
+function monster(name,hp,lvl,drop,imageName){
     this.name = name;
-    this.hp = Math.floor((Math.random() + 1) * hp);
-    this.lvl = Math.floor(hp/100);
+    this.lvl = lvl;
+    this.hp = Math.floor((Math.random() * this.lvl + 1) * this.hp);
     this.drop = drop;
 	var enemyImg = document.createElement("imageName");
 	

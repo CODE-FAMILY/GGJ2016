@@ -5,60 +5,27 @@ commonEnemy.hp = 100;
 commonEnemy.lvl = 1;
 commonEnemy.drop = drop;*/
 
-var skeleton = new monster();
-skeleton.name = "Skeletor";
-skeleton.hp = 100;
-skeleton.drop = 1;
-skeleton.imageName = "skeletonImg";
+//Monsters
+var skeleton = new monster("Skeletor", 100, 1, "image/skeletonImg.png");
+var ghost = new monster("Ghost", 100, 3, "ghostImg.png");
+var zombie = new monster("Zombie", 100, 5, "image/zombieImg.png");
+var zombieNazi = new monster("Nazi Zombie", 100, 6, "image/zombieNaziImg.png");
+var mermaid = new monster("Mermaid", 100, 4, "image/mermaidImg/png");
+var minitaur = new monster("Minitaur", 100, 3, "image/minitaurImg.png");
+var unicorn = new monster("Unicorn", 100, 4, "image/unicornImg.png");
+var teletubby = new monster("Teletubby", 100, 8, "image/teletubbyImg.png");
+var bunny = new monster("Bunny", 100, 7, "image/bunnyImg.png");
 
-var ghost = new monster();
-ghost.name = "Ghost";
-ghost.hp = 100;
-ghost.drop = 3;
-ghost.imageName = "ghostImg";
+//Bosses
+var pikachu = new monster("Pikachu", 1000, 0, "image/pikachuImg.png");
+var trump = new monster("Trump", 1000, 0, "image/trumpImg.png");
+var hllary = new monster("Hillary", 1000, 0, "image/hillaryImg.png");
+var graham = new monster("Dr. Graham", 1000, 0, "image/grahamImg.png");
+var howard = new monster("Dr. Howard", 1000, 0, "image/howardImg.png");
+var hitler = new monster("Hitler", 1000, 0, "image/hitlerImg.png");
+var santa = new monster("Santa", 1000, 0, "image/snataImg.png");
 
-var zombie = new monster();
-zombie.name = "Zombie";
-zombie.hp = 100;
-zombie.drop = 5;
-zombie.imageName = "zombieImg";
-
-var zombieNazi = new monster();
-zombieNazi.name = "Nazi-Zombie";
-zombieNazi.hp = 100;
-zombieNazi.drop = 6;
-zombieNazi.imageName = "zombieNaziImg";
-//Fix attributes
-var mermaid = new monster();
-mermaid.name = "Mermaid";
-mermaid.hp = 100;
-mermaid.drop = 4;
-mermaid.imageName = "MermaidImg";
-
-var minitaur = new monster();
-minitaur.name = "Minitaur";
-minitaur.hp = 100;
-minitaur.drop = 3;
-minitaur.imageName = "minitaurImg";
-
-var unicorn = new monster();
-unicorn.name = "Unicorn";
-unicorn.hp = 100;
-unicorn.drop = 4;
-unicorn.imageName = "zombieImg";
-
-var teletubby = new monster();
-teletubby.name = "Teletubby";
-teletubby.hp = 100;
-teletubby.drop = 8;
-teletubby.imageName = "teletubbyImg";
-
-var bunny = new monster();
-bunny.name = "Bunny";
-bunny.hp = 100;
-bunny.drop = 7;
-bunny.imageName = "bunnyImg";
-
+//Sets
 var pentMonsters = [mermaid, centaur, minitaur, unicorn];
 var pentBoss = [trump, hillary];
 
