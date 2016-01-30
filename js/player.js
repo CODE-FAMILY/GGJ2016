@@ -106,9 +106,9 @@ function char(){
 	}
 }
 
-function monster(name,hp,drop,imageName){
+function monster(name,hp,drop,imageName,lvl){
     this.name = name;
-    this.lvl = playa.enemyLvl;
+    this.lvl = lvl;
 	this.hp = hp;
     this.drop = drop;
 	var enemyImg = document.createElement("imageName");
