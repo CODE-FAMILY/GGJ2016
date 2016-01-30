@@ -47,10 +47,11 @@ function char(){
     this.click = function(){
         this.score = this.score + this.power;
         this.points += this.power;
-		if (commonEnemy.hp <= 0) {
+		console.log(playa.getPoints());
+		//if (commonEnemy.hp <= 0) {
 			//Kill enemy
 			//Rise new enemy
-		}
+		//}
     }
 	
 	this.setDamage = function() {
