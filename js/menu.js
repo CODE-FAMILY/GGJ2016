@@ -12,6 +12,7 @@ function tempPopUp(){
 function upgrade() {
     displayNone();
     document.getElementById("upgrade").style.display = "block";
+    document.getElementById("upgrade-costs").innerHTML = playa.skillLvl*100;
     document.getElementById("upgrade-points").innerHTML = (playa.getPoints());
     showAll();
 }
