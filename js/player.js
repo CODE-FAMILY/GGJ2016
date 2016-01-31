@@ -27,8 +27,16 @@ function char(){
 //Items
     var items = [];
 	
-	this.takeItem = function(thing){
-		items.push(commonEnemy.dropItem);
+	this.takeItem = function(){
+		if (commonEnemy.getDrop() != null){
+			if (commonEnemy.clickDrop() && items.length() <= 5){
+				items.push(commonEnemy.dropItem);
+			}
+		}
+	}
+	
+	this.dropItem = function(thing){
+		items.splice(items.indexOf(thing), 1);
 	}
     
 //Skills
@@ -117,8 +125,6 @@ function char(){
 			commonEnemy.die();
 			this.addKill();
 			this.enemyLvlUp();
-			if (commonEnemy.dropItem){
-			}
 		}
 		document.getElementById("points").innerHTML = ("Score: " + this.getScore() + " Points: " + this.getPoints());
     }
