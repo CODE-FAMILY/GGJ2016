@@ -31,6 +31,20 @@ body {
 
 /**----- item, upgrade, inventory, summon ------**/
 
+#dynamic-box {
+	text-align: left;
+}
+
+#dynamic-box h3 {
+	text-align: center;
+}
+
+.description {
+	text-align: center;
+	padding: 0.5em;
+	border-radius: 0.5em;
+}
+
 #item {
 	display: none;
 }
@@ -172,4 +186,8 @@ button {
 
 .purple {
 	background-color: #684782;
-} 
+}
+
+.darkgrey {
+	background-color: #2A2B2E;
+}
