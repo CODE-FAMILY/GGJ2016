@@ -82,6 +82,7 @@ function monster(name,hp,drop,imageName,lvl){
         if(dropRate == 1){
             document.getElementById("monstImage").src = (this.getDrop().filePath);
 			playa.takeItem(this.getDrop());
+			console.log("Got a weapon!");
         }else if(dropRate == 2){
 			playa.addHp(Math.floor(this.getHp() / 2));
 		}else{

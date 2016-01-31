@@ -58,7 +58,7 @@ function char(){
 			}else{
 				items[items.length] = box;
 			}
-			if(items.length == 1){
+			if(items.length > 1){
 				this.setEquiped(1);
 			}
 		}
@@ -151,7 +151,7 @@ function char(){
 			this.score += this.power;
 			this.points += this.power;
 			commonEnemy.takeDmg();
-			if (Math.floor(Math.random() * 50) + 1){
+			if (Math.floor(Math.random() * 25) + 1 == 1){
 				this.dmgEquiped();
 			}
 			if (commonEnemy.hp <= 0){
