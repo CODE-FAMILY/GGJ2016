@@ -1,5 +1,4 @@
 body {
-	background-color: #252628;
 	color: #f3f3f3;
 	margin: 0px;
 	text-align: center;
@@ -37,6 +36,7 @@ body {
 
 #dynamic-box h3 {
 	text-align: center;
+	color: #30BF5B;
 }
 
 .description {
@@ -189,5 +189,13 @@ button {
 }
 
 .darkgrey {
-	background-color: #2A2B2E;
+	background-color: #252628;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.bold {
+	font-weight: bold;
 }
