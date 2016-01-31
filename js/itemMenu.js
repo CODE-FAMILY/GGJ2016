@@ -17,5 +17,15 @@ function itemScreen(){
 }
 
 function inventoryScreen(){
-    
+    displayNone();
+    document.getElementById("inventory").style.display = "inline";
+        document.getElementById("upgrade-points-inv").innerHTML = (playa.getPoints());
+}
+
+function purchaseHealing(){
+    if(playa.getPoints() >= 500){
+        playa.addHp(100);
+        playa.points -= 500;
+    }
+    document.getElementById("upgrade-points-inv").innerHTML = (playa.getPoints());
 }

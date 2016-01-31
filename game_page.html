@@ -115,6 +115,9 @@
 		    			  		</div>
 		    			  		<div id="inventory">
 		    			  		  <h3>Inventory</h3>
+                                    
+                                  <button class="red" onclick="purchaseHealing()">Pay for healing: 500</button>
+                                  <p class="bold uppercase">Points: <span id="upgrade-points-inv">0</span></span></p>
 		    			  		</div>
 		    			  		<div id="summon">
 		    			  		  <h3 class="uppercase">Summon</h3>
@@ -125,7 +128,7 @@
 		    			  	</div>
 
 		    			  	<div id="button-pane">
-		    			  		<button class="blue" onclick=""><img class="icon" src="images/inventory_button_icon.svg" />Inventory</button>
+		    			  		<button class="blue" onclick="inventoryScreen()"><img class="icon" src="images/inventory_button_icon.svg" />Inventory</button>
 		    			  	  	<button class="green" onclick="upgrade()"><img class="icon" src="images/upgrade_button_icon.svg" />Upgrade</button>
 		    			  	  	<button class="red" onclick="summonMenu()"><img class="icon" src="images/summon_button_icon.svg" />Summon</button>
 		    			  	</div>
