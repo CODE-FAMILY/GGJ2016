@@ -5,6 +5,7 @@
 		<title>The Summoning</title>
 		<link rel="stylesheet" href="game_page.css">
 		<link rel="stylesheet" href="popUps.css">
+		<link rel="shortcut icon" type="image/png" href="favicon.png"/>
 		<script src="js/Jsfileheaders.js"></script>
         <script>header()</script>
 	</head>
@@ -34,9 +35,9 @@
 								<div id="item-selected">
 								  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 										 width="374px" height="389.333px" viewBox="0 0 374 389.333" enable-background="new 0 0 374 389.333" xml:space="preserve">
-								    	<image id="item-image" x="1" y="1" width="100%" height="90%" xlink:href="images/daggerImg.svg" />
+								    	<image id="item-image" x="1" y="1" width="100%" height="90%" xlink:href="images/fistImg.svg" />
 									<g>
-										<text id="weapon-name" transform="matrix(1 0 0 1 37.2778 353.0254)" fill="#EFEFEF" font-family="'Blanch-Caps'" font-size="18">Rocket Launcher</text>
+										<text id="weapon-name" transform="matrix(1 0 0 1 37.2778 353.0254)" fill="#EFEFEF" font-family="'Blanch-Caps'" font-size="18">Fist</text>
 									</g>
 									<g>
 										<text id="weapon-speed" transform="matrix(1 0 0 1 228.4741 349.9922)" fill="#F3F3F3" font-family="'CenturyGothic'" font-size="10.1368">1</text>
@@ -79,37 +80,38 @@
 
 		    			  		<div id="upgrade">
 		    			  		  <h3 class="uppercase">Upgrades</h3>
-		    			  		  <p class="description darkgrey uppercase">
+		    			  		  <p class="description darkgrey uppercase courier">
 								Cost goes up every time you upgrade
 		    			  		        current cost per upgrade: <span id="upgrade-costs">500</span> points
 		    			  		  </p>
-		    			  		  <p class="uppercase bold">
-		    			  		    Power:
-		    			  		  </p>
-		    			  		  <div id="upgrade-power">
-		    			  		    <button id="pow1" onclick="playa.addPower()"></button><button id="pow2" onclick="playa.addPower()"></button><button id="pow3" onclick="playa.addPower()"></button ><button id="pow4" onclick="playa.addPower()"></button><button id="pow5" onclick="playa.addPower()"></button>
-		    			  		  </div>
-		    			  		  <p class="uppercase bold">
-		    			  		    Speed:
-		    			  		  </p>
-		    			  		  <div id="upgrade-speed">
-		    			  		    <button id="spe1" onclick="playa.addSpeed()"></button><button id="spe2" onclick="playa.addSpeed()"></button><button id="spe3" onclick="playa.addSpeed()"></button ><button id="spe4" onclick="playa.addSpeed()"></button><button id="spe5" onclick="playa.addSpeed()"></button>
-		    			  		  </div>
-		    			  		  <p class="uppercase bold">
-		    			  		    Health:
-		    			  		  </p>
-		    			  		  <div id="upgrade-health">
-		    			  		    <button id="const1" onclick="playa.addCons()"></button><button id="const2" onclick="playa.addCons()"></button><button id="const3" onclick="playa.addCons()"></button ><button id="const4" onclick="playa.addCons()"></button><button id="const5" onclick="playa.addCons()"></button>
-		    			  		  </div>
-		    			  		  <p class="uppercase bold">
-		    			  		    Weapon Health:
-		    			  		  </p>
-		    			  		  <div id="upgrade-weapon-health">
-		    			  		    <button id="wep1" onclick="playa.addItem()"></button><button id="wep2" onclick="playa.addItem()"></button><button id="wep3" onclick="playa.addItem()"></button ><button id="wep4" onclick="playa.addItem()"></button><button id="wep5" onclick="playa.addItem()"></button>
+		    			  		  <div id="upgrade-buttons">
+			    			  		  <p class="uppercase bold">
+			    			  		    Power:
+			    			  		  </p>
+			    			  		  <div id="upgrade-power">
+			    			  		    <button id="pow1" onclick="playa.addPower()"></button><button id="pow2" onclick="playa.addPower()"></button><button id="pow3" onclick="playa.addPower()"></button ><button id="pow4" onclick="playa.addPower()"></button><button id="pow5" onclick="playa.addPower()"></button>
+			    			  		  </div>
+			    			  		  <p class="uppercase bold">
+			    			  		    Speed:
+			    			  		  </p>
+			    			  		  <div id="upgrade-speed">
+			    			  		    <button id="spe1" onclick="playa.addSpeed()"></button><button id="spe2" onclick="playa.addSpeed()"></button><button id="spe3" onclick="playa.addSpeed()"></button ><button id="spe4" onclick="playa.addSpeed()"></button><button id="spe5" onclick="playa.addSpeed()"></button>
+			    			  		  </div>
+			    			  		  <p class="uppercase bold">
+			    			  		    Health:
+			    			  		  </p>
+			    			  		  <div id="upgrade-health">
+			    			  		    <button id="const1" onclick="playa.addCons()"></button><button id="const2" onclick="playa.addCons()"></button><button id="const3" onclick="playa.addCons()"></button ><button id="const4" onclick="playa.addCons()"></button><button id="const5" onclick="playa.addCons()"></button>
+			    			  		  </div>
+			    			  		  <p class="uppercase bold">
+			    			  		    Weapon Health:
+			    			  		  </p>
+			    			  		  <div id="upgrade-weapon-health">
+			    			  		    <button id="wep1" onclick="playa.addItem()"></button><button id="wep2" onclick="playa.addItem()"></button><button id="wep3" onclick="playa.addItem()"></button ><button id="wep4" onclick="playa.addItem()"></button><button id="wep5" onclick="playa.addItem()"></button>
+			    			  		  </div>
 		    			  		  </div>
 		    			  		  <div class="float-button-box">
 		    			  		    	<p class="bold uppercase">Points: <span id="upgrade-points">0</span></span></p>
-		    			  		  	<button id="upgrade-done" class="red">Done</button>
 		    			  		  	<br class="clearfix" />
 		    			  		  </div>
 		    			  		</div>
@@ -121,9 +123,14 @@
 		    			  		</div>
 		    			  		<div id="summon">
 		    			  		  <h3 class="uppercase">Summon</h3>
-		    			  		  <button onclick="summonRand(1)">Pentagram</button>
-		    			  		  <button onclick="summonRand(2)">Pokeball</button>
-		    			  		  <button onclick="summonRand(3)">Tome of Death</button>
+		    			  		  <p class="uppercase description darkgrey courier">
+		    			  		    Choose your summoning technique
+		    			  		  </p>
+		    			  		  <div id="summon-buttons">
+		    			  		  	<button onclick="summonRand(1)"><img src="images/pentegram_icon.svg" /><p>Pentagram</p></button>
+		    			  		  	<button onclick="summonRand(2)"><img src="images/pokeball_icon.svg" /><p>Pokeball</p></button>
+		    			  		  	<button onclick="summonRand(3)"><img src="images/tome_icon.svg" /><p>Tome of Death</p></button>
+		    			  		  </div>
 		    			  		</div>
 		    			  	</div>
 
@@ -162,7 +169,7 @@
 						  	</object>-->
 							<div id="CreatureHud">
 							  	<div id="creatureBx">
-							  	  <h4>emo zombie</h4>
+							  	  <h4 id="monsterName">emo zombie</h4>
                                  <div id="creatureImg">
       								<div>
 								        <img src="images/skull_icon.svg" style="float: left;padding-left:20%; padding-right: 0.8em;"/>

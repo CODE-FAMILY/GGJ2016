@@ -1,4 +1,4 @@
-var highscores = "100-tomy-200-tomyshadow-300-ellescuba-400-joe\\-burns\\-the\\-html\\-master"; // change this variable to whatever highscores there are, you may choose to save this in a cookie and put the results in this variable, or store the information in a database and use a server side language such as PHP to get the information
+var highscores = ""; //var highscores = "100-tomy-200-tomyshadow-300-ellescuba-400-joe\\-burns\\-the\\-html\\-master"; // change this variable to whatever highscores there are, you may choose to save this in a cookie and put the results in this variable, or store the information in a database and use a server side language such as PHP to get the information
 var currentname = "";
 var namearray = new Array();
 var i2 = 0;

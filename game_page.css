@@ -1,6 +1,6 @@
 @font-face {
-	font-family: 'BlanchCaps';
-	src: url('fonts/BLANCH_CAPS.otf');
+	font-family: 'LeagueGothic-Regular';
+	src: url('fonts/LeagueGothic-Regular.otf');
 }
 @font-face {
 	font-family: 'CourierRegularNew';
@@ -12,8 +12,7 @@ body {
 	margin: 0px;
 	text-align: center;
 	padding: 1em;
-	font-family: Verdana, Arial, sans-serif;
-
+	font-family: Helvetica, Arial, sans-serif;
 }
 
 #Game {
@@ -58,7 +57,7 @@ body {
 }
 
 #item {
-	display: s;
+	display: block;
 }
 
 #upgrade {
@@ -84,6 +83,15 @@ body {
 
 #button-pane button {
 
+}
+
+#upgrade-buttons button {
+	width: 5.2em;
+	border: 0.03em solid #2A2B2E;
+}
+
+#upgrade-buttons button:hover {
+	border: 0.03em solid snow;
 }
 
 /**---------- Health Pane ---------**/
@@ -171,6 +179,22 @@ button {
 	top:0px;
 	left:0px;
 	width:100%;
+}
+
+#summon-buttons button {
+	background-color: #2A2B2E !important;
+}
+
+#summon-buttons p {
+	font-family: 'CourierRegularNew', monospace;
+	font-size: 0.9em;
+}
+
+#summon-buttons img {
+	border: 0.1em solid snow;
+	background-color: #252628;
+	border-radius: 1em;
+	padding: 0.5em;
 }
 
 

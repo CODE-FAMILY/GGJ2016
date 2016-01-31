@@ -81,7 +81,9 @@ function monster(name,hp,drop,imageName,lvl){
         var dropRate = Math.floor(Math.random() * 3) +1; //Rand between 1 and 3
         if(dropRate == 1){
             document.getElementById("monstImage").src = (this.getDrop().filePath);
-			playa.takeItem(this.getDrop());
+			//playa.takeItem(this.getDrop());
+			playa.equip(this.getDrop());
+			console.log("Got a weapon!");
         }else if(dropRate == 2){
 			playa.addHp(Math.floor(this.getHp() / 2));
 		}else{
@@ -94,6 +96,7 @@ function monster(name,hp,drop,imageName,lvl){
         var second = new monster(this.name,this.hp,this.drop,this.enemyImg,playa.enemyLvl);
 		second.setHp();
 		second.setTime();
+		second.desc = this.desc;
         /*
         second.name = this.name;
         second.lvl = this.lvl;
