@@ -57,7 +57,7 @@ body {
 }
 
 #item {
-	display: s;
+	display: block;
 }
 
 #upgrade {
@@ -87,6 +87,11 @@ body {
 
 #upgrade-buttons button {
 	width: 5.2em;
+	border: 0.03em solid #2A2B2E;
+}
+
+#upgrade-buttons button:hover {
+	border: 0.03em solid white;
 }
 
 /**---------- Health Pane ---------**/
