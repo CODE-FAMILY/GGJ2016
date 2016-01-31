@@ -27,12 +27,10 @@ function char(){
 	}
     
 //Items
-    //var items = [];
-	//items.push(new item());
 	this.setEquiped = function(x){
 		this.equipedIndex = x;
-        	changeSVGImage( this.items[x].filePath, "item-image" );
-        	updateSVGText( this.items[x].name, "weapon-name" );
+        	changeSVGImage(items[this.equipedIndex].filePath, "item-image" );
+        	updateSVGText(items[this.equipedIndex].name, "weapon-name" );
 	}
 	this.getEquiped = function(){
 		return items[this.equipedIndex];
@@ -44,8 +42,8 @@ function char(){
 	}
 	this.takeItem = function(box){
 		if (box != null){
-			if (items.length <= 5){
-				items[1] = box;
+			if (items.length < 5){
+				items[items.length] = box;
 			}
 		}
 	}

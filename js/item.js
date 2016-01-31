@@ -4,7 +4,7 @@ function item(name,power,speed,cond) {
 	this.power = 1;
 	this.speed = 1;
 	this.cond = 5;
-	//this.filePath = "image/fistImg.ogg";
+	this.filePath = "image/fistImg.ogg";
 	var soundPath = [];
 	this.getName = function() {
 		return this.name;
@@ -38,6 +38,7 @@ function item(name,power,speed,cond) {
 		box.power = this.power;
 		box.speed = this.speed;
 		box.cond = this.cond;
+		box.filePath = this.filePath;
 		//box.soundPath = this.soundPath;
 		return box;
 	}

@@ -42,7 +42,7 @@ wand.cond = 5;
 
 var pistol = new item();
 pistol.name = "Pistol";
-//pistol.filePath = "images/pistolImg.svg";
+pistol.filePath = "images/pistolImg.svg";
 //fist.soundPath = ["sound/pistol1.ogg", "sound/pistol2.ogg", "sound/pistol3.ogg"];
 pistol.power = 3;
 pistol.speed = 3;
