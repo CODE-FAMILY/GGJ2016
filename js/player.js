@@ -24,10 +24,8 @@ function char(){
 		return this.enemyLvl;
 	}
     
-    //items
-    var weapons = [];
-	//var potions = [];
-	//var artifacts = [];
+//Items
+    var items = [];
     
 //Skills
 	this.power = 25;
