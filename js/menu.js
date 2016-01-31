@@ -21,34 +21,3 @@ function upgrade() {
     document.write("</div>");
     document.write("<button href=\"#\" onclick=\"popup('popUpDiv')\" img=\"#\">Upgrade</button>");
 }
-
-function plusOne(type){
-	
-switch(type){
-        case 1:
-            if(playa.power != 1)
-			{
-                console.log("Not 1");
-            }
-            else{
-                console.log("1");
-            }
-            break;
-        case 2:
-            if(playa.cons != 1){
-                console.log("Not 1");
-            }
-            else{
-                console.log("1");
-            }
-            break;
-        case 3:
-            if(playa.speed != 1){
-                console.log("Not 1");
-            }
-            else{
-                console.log("1");
-            }
-            break;
-    }
-}
