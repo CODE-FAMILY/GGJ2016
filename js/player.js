@@ -38,7 +38,7 @@ function char(){
 		return items[this.equipedIndex];
 	}
 	this.dmgEquiped = function(){
-		if (items[this.equipedIndex].name != "Fist"){
+		/*if (items[this.equipedIndex].name != "Fist"){
 			items[this.equipedIndex].cond -= 1;
 		}
 		if (items[this.equipedIndex].cond <= 0){
@@ -48,6 +48,12 @@ function char(){
 			}else{
 				this.setEquiped(0);
 			}
+		}*/
+		if (equipedOn.name != "Fist"){
+			equipedOn.cond -= 1;
+		}
+		if (equipedOn.cond <= 0){
+			this.equip(fist)
 		}
 	}
 	this.takeItem = function(box){
@@ -69,6 +75,9 @@ function char(){
 	}
 	this.equip = function(box){
 		this.equipedOn = box;
+		changeSVGImage(items[this.equipedIndex].filePath, "item-image" );
+		updateSVGText(items[this.equipedIndex].name, "weapon-name" );
+		this.audio = items[this.equipedIndex].soundPath;
 	}
     
 //Skills
