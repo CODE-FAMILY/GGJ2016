@@ -96,6 +96,7 @@ function monster(name,hp,drop,imageName,lvl){
         var second = new monster(this.name,this.hp,this.drop,this.enemyImg,playa.enemyLvl);
 		second.setHp();
 		second.setTime();
+		second.desc = this.desc;
         /*
         second.name = this.name;
         second.lvl = this.lvl;

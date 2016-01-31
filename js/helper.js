@@ -1,6 +1,6 @@
 function changeSVGImage( newPath, elementId ) {
 	var element = document.getElementById(elementId);
-	element.href.baseVal = newPath;
+	element.href = newPath;
 }
 
 function updateSVGText( newText, elementId ) {

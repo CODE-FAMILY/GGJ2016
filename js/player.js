@@ -49,10 +49,10 @@ function char(){
 				this.setEquiped(0);
 			}
 		}*/
-		if (equipedOn.name != "Fist"){
-			equipedOn.cond -= 1;
+		if (this.equipedOn.name != "Fist"){
+			this.equipedOn.cond -= 1;
 		}
-		if (equipedOn.cond <= 0){
+		if (this.equipedOn.cond <= 0){
 			this.equip(fist)
 		}
 	}
