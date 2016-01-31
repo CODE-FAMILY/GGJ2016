@@ -72,6 +72,6 @@ rayGun.power = 2;
 rayGun.speed = 5;
 rayGun.cond = 5;
 
-var weapons = [fist, dagger, fish, whip, wand, pistol, rifle, rocket, rayGun];
+var items = [fist]; //, dagger, fish, whip, wand, pistol, rifle, rocket, rayGun
 var myWeapon = new item();
 playa.equipedOn = fist.clone();

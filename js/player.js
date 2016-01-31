@@ -27,7 +27,7 @@ function char(){
 	}
     
 //Items
-    var items = [];
+    //var items = [];
 	//items.push(new item());
 	this.setEquiped = function(x){
 		this.equipedIndex = x;
@@ -44,8 +44,8 @@ function char(){
 	}
 	this.takeItem = function(box){
 		if (box != null){
-			if (items.length < 5){
-				items.push(box);
+			if (items.length <= 5){
+				items[1] = box;
 			}
 		}
 	}
