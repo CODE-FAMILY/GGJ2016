@@ -4,7 +4,7 @@ function item(name,power,speed,cond) {
 	this.power = 1;
 	this.speed = 1;
 	this.cond = 5;
-	this.filePath = "image/fistImg.svg";
+	this.filePath = "image/daggerAni.gif";
     this.cooldown = 2;
 	var soundPath = "sound/punch.ogg";
 	this.getName = function() {

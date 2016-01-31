@@ -41,10 +41,16 @@ function char(){
 		if (items[this.equipedIndex].name != "Fist"){
 			items[this.equipedIndex].cond -= 1;
 		}
+		if (items[this.equipedIndex].cond <= 0){
+			items.pop();
+		}
 	}
 	this.takeItem = function(box){
 		if (box != null){
-			if (items.length < 5){
+			if (items.length >= 5){
+				items.pop();
+				items[items.length] = box;
+			}else{
 				items[items.length] = box;
 			}
 		}
@@ -68,7 +74,7 @@ function char(){
 		
 //Skill Getters
 	this.getPower = function() {
-		return this.power;
+		return this.power + this.equipedOn.power;
 	}
 	this.getCons =  function() {
 		return this.cons;
@@ -133,7 +139,7 @@ function char(){
 	
     this.click = function(){
 		var i;
-		for(i = 0; i < this.speed; i++){
+		for(i = 0; i < this.speed + this.equipedOn.speed; i++){
 			this.score += this.power;
 			this.points += this.power;
 			commonEnemy.takeDmg();

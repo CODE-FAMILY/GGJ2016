@@ -11,7 +11,7 @@ fist.cooldown = 1;
 
 var dagger = new item();
 dagger.name = "Dagger";
-//dagger.filePath = "images/daggerImg.svg";
+dagger.filePath = "images/daggerImg.svg";
 dagger.soundPath = "sound/dagger.ogg";
 dagger.power = 2;
 dagger.speed = 2;
@@ -20,7 +20,7 @@ dagger.cooldown = 2;
 
 var fish = new item();
 fish.name = "Fish";
-//fish.filePath = "images/fishImg.svg";
+fish.filePath = "images/fishImg.svg";
 fish.soundPath = "sound/fish.ogg";
 fish.power = 3;
 fish.speed = 1;
@@ -29,7 +29,7 @@ fish.cooldown = 2;
 
 var whip = new item();
 whip.name = "Whip";
-//whip.filePath = "images/whipImg.svg";
+whip.filePath = "images/whipImg.svg";
 whip.soundPath = "sound/whip.ogg";
 whip.power = 2;
 whip.speed = 3;
@@ -38,7 +38,7 @@ whip.cooldown = 3;
 
 var wand = new item();
 wand.name = "Wand";
-//wand.filePath = "images/wandImg.svg";
+wand.filePath = "images/wandImg.svg";
 wand.soundPath = "sound/wand.ogg";
 wand.power = 2;
 wand.speed = 4;
@@ -56,7 +56,7 @@ pistol.cooldown = 3;
 
 var rifle = new item();
 rifle.name = "Rifle";
-//rifle.filePath = "images/rifleImg.svg";
+rifle.filePath = "images/rifleImg.svg";
 rifle.soundPath = "sound/rifle.ogg";
 rifle.power = 4;
 rifle.speed = 3;
@@ -65,7 +65,7 @@ rifle.cooldown = 6;
 
 var rocket = new item();
 rocket.name = "Rocket";
-//rocket.filePath = "images/rocketImg.svg";
+rocket.filePath = "images/rocketImg.svg";
 rocket.soundPath = "sound/rocketlauncher.ogg";
 rocket.power = 5;
 rocket.speed = 1;
@@ -74,7 +74,7 @@ rocket.cooldown = 10;
 
 var rayGun = new item();
 rayGun.name = "Ray-Gun";
-//rayGun.filePath = "images/rayGunImg.svg";
+rayGun.filePath = "images/rayGunImg.svg";
 rayGun.soundPath = "sound/raygun.ogg";
 rayGun.power = 2;
 rayGun.speed = 5;
