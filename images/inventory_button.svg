@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="119.833px" height="62.167px" viewBox="0 0 119.833 62.167" enable-background="new 0 0 119.833 62.167"
+	 xml:space="preserve">
+<path fill="#4C94D0" d="M105.532,42.23c0,4.132-3.35,7.481-7.481,7.481H17.626c-4.132,0-7.481-3.35-7.481-7.481v-23.76
+	c0-4.132,3.35-7.482,7.481-7.482h80.425c4.132,0,7.481,3.351,7.481,7.482V42.23z"/>
+<g>
+	<text transform="matrix(1 0 0 1 36.6328 35.8169)" fill="#F0EFEF" font-family="'Blanch-Caps'" font-size="25">Inventory</text>
+</g>
+<g>
+	<path fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-miterlimit="10" d="M32.355,33.999c0,3.959-3.209,7.168-7.167,7.168
+		c-3.959,0-7.168-3.209-7.168-7.168c0-3.506,2.516-6.424,5.842-7.046c0.248-0.046,0.193-3,0.193-4.436
+		c0-1.439,0.816-1.173,1.008-1.173c0.198,0,1.287-0.582,1.287,1.438c0,1.31-0.165,4.115,0.035,4.148
+		C29.774,27.5,32.355,30.448,32.355,33.999z"/>
+	
+		<line fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" x1="22.845" y1="21.394" x2="27.481" y2="21.394"/>
+	<polygon fill="#FFFFFF" points="23.057,17.447 23.692,19.766 26.733,19.766 27.382,17.447 	"/>
+</g>
+<path fill="#F0EFEF" d="M30.871,34c0,3.153-2.556,5.708-5.708,5.708c-3.153,0-5.709-2.556-5.709-5.708s3.871-0.833,7.023-0.833
+	S30.871,30.848,30.871,34z"/>
+</svg>
