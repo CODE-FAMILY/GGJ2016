@@ -51,7 +51,7 @@ function summonRand(type) {
             }
             break;
     }
-    commonEnemy = zombie.clone();
+    //commonEnemy = zombie.clone();
     document.getElementById("spawn").innerHTML = "<img draggable=false onclick=\"playa.click()\" id=\"monstImage\" />";
     document.getElementById("monstImage").src = (commonEnemy.enemyImg);
     document.getElementById("monstHealth").style.width = "100%";
@@ -62,6 +62,8 @@ function summonRand(type) {
 	if(document.getElementById("bgsound").ended && document.getElementById("loopsound").ended){
 		document.getElementById("bgsound").play;
 	}
-    
+	    document.getElementById("summon").style.display = "none";
+        document.getElementById("item").style.display = "block";
+
     //send player to item screen afterwards
 }
