@@ -57,7 +57,7 @@ function summonRand(type) {
     document.getElementById("monstHealth").style.width = "100%";
     if(commonEnemy.desc != ""){
         document.getElementById("monsterName").innerHTML = commonEnemy.getName();
-        document.getElementById("questStory").innerHTML = commonEnemy.Desc;
+        document.getElementById("questStory").innerHTML = commonEnemy.desc;
         console.log(commonEnemy.name);
     }//questStory
     

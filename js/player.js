@@ -29,14 +29,13 @@ function char(){
 	}
     
 //Items
-	this.setEquiped = function(x){
-		this.equipedIndex = x;
-        	changeSVGImage(items[this.equipedIndex].filePath, "item-image" );
-        	updateSVGText(items[this.equipedIndex].name, "weapon-name" );
-            this.audio = items[this.equipedIndex].soundPath;
+	this.setEquiped = function(){
+		changeSVGImage(this.equipedOn.aniPath, "item-image" );
+		updateSVGText(this.equipedOn.name, "weapon-name" );
+		this.audio = this.equipedOn.soundPath;
 	}
 	this.getEquiped = function(){
-		return items[this.equipedIndex];
+		return this.equipedOn;
 	}
 	this.dmgEquiped = function(){
 		/*if (items[this.equipedIndex].name != "Fist"){
@@ -76,7 +75,7 @@ function char(){
 	}
 	this.equip = function(box){
 		this.equipedOn = box;
-		changeSVGImage(this.equipedOn.filePath, "item-image" );
+		changeSVGImage(this.equipedOn.aniPath, "item-image" );
 		updateSVGText(this.equipedOn.name, "weapon-name" );
 		this.audio = this.equipedOn.soundPath;
 	}
@@ -157,6 +156,17 @@ function char(){
 	
     this.click = function(){
 		var i;
+        
+        if(commonEnemy.enemyImgT != ""){
+            if(commonEnemy.toggle == 0){
+                document.getElementById("monstImage").src = (commonEnemy.enemyImgT);
+                commonEnemy.toggle = 1;
+            }else{
+                document.getElementById("monstImage").src = (commonEnemy.enemyImg);
+                commonEnemy.toggle = 0;
+            }
+        }
+        
 		for(i = 0; i < this.speed + this.equipedOn.speed; i++){
 			this.live = true;
 			this.score += this.power;
@@ -200,7 +210,8 @@ function char(){
         }
 		document.getElementById("points").innerHTML = (this.getScore());
 		document.getElementById("upgrade-points").innerHTML = (this.getPoints());
-    }
+
+    } //end
 	
     this.kill = function(){
         var i;

@@ -1,11 +1,13 @@
 //Monster Class
-function monster(name,hp,drop,imageName,lvl){
+function monster(name,hp,drop,imageName,imageTwo,lvl){
     this.name = name;
     this.lvl = lvl;
 	this.hp = hp;
 	this.cons = hp;
     this.drop = drop;
 	this.enemyImg = imageName;
+    this.enemyImgT = imageTwo;
+    this.toggle = 0;
 	this.startTime = 0;
 	this.nowTime = 0;
 	this.desc = "";
@@ -80,7 +82,8 @@ function monster(name,hp,drop,imageName,lvl){
 	this.die = function() {
         var dropRate = Math.floor(Math.random() * 3) +1; //Rand between 1 and 3
         if(dropRate == 1){
-            document.getElementById("monstImage").src = (this.getDrop().filePath);
+            //document.getElementById("monstImage").src = (this.getDrop().filePath);
+            document.getElementById("spawn").innerHTML = "";
 			playa.equip(this.getDrop());
 			console.log("Got a weapon!");
         }else if(dropRate == 2){
@@ -92,7 +95,7 @@ function monster(name,hp,drop,imageName,lvl){
 	}
     
     this.clone = function(){
-        var second = new monster(this.name,this.hp,this.drop,this.enemyImg,playa.enemyLvl);
+        var second = new monster(this.name,this.hp,this.drop,this.enemyImg,this.enemyImgT,playa.enemyLvl);
 		second.setHp();
 		second.setTime();
 		second.desc = this.desc;
