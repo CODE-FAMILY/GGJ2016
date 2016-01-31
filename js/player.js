@@ -146,6 +146,7 @@ function char(){
 	
 	this.takeDmg = function(dmg){
 		if (this.hp - dmg <= 0) {
+			document.getElementById("health").style.width = "0%";
 			this.die();
 		} else {
 			this.hp -= dmg;
