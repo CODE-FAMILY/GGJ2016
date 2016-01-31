@@ -59,6 +59,10 @@ function monster(name,hp,drop,imageName,lvl){
 			}
 		}
 	}
+	
+	this.dropClick = function(){
+		playa.takeItem();
+	}
     
     this.dropItem = function(){
         var dropRate = Math.floor(Math.random * 10) +1;
