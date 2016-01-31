@@ -114,20 +114,27 @@ function char(){
 	}
 	
     this.click = function(){
-        this.score += this.power;
-        this.points += this.power;
-		commonEnemy.takeDmg();
-		if (commonEnemy.hp <= 0){
-			this.score += 100;
-			this.points += 100;
-			if (runningQuest.compare()){
-				runningQuest.killedOne();
+		var i;
+		for(i = 0; i < this.speed; i++){
+			this.score += this.power;
+			this.points += this.power;
+			commonEnemy.takeDmg();
+			if (commonEnemy.hp <= 0){
+				this.score += 100;
+				this.points += 100;
+				if (runningQuest.compare()){
+					runningQuest.killedOne();
+				}
+				var box = commonEnemy.dropItem();
+				this.takeItem(box);
+				commonEnemy.die();
+				this.addKill();
+				this.enemyLvlUp();
+				console.log("He's dead");
+				break;
 			}
-			var box = commonEnemy.dropItem();
-			this.takeItem(box);
-			commonEnemy.die();
-			this.addKill();
-			this.enemyLvlUp();
+			document.getElementById("points").innerHTML = (this.getScore());
+			document.getElementById("upgrade-points").innerHTML = (this.getPoints());
 		}
 		document.getElementById("points").innerHTML = (this.getScore());
 		document.getElementById("upgrade-points").innerHTML = (this.getPoints());
