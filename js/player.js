@@ -31,7 +31,7 @@ function char(){
 	this.setEquiped = function(x){
 		this.equipedIndex = x;
 	}
-	this.getEquiped = funciton(){
+	this.getEquiped = function(){
 		return items[this.equipedIndex];
 	}
 	this.dmgEquiped = function(){
