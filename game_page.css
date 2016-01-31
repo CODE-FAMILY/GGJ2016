@@ -296,11 +296,11 @@ button {
 
 #monstImage:ACTIVE
 {
-	-webkit-animation-name: shakeelement;
-	-webkit-animation-duration: 200ms;
-	-webkit-transform-origin:50% 50%;
-	-webkit-animation-iteration-count: 2;
-	-webkit-animation-timing-function: linear;
+	animation-name: shakeelement;
+	animation-duration: 200ms;
+	transform-origin:50% 50%;
+	animation-iteration-count: 2;
+	animation-timing-function: linear;
 }
 #monstImage {
 	height: 100%;
