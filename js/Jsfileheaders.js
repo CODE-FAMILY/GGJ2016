@@ -12,6 +12,5 @@ function header(){
 	document.write("<script src=\"js/questMenu.js\"></script>");
     
     document.write("<script src=\"js/basic.js\"></script>");
-    
 
 }
