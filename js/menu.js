@@ -27,15 +27,18 @@ function showAll(){
     var stats = [playa.getPower(),playa.getSpeed(),playa.getCons(),playa.getItem()];
     for(j = 0; j < 4; j++){
         for(i = 1; i <= 5; i++){
-            if(playa.getItem() >= i){
+            if(stats[j] >= i){
                 document.getElementById(types[j]+i).style.display = "inline";
+                document.getElementById(types[j]+i).disabled = true;
             }
             else{
                 document.getElementById(types[j]+i).style.display = "none";
             }
         }
-        console.log(types[j]+stats[j]);
-        document.getElementById(types[j]+stats[j]).style.display = "inline";
-        document.getElementById(types[j]+stats[j]).className = "purple";
+        if(stats[j] != 5){
+            document.getElementById(types[j]+(stats[j]+1)).style.display = "inline";
+            document.getElementById(types[j]+(stats[j]+1)).className = "purple";
+            document.getElementById(types[j]+(stats[j]+1)).disabled = false;
+        }
     }
 }
