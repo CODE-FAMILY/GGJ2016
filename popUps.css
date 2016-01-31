@@ -59,3 +59,19 @@
     border: 5px solid #252628;
 	z-index: 9002;
 }
+
+#wep1,#wep2,#wep3,#wep4,#wep5{
+    display:none;
+}
+
+#const1,#const2,#const3,#const4,#const5{
+    display:none;
+}
+
+#spe1,#spe2,#spe3,#spe4,#spe5{
+    display:none;
+}
+
+#pow1,#pow2,#pow3,#pow4,#pow5{
+    display:none;
+}

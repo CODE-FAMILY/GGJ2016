@@ -1,12 +1,13 @@
-function summonMenu() {
-    var pent = "   <p><button img=\"#\" onclick=\"summonRand(1)\">Pentagram</button></p>";
-    var poke = "   <p><button img=\"#\" onclick=\"summonRand(2)\">Pokeball</button></p>";
-    var tome = "   <p><button img=\"#\" onclick=\"summonRand(3)\">Tome of Death</button></p>";
+function displayNone(){
+    document.getElementById("summon").style.display = "none";
+    document.getElementById("upgrade").style.display = "none";
+    document.getElementById("item").style.display = "none";
+    document.getElementById("inventory").style.display = "none";
+}
 
-    document.getElementById("dynamic-box").innerHTML="<h3>Summon</h3><p id=\"btnPent\"></p><p id=\"btnPoke\"></p><p id=\"btnTome\"></p>";
-    document.getElementById("btnPent").innerHTML=pent;
-    document.getElementById("btnPoke").innerHTML=poke;
-    document.getElementById("btnTome").innerHTML=tome;
+function summonMenu() {
+    displayNone();
+    document.getElementById("summon").style.display = "block";
 }
 
 function summonRand(type) {
@@ -54,4 +55,6 @@ function summonRand(type) {
     document.getElementById("spawn").innerHTML = "<img draggable=false onclick=\"playa.click()\" id=\"monstImage\" />";
     document.getElementById("monstImage").src = (commonEnemy.enemyImg);
     document.getElementById("monstHealth").style.width = "100%";
+    
+    //send player to item screen afterwards
 }
