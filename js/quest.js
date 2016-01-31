@@ -6,7 +6,6 @@ function quest(){
     this.done = 0;
 	this.monster = skeleton;
 	this.questString = "example";
-
 	this.pointReward = 100;
     
 	this.getmonster = function() {
@@ -23,7 +22,6 @@ function quest(){
         while (adventures[selected].id == this.id){
             var selected = Math.floor(Math.random() * adventures.length);
         }
- 
         this.clone(adventures[selected]);
     }
     
@@ -59,7 +57,7 @@ q1.id = 1;
 q1.name = "Unburied Bones";
 q1.limit = 3;
 q1.pointReward = 200;
-q1.monster = "Skeleton"";
+q1.monster = "Skeleton";
 q1.questString = "Summon 3 skeletons with the Tome of Death and put them back into the ground!";
 
 var q2 = new quest();
