@@ -40,22 +40,22 @@ var pikachu = new monster("Pikachu", 1000, 0, "images/pikachuImg.png",playa.enem
 pikachu.Desc = "After his best friend’s death, drowning in despair and pain. Sadly little Pikachu couldn’t take it anymore. He wanted his best friend back. But no matter how much he tried to get out of his pokemon ball he can’t help but think that the reason why he was stuck in this small clastrophoic space was because his Master wanted him safe. Why was this safe? Why can’t he leave? No Matter how much he punches his little arms against the walls of the space until they turn bruised and broken and bloody did he realized he was trapped here and something happen to his Master. Slowly, he was forgotten and slowly did his sanity turned on him into depression and sorrow. Finally one day, he had enough. Pikachu got a wonderful idea and thought maybe, just maybe will he be able to escape the confines of the space by shooting out hundreds and hundreds of lightning. Tell he cannot shot anymore and slowly everything turned black and he escaped the prison, until the next time the pokeball will open back up.";
 
 var trump = new monster("Trump", 1000, 0, "images/trumpImg.png",playa.enemyLvl);
-.Desc = "";
+//.Desc = "";
 
 var dragon = new monster("Dragon", 1000, 0, "images/dragonImg.png",playa.enemyLvl);
-.Desc = "The Chinese dragon death was uncommonly rare to all dragons. The dragon was flying like normal, minding his own business. Doing twirls, loopy doops, learning how to breath fire and anything else that is common with young foolish fledgling. But, his own stupidly caused his death. You see the dragon was attracted to shiny objects. One night in particular, he was flying over a town that’s celebrating New Years. Fireworks were shooting off in the sky and the young fledgling was to attracted to the shiny lights going on and off that he flew right into the path of a firework.  Now back from the undead, the young Chinese Dragon can now breath fire for it never had before.";
+//.Desc = "The Chinese dragon death was uncommonly rare to all dragons. The dragon was flying like normal, minding his own business. Doing twirls, loopy doops, learning how to breath fire and anything else that is common with young foolish fledgling. But, his own stupidly caused his death. You see the dragon was attracted to shiny objects. One night in particular, he was flying over a town that’s celebrating New Years. Fireworks were shooting off in the sky and the young fledgling was to attracted to the shiny lights going on and off that he flew right into the path of a firework.  Now back from the undead, the young Chinese Dragon can now breath fire for it never had before.";
 
 var graham = new monster("Dr. Graham", 1000, 0, "images/grahamImg.png",playa.enemyLvl);
-.Desc = "";
+//.Desc = "";
 
 var howard = new monster("Dr. Howard", 1000, 0, "images/howardImg.png",playa.enemyLvl);
-.Desc = "";
+//.Desc = "";
 
 var hitler = new monster("Hitler", 1000, 0, "images/hitlerImg.png",playa.enemyLvl);
-.Desc = "";
+//.Desc = "";
 
 var santa = new monster("Santa", 1000, 0, "images/snataImg.png",playa.enemyLvl);
-.Desc = "He knows when you are sleeping, he know when you are awake. He have the magic that can make you crazy for some more! During the holidays, something tragic happen in the workshop. Our young Santa has just started working on gifts for the poor unfortunate souls, that he had no sleep for the past few nights. While yawning and starting to dose off, our young Santa accidently started the workshop on fire. His death was an untimely one as he tried and tried to escape the flames. But, breathing became as difficult as surviving the extremely hot temperature that his eyes started to have blac spots starting to form. As he takes that one last breath, everything went black. The roaring sound of the crackling and the sizzling of the fire slowly fade away.";
+//.Desc = "He knows when you are sleeping, he know when you are awake. He have the magic that can make you crazy for some more! During the holidays, something tragic happen in the workshop. Our young Santa has just started working on gifts for the poor unfortunate souls, that he had no sleep for the past few nights. While yawning and starting to dose off, our young Santa accidently started the workshop on fire. His death was an untimely one as he tried and tried to escape the flames. But, breathing became as difficult as surviving the extremely hot temperature that his eyes started to have blac spots starting to form. As he takes that one last breath, everything went black. The roaring sound of the crackling and the sizzling of the fire slowly fade away.";
 
 //Sets
 var pentMonsters = [mermaid, centaur, minitaur, teletubby];
