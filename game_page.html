@@ -28,7 +28,7 @@
 		    			  	<h3 class="uppercase">Just Keep Clicking</h3>
 		    			  	<div id="dynamic-box" class="pane">
 		    			  	  	<div id="item">
-		    			  	  		<h3>Item</h3>
+		    			  	  		<h3 class="uppercase">Item</h3>
 								<div id="item-selected">
 								  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 										 width="374px" height="389.333px" viewBox="0 0 374 389.333" enable-background="new 0 0 374 389.333" xml:space="preserve">
@@ -106,7 +106,7 @@
 		    			  		    <button id="wep1" onclick="playa.addItem()"></button><button id="wep2" onclick="playa.addItem()"></button><button id="wep3" onclick="playa.addItem()"></button ><button id="wep4" onclick="playa.addItem()"></button><button id="wep5" onclick="playa.addItem()"></button>
 		    			  		  </div>
 		    			  		  <div class="float-button-box">
-		    			  		    	<p>Points: <span id="upgrade-points">0</span></span></p>
+		    			  		    	<p class="bold uppercase">Points: <span id="upgrade-points">0</span></span></p>
 		    			  		  	<button id="upgrade-done" class="red">Done</button>
 		    			  		  	<br class="clearfix" />
 		    			  		  </div>
@@ -123,9 +123,9 @@
 		    			  	</div>
 
 		    			  	<div id="button-pane">
-		    			  		<button class="blue" onclick="">Inventory</button>
-		    			  	  	<button class="green" onclick="upgrade()">Upgrade</button>
-		    			  	  	<button class="red" onclick="summonMenu()">Summon</button>
+		    			  		<button class="blue" onclick=""><img class="icon" src="images/inventory_button_icon.svg" />Inventory</button>
+		    			  	  	<button class="green" onclick="upgrade()"><img class="icon" src="images/upgrade_button_icon.svg" />Upgrade</button>
+		    			  	  	<button class="red" onclick="summonMenu()"><img class="icon" src="images/summon_button_icon.svg" />Summon</button>
 		    			  	</div>
 
 						<!-- Health Pane -->
@@ -140,7 +140,7 @@
 							<div id="CreatureHud">
 
 						  	<div id="score-hud" class="float-button-box">
-						  	  <p>Points: <span id="points">0</span></p>
+						  	  <p class="bold uppercase">Points: <span id="points">0</span></p>
 						  	  <button class="purple">Scores</button>
 						  	  <br class="clearfix" />
 						  	</div>
@@ -177,7 +177,7 @@
 		  		  	  	<!-- Quest section -->
 						<div id="quest">
 						  <fieldset>
-							<legend class="bold red">Quest</legend>
+							<legend class="bold red uppercase">Quest</legend>
 							<p id="questStory">
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 							  	Donec a diam lectus. Sed sit amet ipsum mauris.

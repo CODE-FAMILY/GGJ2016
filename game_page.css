@@ -101,11 +101,13 @@ body {
 #enemy-container {
 	width: 65%;
 	background-image: url("images/monster_background.svg");
-	background-size: cover;
+	background-size: 200%;
+	background-position: center;
+	border-radius: 2em;
+	background-repeat: no-repeat;
 }
 
 #enemy-inner-container {
-	border-radius: 2em;
 	padding: 1em;
 }
 
@@ -121,11 +123,32 @@ body {
 	margin-left: 3em;
 }
 
+.icon {
+	float: left;
+	height: 1.6em;
+}
+
+#button-pane {
+
+}
+
+#button-pane > button {
+	margin: 0em 1.2em;
+	display: inline-block;
+	text-align: left;
+	white-space: nowrap;
+	height: 3.5em;
+}
+
 button {
 	padding: 0.5em;
 	border-radius: 0.5em;
 	background: grey;
 	border: none;
+	color: white;
+	font-weight: bold;
+	font-size: small;
+	text-transform: uppercase;
 }
 
 #blanket {
