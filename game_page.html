@@ -3,7 +3,7 @@
 	<meta charset="UTF-8" />
 	<head>
 		<title>The Summoning</title>
-		<link rel="stylesheet" href="index.css">
+		<link rel="stylesheet" href="game_page.css">
 		<link rel="stylesheet" href="popUps.css">
 		<script src="js/Jsfileheaders.js"></script>
         <script>header()</script>
@@ -127,18 +127,10 @@
 
 						<!-- Health Pane -->
 						<div id="health-pane" class="pane">
-						  <div id="health-box">
+							<object id ="health-img" type="image/svg+xml" data="images/heart_healthbar.svg">
 
-						  	<div id="health-heart">
-						  	 	  <img src="images/heart.svg" />
-						  	</div>
-						  	<div id="healt-status">
-								<div class="meter">
-						    			<span id="health" class="green"></span>
-								</div>
-						  	</div>
-						    	<br class="clearfix" />
-						  </div>
+						  	</object>
+							<div id="CreatureHud">
 
 						  	<div id="score-hud" class="float-button-box">
 						  	  <p>Points: <span id="points">0</span></p>
@@ -153,7 +145,11 @@
 
 						<!-- Creature Pane -->
 						<div id="Creature">
-							<div id="CreatureHud">
+						  	<object type="image/svg+xml" data="images/skull_healthbar.svg">
+
+						  	</object>
+							<!--<div id="CreatureHud">
+
 							  	<div id="creatureImg">								<div>
 								    <img src="images/skull.svg" />
 								</div>
@@ -164,7 +160,7 @@
 									</div>
 							  	</div>
 							  	<br class="clearfix" />
-							</div>
+							</div>--->
 						</div>
 
 		  				<div id="spawn">

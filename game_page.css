@@ -76,8 +76,8 @@ body {
 }
 
 /**---------- Health Pane ---------**/
-#health-heart {
-	float: left;
+#health-img {
+	width: 100%;
 }
 
 #score-hud {
