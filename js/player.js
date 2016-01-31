@@ -30,7 +30,11 @@ function char(){
     
 //Items
 	this.setEquiped = function(){
-		changeSVGImage(this.equipedOn.aniPath, "item-image" );
+        if(!toggleAni){
+		  changeSVGImage(this.equipedOn.aniPath, "item-image" );
+        }else{
+            changeSVGImage(this.equipedOn.filePath, "item-image");
+        }
 		updateSVGText(this.equipedOn.name, "weapon-name" );
 		this.audio = this.equipedOn.soundPath;
 	}
@@ -75,8 +79,11 @@ function char(){
 	}
 	this.equip = function(box){
 		this.equipedOn = box;
-		changeSVGImage(this.equipedOn.aniPath, "item-image" );
-		updateSVGText(this.equipedOn.name, "weapon-name" );
+		if(!toggleAni){
+		  changeSVGImage(this.equipedOn.aniPath, "item-image" );
+        }else{
+            changeSVGImage(this.equipedOn.filePath, "item-image");
+        }
 		this.audio = this.equipedOn.soundPath;
 	}
     
@@ -194,19 +201,21 @@ function char(){
 			document.getElementById("points").innerHTML = (this.getScore());
 			document.getElementById("upgrade-points").innerHTML = (this.getPoints());
 		}
-        if(document.getElementById("bgsound").ended){
-            document.getElementById("loopsound").play();
-            document.getElementById("loopsound").loop = true;
-            document.getElementById("loopsound").volume = 0;
-        }
-        if(this.equipedOn.cooldown == this.clicked){
-            var play = new Audio(this.equipedOn.soundPath);
-            play.volume = .9999;
-            play.play();
-            this.clicked = 0;
-            console.log("played sound");
-        }else{
-            this.clicked ++;
+        if(!toggleMute){
+            if(document.getElementById("bgsound").ended){
+                document.getElementById("loopsound").play();
+                document.getElementById("loopsound").loop = true;
+                document.getElementById("loopsound").volume = .45;
+            }
+            if(this.equipedOn.cooldown == this.clicked){
+                var play = new Audio(this.equipedOn.soundPath);
+                play.volume = .9999;
+                play.play();
+                this.clicked = 0;
+                console.log("played sound");
+            }else{
+                this.clicked ++;
+            }
         }
 		document.getElementById("points").innerHTML = (this.getScore());
 		document.getElementById("upgrade-points").innerHTML = (this.getPoints());
