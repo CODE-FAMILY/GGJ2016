@@ -10,6 +10,7 @@
         <script>header()</script>
 	</head>
 	<body class="darkgrey">
+
 		<div id="distraction-control" class="darkgrey pane">
 		  <button onclick="mute()" class="darkgrey" id="no-sound" title="mute sound">
 		    	<img src="images/volume_button_1-1.svg" />
@@ -87,6 +88,37 @@
 								</div>
 		    			  	  	</div>
 
+		    			  	  	<div id="inventory">
+		    			  		  <h3>Inventory</h3>
+		    			  	  	  <p class="description darkgrey uppercase courier">
+								Oh neat. Stuff.
+		    			  		  </p>
+		    			  	  	  <table id="inventory-items">
+		    			  	  	    <tbody>
+		    			  	  	      <tr>
+		    			  	  	        <td></td>
+		    			  	  	        <td></td>
+		    			  	  	      </tr>
+		    			  	  	      <tr>
+		    			  	  	        <td></td>
+		    			  	  	        <td></td>
+		    			  	  	      </tr>
+		    			  	  	      <tr>
+		    			  	  	        <td></td>
+		    			  	  	        <td></td>
+		    			  	  	      </tr>
+		    			  	  	    </tbody>
+		    			  	  	  </table>
+
+		    			  	  	  <div id="pay-box" class="float-button-box">
+		    			  		    	<p class="bold uppercase">Points: <span id="upgrade-points">0</span></span></p>
+		    			  	  	  	<button class="red" onclick="purchaseHealing()">
+		    			  	  	  	  Pay for healing: <span id="inventory-price">500</span>
+		    			  	  	  	</button>
+		    			  		  	<br class="clearfix" />
+		    			  		  </div>
+		    			  		</div>
+
 		    			  		<div id="upgrade">
 		    			  		  <h3 class="uppercase">Upgrades</h3>
 		    			  		  <p class="description darkgrey uppercase courier">
@@ -123,12 +155,6 @@
 		    			  		    	<p class="bold uppercase">Points: <span id="upgrade-points">0</span></span></p>
 		    			  		  	<br class="clearfix" />
 		    			  		  </div>
-		    			  		</div>
-		    			  		<div id="inventory">
-		    			  		  <h3>Inventory</h3>
-
-                                  <button class="red" onclick="purchaseHealing()">Pay for healing: 500</button>
-                                  <p class="bold uppercase">Points: <span id="upgrade-points-inv">0</span></span></p>
 		    			  		</div>
 		    			  		<div id="summon">
 		    			  		  <h3 class="uppercase">Summon</h3>
