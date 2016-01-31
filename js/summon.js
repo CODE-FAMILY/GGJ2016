@@ -55,6 +55,12 @@ function summonRand(type) {
     document.getElementById("spawn").innerHTML = "<img draggable=false onclick=\"playa.click()\" id=\"monstImage\" />";
     document.getElementById("monstImage").src = (commonEnemy.enemyImg);
     document.getElementById("monstHealth").style.width = "100%";
+    if(commonEnemy.desc != ""){
+        document.getElementById("monsterName").innerHTML = commonEnemy.getName();
+        document.getElementById("questStory").innerHTML = commonEnemy.Desc;
+        console.log(commonEnemy.name);
+    }//questStory
+    
     
     //stop intro
     //document.getElementById("bgsound").muted = true;
