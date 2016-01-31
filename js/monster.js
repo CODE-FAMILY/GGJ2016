@@ -33,7 +33,9 @@ function monster(name,hp,drop,imageName,lvl){
 		document.getElementById("monstHealth").style.width = (this.hp / (this.cons))*100 + "%";
         console.log("shit happened");
 	}
+    
 	this.die = function() {
+        document.getElementById("monstImage").src = ("");
 		//this.enemyImg.parentNode.removeChild(this.name);
 	}
     
