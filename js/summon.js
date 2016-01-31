@@ -54,6 +54,7 @@ function summonRand(type) {
             break;
     }
     commonEnemy = zombie.clone();
+    document.getElementById("spawn").innerHTML = "<img onclick=\"playa.click()\" id=\"monstImage\" />";
     document.getElementById("monstImage").src = (commonEnemy.enemyImg);
     document.getElementById("monstHealth").style.width = "100%";
 }
