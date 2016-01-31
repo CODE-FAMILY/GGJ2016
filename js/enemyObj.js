@@ -26,7 +26,7 @@ minitaur.Desc = "Being the runt of the minataur’s, this little guy is always b
 var centaur = new monster("Centaur", 100, 2, "images/centaurImg.png",playa.enemyLvl);
 centaur.Desc = "A creature that has half the body of a horse and top half a human, this powerful creature can be summon by the pentagram. He has the strength and speed of a regular horse, while the intelligence of a human.";
 
-var unicorn = new monster("Unicorn", 100, 4, "images/unicornImg.png",playa.enemyLvl);
+var unicorn = new monster("Unicorn", 100, wand, "images/unicornImg.png",playa.enemyLvl);
 unicorn.Desc = "Born of the pureness of innocent people, this creature was walking down a stream getting a drink of water. But something shiny caught the Unicorn’s eyes. Walking up to the red and white ball, it was unusual for the dumb Unicorn, for it touched his nose on the ball and got itself capture in the small space. Forever trapped, unless someone release it or summon it from the ball.";
 
 var teletubby = new monster("Teletubby", 100, 8, "images/teletubbyImg.png",playa.enemyLvl);
