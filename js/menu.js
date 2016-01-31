@@ -1,3 +1,4 @@
+
 //generates menu
 
 function tempPopUp(){
@@ -9,15 +10,32 @@ function tempPopUp(){
 }
 
 function upgrade() {
+    displayNone();
     var power = "   <p id=\"power\">"+playa.getPower()+"/5</p> <button img=\"#\" onclick=\"playa.addPower()\">Upgrade</button> ";
     var cons = "   <p id=\"cons\">"+playa.getCons()+"/5</p> <button img=\"#\" onclick=\"playa.addCons()\">Upgrade</button> ";
     var speed = "   <p id=\"speed\">"+playa.getSpeed()+"/5</p> <button img=\"#\" onclick=\"playa.addSpeed()\">Upgrade</button> ";
-    document.write("<div id=\"blanket\" style=\"display:none\"> </div>");
-    document.write("<div id=\"popUpDiv\" style=\"display:none\">");
-    document.write("<a href=\"#\" onclick=\"popup('popUpDiv')\" >Click to Close</a>");
-    document.write(power);
-    document.write(cons);
-    document.write(speed);
-    document.write("</div>");
-    document.write("<button href=\"#\" onclick=\"popup('popUpDiv')\" img=\"#\">Upgrade</button>");
+    document.getElementById("upgrade").style.display = "block";
+    
+    showAll()
+}
+
+
+function showAll(){
+    var i;
+    var j;
+    var types = ["pow","spe","const","wep"];
+    var stats = [playa.getPower(),playa.getSpeed(),playa.getCons(),playa.getItem()];
+    for(j = 0; j < 4; j++){
+        for(i = 1; i <= 5; i++){
+            if(playa.getItem() >= i){
+                document.getElementById(types[j]+i).style.display = "inline";
+            }
+            else{
+                document.getElementById(types[j]+i).style.display = "none";
+            }
+        }
+        console.log(types[j]+stats[j]);
+        document.getElementById(types[j]+stats[j]).style.display = "inline";
+        document.getElementById(types[j]+stats[j]).className = "purple";
+    }
 }
