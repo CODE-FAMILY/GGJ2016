@@ -1,9 +1,10 @@
 function header(){
     document.write("<script src=\"js/css-popup.js\"></script>");
     document.write("<script src=\"js/item.js\"></script>");
+	document.write("<script src=\"js/quest.js\"></script>");
     document.write("<script src=\"js/player.js\"></script>");
     document.write("<script src=\"js/monster.js\"></script>");
-    document.write("<script src=\"js/quest.js\"></script>");
+    
     document.write("<script src=\"js/itemObj.js\"></script>");
     document.write("<script src=\"js/enemyObj.js\"></script>");
     document.write("<script src=\"js/highscores.js\"></script>");
@@ -12,6 +13,4 @@ function header(){
 	document.write("<script src=\"js/questMenu.js\"></script>");
     
     document.write("<script src=\"js/basic.js\"></script>");
-    
-
 }

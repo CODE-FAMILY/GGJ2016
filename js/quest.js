@@ -14,7 +14,6 @@ function quest(){
 		this.getquestString = function() {
 		return this.questString;
 	}
-
 	
     this.completed = function(){
 		playa.points += this.pointReward;
