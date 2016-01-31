@@ -79,7 +79,7 @@ function monster(name,hp,drop,imageName,lvl){
     }
     
 	this.die = function() {
-        document.getElementById("monstImage").src = ("");
+        //document.getElementById("monstImage").src = ("");
         document.getElementById("spawn").innerHTML = "";
 		//this.enemyImg.parentNode.removeChild(this.name);
 	}
