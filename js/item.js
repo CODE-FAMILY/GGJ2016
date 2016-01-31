@@ -4,7 +4,8 @@ function item() {
 	this.power = 1;
 	this.speed = 1;
 	this.cond = 5;
-	this.filePath = ""
+	this.filePath = "";
+	var soundPath = [];
 	this.getName = function() {
 		return this.name;
 	}
@@ -24,5 +25,6 @@ function item() {
 		box.power = this.power;
 		box.speed = this.speed;
 		box.cond = this.cond;
+		box.soundPath = this.soundEffects;
 	}
 }

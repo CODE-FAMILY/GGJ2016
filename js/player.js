@@ -50,8 +50,6 @@ function char(){
 	this.dropItem = function(thing){
 		items.splice(items.indexOf(thing), 1);
 	}
-	
-	this.
     
 //Skills
 	this.power = 1;
