@@ -8,6 +8,7 @@ function char(){
 	this.enemyLvl = 1;
 	this.equipedIndex = 0;
 	this.equipedOn;
+    this.clicked = 0;
 	
 //Basic Getters
 	this.getScore = function(){
@@ -31,6 +32,7 @@ function char(){
 		this.equipedIndex = x;
         	changeSVGImage(items[this.equipedIndex].filePath, "item-image" );
         	updateSVGText(items[this.equipedIndex].name, "weapon-name" );
+            this.audio = items[this.equipedIndex].soundPath;
 	}
 	this.getEquiped = function(){
 		return items[this.equipedIndex];
@@ -39,10 +41,16 @@ function char(){
 		if (items[this.equipedIndex].name != "Fist"){
 			items[this.equipedIndex].cond -= 1;
 		}
+		if (items[this.equipedIndex].cond <= 0){
+			items.pop();
+		}
 	}
 	this.takeItem = function(box){
 		if (box != null){
-			if (items.length < 5){
+			if (items.length >= 5){
+				items.pop();
+				items[items.length] = box;
+			}else{
 				items[items.length] = box;
 			}
 		}
@@ -66,7 +74,7 @@ function char(){
 		
 //Skill Getters
 	this.getPower = function() {
-		return this.power;
+		return this.power + this.equipedOn.power;
 	}
 	this.getCons =  function() {
 		return this.cons;
@@ -131,7 +139,7 @@ function char(){
 	
     this.click = function(){
 		var i;
-		for(i = 0; i < this.speed; i++){
+		for(i = 0; i < this.speed + this.equipedOn.speed; i++){
 			this.score += this.power;
 			this.points += this.power;
 			commonEnemy.takeDmg();
@@ -150,6 +158,7 @@ function char(){
 				this.addKill();
 				this.enemyLvlUp();
 				console.log("He's dead");
+                this.clicked = 0;
 				break;
 			}
 			document.getElementById("points").innerHTML = (this.getScore());
@@ -158,6 +167,16 @@ function char(){
         if(document.getElementById("bgsound").ended){
             document.getElementById("loopsound").play();
             document.getElementById("loopsound").loop = true;
+            document.getElementById("loopsound").volume = 0;
+        }
+        if(this.equipedOn.cooldown == this.clicked){
+            var play = new Audio(this.equipedOn.soundPath);
+            play.volume = .9999;
+            play.play();
+            this.clicked = 0;
+            console.log("played sound");
+        }else{
+            this.clicked ++;
         }
 		document.getElementById("points").innerHTML = (this.getScore());
 		document.getElementById("upgrade-points").innerHTML = (this.getPoints());
@@ -191,6 +210,8 @@ function char(){
 	
 	this.die = function(){
 		//Game Over!!!
+        alert("You Have Died in combat with the" + commonEnemy.getName());
+        location.href = 'Credits.html';
 	}
 	
 	this.addItemToList = function() {
