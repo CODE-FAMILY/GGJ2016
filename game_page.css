@@ -41,6 +41,9 @@ body {
 
 #distraction-control {
 	margin-left: 70%;
+	margin-bottom: 2em;
+	margin-top: 2em;
+	padding: 0ex;
 }
 
 #distraction-control button {
@@ -70,6 +73,7 @@ body {
 	padding: 0.5em;
 	border-radius: 0.5em;
 }
+
 
 #item {
 	display: block;
@@ -107,6 +111,42 @@ body {
 
 #upgrade-buttons button:hover {
 	border: 0.03em solid snow;
+}
+
+/**---------- Inventory ---------**/
+
+#inventory h3 {
+	color: #4A94D0;
+}
+
+#inventory-items {
+	border-spacing: 1.2em;
+}
+
+#inventory-items td {
+	border-radius: 1em;
+	border: 0.03em solid #2A2B2E;
+	background-color: #252628;
+	height: 2em;
+
+}
+
+#inventory-items td:even {
+	padding-left: 5em;
+}
+
+#inventory-items td:odd {
+	padding-right: 5em;
+	position: absolute;
+}
+
+
+#inventory-items td:hover {
+	border: 0.03em solid snow;
+}
+
+#pay-box {
+	margin-top: 2em;
 }
 
 /**---------- Health Pane ---------**/
