@@ -47,7 +47,7 @@ body {
 }
 
 #item {
-	display: v;
+	display: s;
 }
 
 #upgrade {
@@ -108,7 +108,6 @@ body {
 	border-radius: 2em;
 	padding: 1em;
 }
-
 
 #quest fieldset {
 	border: none;
