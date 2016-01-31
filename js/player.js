@@ -42,16 +42,24 @@ function char(){
 			items[this.equipedIndex].cond -= 1;
 		}
 		if (items[this.equipedIndex].cond <= 0){
-			items.pop();
+			items.splice(this.equipedIndex,1);
+			if (items.length > 1){
+				this.setEquiped(1);
+			}else{
+				this.setEquiped(0);
+			}
 		}
 	}
 	this.takeItem = function(box){
 		if (box != null){
 			if (items.length >= 5){
-				items.pop();
+				items.splice(1,1);
 				items[items.length] = box;
 			}else{
 				items[items.length] = box;
+			}
+			if(items.length == 1){
+				this.setEquiped(1);
 			}
 		}
 	}
