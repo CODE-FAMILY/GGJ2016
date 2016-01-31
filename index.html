@@ -10,6 +10,10 @@
 	</head>
 	<body class="darkgrey">
 
+
+		<audio autoplay>
+			<source src="sound/battlesequence_intro.mp3" type="audio/mpeg">
+		</audio>
 		<h1 class="uppercase">The Summoning</h1>
 
 		<!-- Game -->
@@ -78,25 +82,25 @@
 		    			  		    Power:
 		    			  		  </p>
 		    			  		  <div id="upgrade-power">
-		    			  		    <button></button><button></button>
+		    			  		    <button id="pow1" onclick="playa.addPower()"></button><button id="pow2" onclick="playa.addPower()"></button><button id="pow3" onclick="playa.addPower()"></button ><button id="pow4" onclick="playa.addPower()"></button><button id="pow5" onclick="playa.addPower()"></button>
 		    			  		  </div>
 		    			  		  <p class="uppercase bold">
 		    			  		    Speed:
 		    			  		  </p>
 		    			  		  <div id="upgrade-speed">
-		    			  		    <button></button><button></button><button></button><button></button><button></button>
+		    			  		    <button id="spe1" onclick="playa.addSpeed()"></button><button id="spe2" onclick="playa.addSpeed()"></button><button id="spe3" onclick="playa.addSpeed()"></button ><button id="spe4" onclick="playa.addSpeed()"></button><button id="spe5" onclick="playa.addSpeed()"></button>
 		    			  		  </div>
 		    			  		  <p class="uppercase bold">
 		    			  		    Health:
 		    			  		  </p>
 		    			  		  <div id="upgrade-health">
-		    			  		    <button></button><button></button><button></button>
+		    			  		    <button id="const1" onclick="playa.addCons()"></button><button id="const2" onclick="playa.addCons()"></button><button id="const3" onclick="playa.addCons()"></button ><button id="const4" onclick="playa.addCons()"></button><button id="const5" onclick="playa.addCons()"></button>
 		    			  		  </div>
 		    			  		  <p class="uppercase bold">
 		    			  		    Weapon Health:
 		    			  		  </p>
 		    			  		  <div id="upgrade-weapon-health">
-		    			  		    <button></button><button></button><button></button><button></button>
+		    			  		    <button id="wep1" onclick="playa.addItem()"></button><button id="wep2" onclick="playa.addItem()"></button><button id="wep3" onclick="playa.addItem()"></button ><button id="wep4" onclick="playa.addItem()"></button><button id="wep5" onclick="playa.addItem()"></button>
 		    			  		  </div>
 		    			  		  <div class="float-button-box">
 		    			  		    	<p>Points: <span id="upgrade-points">0</span></span></p>
@@ -117,7 +121,7 @@
 
 		    			  	<div id="button-pane">
 		    			  		<button class="blue" onclick="">Inventory</button>
-		    			  	  	<button class="green" onclick="">Upgrade</button>
+		    			  	  	<button class="green" onclick="upgrade()">Upgrade</button>
 		    			  	  	<button class="red" onclick="summonMenu()">Summon</button>
 		    			  	</div>
 

@@ -213,7 +213,10 @@ button {
 	background-color: #2A2B2E;
 }
 
-/**------------ Text ------------**/
+.lightgrey{
+    background-color:#454546;
+}
+
 .uppercase {
 	text-transform: uppercase;
 }
