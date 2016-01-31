@@ -13,75 +13,73 @@
 		<!-- Game -->
 		<table id="Game">
 			<!-- Inventory Pane -->
-		  <tbody>
-		  <tr>
-			<td id="Inventory" class="small-pane">
-				<div class="ItemFrame">
-					<div class="ItemScroll">
-					</div>
-				</div>
+			<tbody>
+		  		<tr>
+		    			<td class="small-pane">
+						<div id="Inventory">
+							<div class="ItemFrame">
+								<div class="ItemScroll">
+								</div>
+							</div>
 
-				<script> questPopup(); </script>
-				<script> upgrade();</script>
-				<script> summonMenu();</script>
+							<script> questPopup(); </script>
+							<script> upgrade();</script>
+							<script> summonMenu();</script>
 
-			</td>
+						</div>
+						<!-- Health Pane -->
+						<div id="Health">
+							<div class="meter">
+					    			<span id="health"></span>
+							</div>
+							<p id="score" syle="">Score: 0</p>
+							<script id="HScore" class="btnHScore"> </script>
+						</div>
 
-			<!-- Creature Pane -->
-			<td id="Creature" class="large-pane">
-				<div id="CreatureHud">
-					<img src="images/skullHp.png" />
-					<div class="meter orange">
-					    <span id="monstHealth"></span>
-					</div>
-				</div>
-				<div id="spawn">
-                    <img onclick="playa.click()" id="monstImage" />
-				</div>
+		    			</td>
+		  		  	<td class="large-pane">
 
-				<!-- Score Calc -->
-			</td>
-		    </tr>
-		  <tr>
+						<!-- Creature Pane -->
+						<div id="Creature">
+							<div id="CreatureHud">
+								<img src="images/skullHp.png" />
+								<div class="meter orange">
+								    <span id="monstHealth"></span>
+								</div>
+							</div>
+							<div id="spawn">
+					    			<img onclick="playa.click()" id="monstImage" />
+							</div>
 
-			<!-- Health Pane -->
-			<td id="Health" class="small-pane">
+							<!-- Score Calc -->
+						</div>
+		  		  	  	<!-- Quest section -->
+						<div id="Quest">
+						  <fieldset>
+							<legend align="center">Quest</legend>
+							<p id="questStory">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							  	Donec a diam lectus. Sed sit amet ipsum mauris.
+							  	Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit.
+							  	Donec et mollis dolor. Praesent et diam eget libero egestas mattis
+							  	sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia
+							  	consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor.
+							  	Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							  	Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed,
+							  	adipiscing id dolor. Pellentesque auctor nisi id magna consequat
+							  	sagittis. Curabitur dapibus enim sit amet elit pharetra tincidunt
+							  	feugiat nisl imperdiet. Ut convallis libero in urna ultrices accumsan.
+							   	Donec sed odio eros. Donec viverra mi quis quam pulvinar at malesuada
+							  	arcu rhoncus. Cum sociis natoque penatibus et magnis dis parturient
+							  	montes, nascetur ridiculus mus. In rutrum accumsan ultricies.
+							  	Mauris vitae nisi at sem facilisis semper ac in est.
+							</p>
+						    </fieldset>
+						</div>
+		  		  	</td>
 
-			<div class="meter">
-                    		<span id="health"></span>
-                	</div>
-				<br/>
-                <br/>
-                <p id="score" syle="">Score: 0</p>
-
-				<script id="HScore" class="btnHScore"> </script>
-			</td>
-
-			<!-- Quest Pane -->
-			<td id="Quest" class="large-pane">
-			  <fieldset>
-				<legend align="center">Quest</legend>
-				<p id="questStory">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-				  	Donec a diam lectus. Sed sit amet ipsum mauris.
-				  	Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit.
-				  	Donec et mollis dolor. Praesent et diam eget libero egestas mattis
-				  	sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia
-				  	consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor.
-				  	Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-				  	Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed,
-				  	adipiscing id dolor. Pellentesque auctor nisi id magna consequat
-				  	sagittis. Curabitur dapibus enim sit amet elit pharetra tincidunt
-				  	feugiat nisl imperdiet. Ut convallis libero in urna ultrices accumsan.
-				   	Donec sed odio eros. Donec viverra mi quis quam pulvinar at malesuada
-				  	arcu rhoncus. Cum sociis natoque penatibus et magnis dis parturient
-				  	montes, nascetur ridiculus mus. In rutrum accumsan ultricies.
-				  	Mauris vitae nisi at sem facilisis semper ac in est.
-				</p>
-			    </fieldset>
-			</td>
-		    </tr>
-		    </tbody>
+		  		</tr>
+			</tbody>
 		</table>
 	</body>
 </html> 
