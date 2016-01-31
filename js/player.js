@@ -6,6 +6,7 @@ function char(){
     this.points = 0; //points - upgradeCost
 	this.killCount = 0;
 	this.enemyLvl = 1;
+	this.equipedIndex = 0;
 	
 //Basic Getters
 	this.getScore = function(){
@@ -26,7 +27,18 @@ function char(){
     
 //Items
     var items = [];
-	
+	//items.push(fist);
+	this.setEquiped = function(x){
+		this.equipedIndex = x;
+	}
+	this.getEquiped = funciton(){
+		return items[this.equipedIndex];
+	}
+	this.dmgEquiped = function(){
+		if (items[this.equipedIndex].name != "Fist"){
+			items[this.equipedIndex].cond -= 1;
+		}
+	}
 	this.takeItem = function(box){
 		if (box != null){
 			if (items.length() <= 5){
@@ -38,6 +50,8 @@ function char(){
 	this.dropItem = function(thing){
 		items.splice(items.indexOf(thing), 1);
 	}
+	
+	this.
     
 //Skills
 	this.power = 1;
@@ -119,6 +133,9 @@ function char(){
 			this.score += this.power;
 			this.points += this.power;
 			commonEnemy.takeDmg();
+			if (Math.floor(Math.random() * 50) + 1){
+				this.dmgEquiped();
+			}
 			if (commonEnemy.hp <= 0){
 				this.score += 100;
 				this.points += 100;
@@ -146,18 +163,14 @@ function char(){
             this.click();
         }
     }
-    
-    /*
-	this.setDmg = function(){
-		this.damage = this.power * this.power;
-	}
-	*/
+	
 	this.addHp = function(health){
-		if (this.hp + health > this.cons) {
+		if (this.hp + health > this.cons * 100) {
 			this.hp = this.cons * 100;
 		} else {
 			this.hp += health;
 		}
+		document.getElementById("health").style.width = (this.hp / (this.cons * 100))*100 + "%";
 	}
 	
 	this.takeDmg = function(dmg){
