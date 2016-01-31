@@ -133,7 +133,7 @@ function char(){
 		}
 	}
 	
-	this.takeDamage = function(dmg){
+	this.takeDmg = function(dmg){
 		if (this.hp - dmg <= 0) {
 			this.die();
 		} else {
