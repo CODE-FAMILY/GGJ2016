@@ -4,7 +4,8 @@ function item(name,power,speed,cond) {
 	this.power = 1;
 	this.speed = 1;
 	this.cond = 5;
-	this.filePath = "image/daggerAni.gif";
+	this.filePath = "image/fistImg.svg";
+	this.aniPath = "images/Anis/Fist_Ani.gif"
     this.cooldown = 2;
 	var soundPath = "sound/punch.ogg";
 	this.getName = function() {
@@ -40,7 +41,8 @@ function item(name,power,speed,cond) {
 		box.speed = this.speed;
 		box.cond = this.cond;
 		box.filePath = this.filePath;
-		//box.soundPath = this.soundPath;
+		box.aniPath = this.aniPath;
+		box.soundPath = this.soundPath;
 		return box;
 	}
 }

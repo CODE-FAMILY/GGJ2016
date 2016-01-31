@@ -29,11 +29,10 @@ function char(){
 	}
     
 //Items
-	this.setEquiped = function(x){
-		this.equipedIndex = x;
-        	changeSVGImage(this.equipedOn.filePath, "item-image" );
-        	updateSVGText(this.equipedOn.name, "weapon-name" );
-            this.audio = this.equipedOn.soundPath;
+	this.setEquiped = function(){
+		changeSVGImage(this.equipedOn.aniPath, "item-image" );
+		updateSVGText(this.equipedOn.name, "weapon-name" );
+		this.audio = this.equipedOn.soundPath;
 	}
 	this.getEquiped = function(){
 		return this.equipedOn;
@@ -76,7 +75,7 @@ function char(){
 	}
 	this.equip = function(box){
 		this.equipedOn = box;
-		changeSVGImage(this.equipedOn.filePath, "item-image" );
+		changeSVGImage(this.equipedOn.aniPath, "item-image" );
 		updateSVGText(this.equipedOn.name, "weapon-name" );
 		this.audio = this.equipedOn.soundPath;
 	}
