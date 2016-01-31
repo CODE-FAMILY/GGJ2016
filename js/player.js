@@ -9,6 +9,7 @@ function char(){
 	this.equipedIndex = 0;
 	this.equipedOn;
     this.clicked = 0;
+	this.live = true;
 	
 //Basic Getters
 	this.getScore = function(){
@@ -75,9 +76,9 @@ function char(){
 	}
 	this.equip = function(box){
 		this.equipedOn = box;
-		changeSVGImage(items[this.equipedIndex].filePath, "item-image" );
-		updateSVGText(items[this.equipedIndex].name, "weapon-name" );
-		this.audio = items[this.equipedIndex].soundPath;
+		changeSVGImage(this.equipedOn.filePath, "item-image" );
+		updateSVGText(this.equipedOn.name, "weapon-name" );
+		this.audio = this.equipedOn.soundPath;
 	}
     
 //Skills
@@ -91,7 +92,7 @@ function char(){
 		
 //Skill Getters
 	this.getPower = function() {
-		return this.power + this.equipedOn.power;
+		return this.power;
 	}
 	this.getCons =  function() {
 		return this.cons;
@@ -103,7 +104,7 @@ function char(){
 		return this.item;
 	}
 	this.getDmg = function(){
-		return this.power;
+		return this.power + this.equipedOn.power;;
 	}
 	
 //Methods
@@ -157,13 +158,14 @@ function char(){
     this.click = function(){
 		var i;
 		for(i = 0; i < this.speed + this.equipedOn.speed; i++){
+			this.live = true;
 			this.score += this.power;
 			this.points += this.power;
 			commonEnemy.takeDmg();
-			if (Math.floor(Math.random() * 25) + 1 == 1){
+			if (Math.floor(Math.random() * 50) + 1 == 1){
 				this.dmgEquiped();
 			}
-			if (commonEnemy.hp <= 0){
+			if (commonEnemy.hp <= 0 && this.live == true){
 				this.score += 100;
 				this.points += 100;
 				if (runningQuest.compare()){
@@ -176,6 +178,7 @@ function char(){
 				this.enemyLvlUp();
 				console.log("He's dead");
                 this.clicked = 0;
+				this.live = false;
 				break;
 			}
 			document.getElementById("points").innerHTML = (this.getScore());
