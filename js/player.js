@@ -128,7 +128,8 @@ function char(){
 			this.addKill();
 			this.enemyLvlUp();
 		}
-		document.getElementById("points").innerHTML = ("Score: " + this.getScore() + " Points: " + this.getPoints());
+		document.getElementById("points").innerHTML = (this.getScore());
+		document.getElementById("upgrade-points").innerHTML = (this.getPoints());
     }
 	
     /*
