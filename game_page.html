@@ -10,12 +10,22 @@
         <script>header()</script>
 	</head>
 	<body class="darkgrey">
+		<div id="distraction-control" class="darkgrey pane">
+		  <button class="darkgrey" id="no-sound" title="mute sound">
+		    	<img src="images/volume_button_1-1.svg" />
+		    	<p>Mute</p>
+		  </button>
+		  <button class="darkgrey" id="no-animation" title="no animations">
+		    	<img src="images/gif_button_1-2.svg" />
+		    	<p>No Animation</p>
+		  </button>
+		</div>
 
 
 		<audio id="bgsound" autoplay>
 			<source src="sound/battlesequence_intro.mp3" type="audio/mpeg">
 		</audio>
-        <audio id="loopsound">
+        	<audio id="loopsound">
 			<source src="sound/battlesequence_loop.mp3" type="audio/mpeg">
 		</audio>
 
@@ -116,7 +126,7 @@
 		    			  		</div>
 		    			  		<div id="inventory">
 		    			  		  <h3>Inventory</h3>
-                                    
+
                                   <button class="red" onclick="purchaseHealing()">Pay for healing: 500</button>
                                   <p class="bold uppercase">Points: <span id="upgrade-points-inv">0</span></span></p>
 		    			  		</div>

@@ -38,6 +38,21 @@ body {
 	width: 35%;
 }
 
+
+#distraction-control {
+	margin-left: 70%;
+}
+
+#distraction-control button {
+	width: 12em;
+	border: 0.4em solid #313233;
+
+}
+
+#distraction-control button:hover {
+	border: 0.4em solid #44454A;
+}
+
 /**----- item, upgrade, inventory, summon ------**/
 
 #dynamic-box {
@@ -197,6 +212,9 @@ button {
 	padding: 0.5em;
 }
 
+#summon h3 {
+	color: #A42941;
+}
 
 /**-------- Heading --------**/
 #heading {

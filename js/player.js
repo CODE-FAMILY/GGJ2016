@@ -157,6 +157,17 @@ function char(){
 	
     this.click = function(){
 		var i;
+        
+        if(commonEnemy.enemyImgT != ""){
+            if(commonEnemy.toggle == 0){
+                document.getElementById("monstImage").src = (commonEnemy.enemyImgT);
+                commonEnemy.toggle = 1;
+            }else{
+                document.getElementById("monstImage").src = (commonEnemy.enemyImg);
+                commonEnemy.toggle = 0;
+            }
+        }
+        
 		for(i = 0; i < this.speed + this.equipedOn.speed; i++){
 			this.live = true;
 			this.score += this.power;
@@ -200,7 +211,8 @@ function char(){
         }
 		document.getElementById("points").innerHTML = (this.getScore());
 		document.getElementById("upgrade-points").innerHTML = (this.getPoints());
-    }
+
+    } //end
 	
     this.kill = function(){
         var i;
