@@ -7,6 +7,7 @@ function char(){
 	this.killCount = 0;
 	this.enemyLvl = 1;
 	this.equipedIndex = 0;
+	this.equipedOn;
 	
 //Basic Getters
 	this.getScore = function(){
@@ -27,7 +28,7 @@ function char(){
     
 //Items
     var items = [];
-	items.push(new item());
+	//items.push(new item());
 	this.setEquiped = function(x){
 		this.equipedIndex = x;
         	changeSVGImage( this.items[x].filePath, "item-image" );
@@ -47,6 +48,9 @@ function char(){
 				items.push(box);
 			}
 		}
+	}
+	this.equip = function(bank){
+		this.equipedOn = bank.clone();
 	}
 	
 	this.dropItem = function(thing){
