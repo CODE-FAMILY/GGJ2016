@@ -1,0 +1,9 @@
+#questPopup{
+	position:absolute;
+    /*background:url(pop-back.jpg) no-repeat;*/
+    background-color: #252628;
+    width:200px;
+    height:200px;
+    border: 5px solid #252628;
+	z-index: 9002;
+}

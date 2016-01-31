@@ -13,7 +13,5 @@ function header(){
     
     document.write("<script src=\"js/basic.js\"></script>");
     
-    commonEnemy = starter.clone();
-    document.getElementById("monstImage").src = (commonEnemy.enemyImg);
-    document.getElementById("monstHealth").style.width = "100%";
+
 }
