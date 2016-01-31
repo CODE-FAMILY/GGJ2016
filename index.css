@@ -188,6 +188,10 @@ button {
 	background-color: #2A2B2E;
 }
 
+.lightgrey{
+    background-color:#454546; 
+}
+
 /** Text **/
 .uppercase {
 	text-transform: uppercase;
