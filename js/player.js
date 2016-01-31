@@ -77,10 +77,12 @@ function char(){
 	}
 	
 	this.updateCost = function(){
-			this.points -= this.skillLvl * 100;
-			this.temp = this.skillLvl;
-			this.skillLvl += this.skillLvlTail;
-			this.skillLvlTail = this.temp;}
+		this.points -= this.skillLvl * 100;
+		this.temp = this.skillLvl;
+		this.skillLvl += this.skillLvlTail;
+		this.skillLvlTail = this.temp;
+		document.getElementById("upgrade-points").innerHTML = (this.getPoints());
+	}
 
 	this.addPower = function(){
 		if (this.points >= this.skillLvl * 100 && this.power < 5){
@@ -155,7 +157,7 @@ function char(){
 	}
 	
 	this.addItemToList = function() {
-		weapons.push("item");
+		items.push("item");
 	}
 	
 	this.randCall = function() {
