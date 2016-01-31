@@ -17,6 +17,8 @@ function upgrade() {
     document.getElementById("upgrade").style.display = "block";
     
     showAll()
+    document.getElementById("upgrade-points").innerHTML = (playa.getPoints());
+    showAll();
 }
 
 
@@ -30,6 +32,7 @@ function showAll(){
             if(stats[j] >= i){
                 document.getElementById(types[j]+i).style.display = "inline";
                 document.getElementById(types[j]+i).disabled = true;
+                document.getElementById(types[j]+i).className = "lightgrey";
             }
             else{
                 document.getElementById(types[j]+i).style.display = "none";

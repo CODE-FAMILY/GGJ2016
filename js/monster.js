@@ -30,6 +30,7 @@ function monster(name,hp,drop,imageName,lvl){
 //Setters
 	this.setHp = function() {
 		this.hp = Math.floor((Math.random() * Math.log(this.lvl)*2 + 1) * hp);
+		this.hp = Math.floor((Math.random() * Math.log(this.lvl)*2 + 1) * hp) * Math.ceil(playa.getSpeed() * playa.getPower() / 2);
 		this.cons = this.hp;
 	}
 	this.setTime = function(){

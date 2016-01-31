@@ -88,24 +88,28 @@ function char(){
 		if (this.points >= this.skillLvl * 100 && this.power < 5){
 			this.power += 1;
 			this.updateCost();
+            upgrade();
 		}
 	}
 	this.addCons = function(){
 		if (this.points >= this.skillLvl * 100 && this.cons < 5){
 			this.cons += 1;
 			this.updateCost();
+            upgrade();
 		}
 	}
 	this.addSpeed = function(){
 		if (this.points >= this.skillLvl * 100 && this.speed < 5){
 			this.speed += 1;
 			this.updateCost();
+            upgrade();
 		}
 	}
 	this.addItem = function(){
 		if (this.points >= this.skillLvl * 100 && this.item < 5){
 			this.item += 1;
 			this.updateCost();
+            upgrade();
 		}
 	}
 	
@@ -118,17 +122,39 @@ function char(){
 			this.points += 100;
 			if (runningQuest.compare()){
 				runningQuest.killedOne();
+		var i;
+		for(i = 0; i < this.speed; i++){
+			this.score += this.power;
+			this.points += this.power;
+			commonEnemy.takeDmg();
+			if (commonEnemy.hp <= 0){
+				this.score += 100;
+				this.points += 100;
+				if (runningQuest.compare()){
+					runningQuest.killedOne();
+				}
+				var box = commonEnemy.dropItem();
+				this.takeItem(box);
+				commonEnemy.die();
+				this.addKill();
+				this.enemyLvlUp();
+				console.log("He's dead");
+				break;
 			}
-			var box = commonEnemy.dropItem();
-			this.takeItem(box);
-			commonEnemy.die();
-			this.addKill();
-			this.enemyLvlUp();
+			document.getElementById("points").innerHTML = (this.getScore());
+			document.getElementById("upgrade-points").innerHTML = (this.getPoints());
 		}
 		document.getElementById("points").innerHTML = (this.getScore());
 		document.getElementById("upgrade-points").innerHTML = (this.getPoints());
     }
 	
+    this.kill = function(){
+        var i;
+        for(i = 0; i < 500; i++){
+            this.click();
+        }
+    }
+    
     /*
 	this.setDmg = function(){
 		this.damage = this.power * this.power;

@@ -3,6 +3,7 @@ body {
 	margin: 0px;
 	text-align: center;
 	padding: 1em;
+	font-family: sans-serif;
 }
 
 #Game {
@@ -26,6 +27,7 @@ body {
 
 #info-container {
 	width: 30%;
+	width: 35%;
 }
 
 /**----- item, upgrade, inventory, summon ------**/
@@ -47,10 +49,12 @@ body {
 
 #item {
 	display: none;
+	display: s;
 }
 
 #upgrade {
 	display: visible;
+	display: none;
 }
 
 #inventory {
@@ -63,7 +67,10 @@ body {
 
 #health-pane {
 
+#spawn {
+	height: 36em;
 }
+
 
 #button-pane {
 	margin: 2em 0em;
@@ -75,22 +82,39 @@ body {
 
 #score-hud {
 
+#score-hud {
+	padding-top: 2em;
 }
 
 #score-hud > p {
 	display: inline;
+.float-button-box  p {
+	text-align: left;
+	float: left;
 }
 
 #score-hud > button {
+.float-button-box button {
 	float: right;
+}
+
+#score-hud .clearfix {
+	clear: both;
 }
 
 /** enemy container **/
 #enemy-container {
 	width: 70%;
 
+	width: 65%;
+	background-image: url("images/monster_background.svg");
+	background-size: cover;
 }
 
+#enemy-inner-container {
+	border-radius: 2em;
+	padding: 1em;
+}
 
 #quest fieldset {
 	border: none;
@@ -128,6 +152,14 @@ button {
 	border: 0.1em;
 }
 
+#creatureImg {
+
+}
+
+#creatureBx {
+
+}
+
 #monstHealth {
     width: 100%;
 }
@@ -145,6 +177,7 @@ button {
 
 .meter {
 	height: 1.2em;  /* Can be anything */
+	height: 1.2em;
 	background: #252628;
 	border-radius: 1em;
 	box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
@@ -164,6 +197,7 @@ button {
 }
 
 /** color **/
+/**------------ color -----------**/
 .red {
   background-color: #A42941;
 }
@@ -189,6 +223,10 @@ button {
 }
 
 /** Text **/
+.lightgrey{
+    background-color:#454546;
+}
+
 .uppercase {
 	text-transform: uppercase;
 }
