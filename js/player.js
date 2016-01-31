@@ -106,6 +106,7 @@ function char(){
     this.click = function(){
         this.score += this.power;
         this.points += this.power;
+		commonEnemy.takeDmg();
 		if (commonEnemy.hp <= 0){
 			this.score += 100;
 			this.points += 100;
@@ -114,7 +115,6 @@ function char(){
 			this.enemyLvlUp();
 		}
 		document.getElementById("score").innerHTML = ("Score: " + this.getScore() + "Points: " + this.getPoints());
-		commonEnemy.takeDmg();
     }
 	
     /*
