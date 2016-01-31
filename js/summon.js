@@ -56,5 +56,14 @@ function summonRand(type) {
     document.getElementById("monstImage").src = (commonEnemy.enemyImg);
     document.getElementById("monstHealth").style.width = "100%";
     
+    //stop intro
+    //document.getElementById("bgsound").muted = true;
+    //sets battle music every monster summoning
+    var x = document.createElement("AUDIO");
+    x.setAttribute("src","sound/battlesequence_intro.mp3");
+    x.play();
+    
+    document.body.appendChild(x);
+    
     //send player to item screen afterwards
 }

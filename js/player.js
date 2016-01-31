@@ -27,7 +27,7 @@ function char(){
     
 //Items
     var items = [];
-	//items.push(fist);
+	items.push(new item());
 	this.setEquiped = function(x){
 		this.equipedIndex = x;
 	}
@@ -50,8 +50,6 @@ function char(){
 	this.dropItem = function(thing){
 		items.splice(items.indexOf(thing), 1);
 	}
-	
-	this.
     
 //Skills
 	this.power = 1;
@@ -153,6 +151,10 @@ function char(){
 			document.getElementById("points").innerHTML = (this.getScore());
 			document.getElementById("upgrade-points").innerHTML = (this.getPoints());
 		}
+        if(document.getElementById("bgsound").ended()){
+            document.getElementById("loopsound").play();
+            document.getElementById("loopsound").loop();
+        }
 		document.getElementById("points").innerHTML = (this.getScore());
 		document.getElementById("upgrade-points").innerHTML = (this.getPoints());
     }

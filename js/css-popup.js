@@ -1,3 +1,7 @@
+//globals
+
+//globals
+
 function toggle(div_id) {
 	var el = document.getElementById(div_id);
 	if ( el.style.display == 'none' ) {	el.style.display = 'block';}
