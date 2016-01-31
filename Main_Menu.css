@@ -17,3 +17,9 @@ img {
 	height: 50%;
 	width: 50%;
 }
+
+a {
+	background-color: #2a2b2e;
+	border-radius: 1.5em;
+	border-color: #2a2b2e;
+}

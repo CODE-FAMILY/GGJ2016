@@ -3,12 +3,17 @@ body {
 	color: #f3f3f3;
 	margin: auto;
 	text-align: center;
-	padding: 1em;
 }
 
 div {
 	background: #2a2b2e;
 	vh: 95%;
 	vw:90%;
-	margin: 5em;
+	margin: 1em;
+}
+
+a {
+	background-color: #2a2b2e;
+	border-radius: 1.5em;
+	border-color: #2a2b2e;
 }
