@@ -119,6 +119,27 @@ button.btnSum {
 	z-index: 9002;
 }
 
+/**-------- Creature Box ----------**/
+
+#CreatureHud > img {
+	width: 10%;
+	height: 15%;
+	float: left;
+}
+
+#monstHealth {
+    width: 75%;
+}
+
+#monstImage {
+	width: 25%;
+	height: 25%;
+}
+
+#healt {
+	width: 100%
+}
+
 /*HP bar*/
 
 .meter { 
@@ -130,6 +151,8 @@ button.btnSum {
 	border-radius: 25px;
 	padding: 10px;
 	box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
+	width: 80%;
+	float: left;
 }
 .meter > span {
   display: block;

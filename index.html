@@ -25,15 +25,17 @@
 			</div>
 			
 			<!-- Creature Pane -->
-			<div class ="Creature">
-				<img src="images/skullHp.png" style="width: 10%;height: 15%;float: left"></img>
-                <div class="meter orange" style="">
-                    <span id="monstHealth" style="width: 75%"></span>
-                </div>
-                <br/>
-                <br/>
+			<div class="Creature">
+				<div id="CreatureHud">
+					<img src="images/skullHp.png" />
+					<div class="meter orange">
+					    <span id="monstHealth"></span>
+					</div>
+				</div>
+				<br/>
+				<br/>
 				<div>
-                    <img id="monstImage"  style="width: 25%;height: 25%;"></img>
+                    			<img id="monstImage" />
 				</div>
 			
 				<!-- Score Calc -->
@@ -45,9 +47,9 @@
 			<!-- Health Pane --> 
 			<div class ="Health">
                 
-				<div class="meter" style="width: 80%;float:left">
-                    <span id="health" style="width: 100%"></span>
-                </div>
+			<div class="meter">
+                    		<span id="health"></span>
+                	</div>
 				<br/>
                 <br/>
                 <p id="score" syle="">Score: 0</p>
