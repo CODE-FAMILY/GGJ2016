@@ -27,10 +27,10 @@ function char(){
 //Items
     var items = [];
 	
-	this.takeItem = function(){
-		if (commonEnemy.getDrop() != null){
-			if (commonEnemy.clickDrop() && items.length() <= 5){
-				items.push(commonEnemy.getDrop());
+	this.takeItem = function(box){
+		if (box != null){
+			if (items.length() <= 5){
+				items.push(box);
 			}
 		}
 	}
@@ -40,7 +40,7 @@ function char(){
 	}
     
 //Skills
-	this.power = 25;
+	this.power = 1;
 	this.cons = 1;
 	this.speed = 1;
 	this.item = 1;
@@ -122,7 +122,8 @@ function char(){
 			if (runningQuest.compare()){
 				runningQuest.killedOne();
 			}
-			commonEnemy.dropItem();
+			var box = commonEnemy.dropItem();
+			this.takeItem(box);
 			commonEnemy.die();
 			this.addKill();
 			this.enemyLvlUp();

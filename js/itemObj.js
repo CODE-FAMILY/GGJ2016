@@ -8,6 +8,7 @@ fist.cond = 5;
 
 var dagger = new item();
 dagger.name = "Dagger";
+dagger.filePath = "images/daggerImg.svg";
 dagger.power = 2;
 dagger.speed = 2;
 dagger.cond = 5;
