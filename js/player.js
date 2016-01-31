@@ -150,7 +150,7 @@ function char(){
 		} else {
 			this.hp -= dmg;
 		}
-		console.log("I'm hit!" + dmg);
+		document.getElementById("health").style.width = (this.hp / (this.cons * 100))*100 + "%";
 	}
 	
 	this.die = function(){
