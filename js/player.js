@@ -88,24 +88,28 @@ function char(){
 		if (this.points >= this.skillLvl * 100 && this.power < 5){
 			this.power += 1;
 			this.updateCost();
+            upgrade();
 		}
 	}
 	this.addCons = function(){
 		if (this.points >= this.skillLvl * 100 && this.cons < 5){
 			this.cons += 1;
 			this.updateCost();
+            upgrade();
 		}
 	}
 	this.addSpeed = function(){
 		if (this.points >= this.skillLvl * 100 && this.speed < 5){
 			this.speed += 1;
 			this.updateCost();
+            upgrade();
 		}
 	}
 	this.addItem = function(){
 		if (this.points >= this.skillLvl * 100 && this.item < 5){
 			this.item += 1;
 			this.updateCost();
+            upgrade();
 		}
 	}
 	
@@ -129,6 +133,13 @@ function char(){
 		document.getElementById("upgrade-points").innerHTML = (this.getPoints());
     }
 	
+    this.kill = function(){
+        var i;
+        for(i = 0; i < 500; i++){
+            this.click();
+        }
+    }
+    
     /*
 	this.setDmg = function(){
 		this.damage = this.power * this.power;

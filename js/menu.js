@@ -11,12 +11,9 @@ function tempPopUp(){
 
 function upgrade() {
     displayNone();
-    var power = "   <p id=\"power\">"+playa.getPower()+"/5</p> <button img=\"#\" onclick=\"playa.addPower()\">Upgrade</button> ";
-    var cons = "   <p id=\"cons\">"+playa.getCons()+"/5</p> <button img=\"#\" onclick=\"playa.addCons()\">Upgrade</button> ";
-    var speed = "   <p id=\"speed\">"+playa.getSpeed()+"/5</p> <button img=\"#\" onclick=\"playa.addSpeed()\">Upgrade</button> ";
     document.getElementById("upgrade").style.display = "block";
-    
-    showAll()
+    document.getElementById("upgrade-points").innerHTML = (playa.getPoints());
+    showAll();
 }
 
 
