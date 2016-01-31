@@ -12,11 +12,11 @@ dagger.power = 2;
 dagger.speed = 2;
 dagger.cond = 5;
 
-var sword = new item();
-sword.name = "Sword";
-sword.power = 3;
-sword.speed = 1;
-sword.cond = 5;
+var fish = new item();
+fish.name = "Fish";
+fish.power = 3;
+fish.speed = 1;
+fish.cond = 5;
 
 var whip = new item();
 whip.name = "Whip";

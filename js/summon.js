@@ -2,14 +2,11 @@ function summonMenu() {
     var pent = "   <p><button img=\"#\" onclick=\"summonRand(1)\">Pentagram</button></p>";
     var poke = "   <p><button img=\"#\" onclick=\"summonRand(2)\">Pokeball</button></p>";
     var tome = "   <p><button img=\"#\" onclick=\"summonRand(3)\">Tome of Death</button></p>";
-    document.write("<div id=\"blanket\" style=\"display:none\"> </div>");
-    document.write("<div id=\"summonPopUp\" style=\"display:none\">");
-    document.write("     <a href=\"#\" onclick=\"popup('summonPopUp')\" >Click to Close</a>");
-    document.write(pent);
-    document.write(poke);
-    document.write(tome);
-    document.write("</div>");
-    document.write("<button href=\"#\" onclick=\"popup('summonPopUp')\" img=\"#\">Summon</button>");
+
+    document.getElementById("dynamic-box").innerHTML="<h3>Summon</h3><p id=\"btnPent\"></p><p id=\"btnPoke\"></p><p id=\"btnTome\"></p>";
+    document.getElementById("btnPent").innerHTML=pent;
+    document.getElementById("btnPoke").innerHTML=poke;
+    document.getElementById("btnTome").innerHTML=tome;
 }
 
 function summonRand(type) {
@@ -57,5 +54,4 @@ function summonRand(type) {
     document.getElementById("spawn").innerHTML = "<img draggable=false onclick=\"playa.click()\" id=\"monstImage\" />";
     document.getElementById("monstImage").src = (commonEnemy.enemyImg);
     document.getElementById("monstHealth").style.width = "100%";
-    popup('summonPopUp');
 }
