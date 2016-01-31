@@ -1,9 +1,19 @@
+@font-face {
+	font-family: 'BlanchCaps';
+	src: url('fonts/BLANCH_CAPS.otf');
+}
+@font-face {
+	font-family: 'CourierRegularNew';
+	src: url('fonts/curr.ttf');
+}
+
 body {
 	color: #f3f3f3;
 	margin: 0px;
 	text-align: center;
 	padding: 1em;
-	font-family: sans-serif;
+	font-family: Verdana, Arial, sans-serif;
+
 }
 
 #Game {
@@ -64,7 +74,7 @@ body {
 }
 
 #spawn {
-	height: 29em;
+	height: 37em;
 }
 
 
@@ -115,7 +125,7 @@ body {
 #quest fieldset {
 	border: none;
 	border-radius: 1em;
-	background: rgba( 80, 80, 80, 0.7);
+	background: rgba( 37, 38, 40, 0.78 ); #252628ff;
 }
 
 #quest legend {
@@ -163,19 +173,26 @@ button {
 	width:100%;
 }
 
+
+/**-------- Heading --------**/
+#heading {
+	height: 5rem;
+	background: url( "images/title.svg" );
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
+	margin-bottom: 1em;
+}
+
+#heading h3 {
+	visibility: hidden;
+}
 /**-------- Creature Box ----------**/
 
 #CreatureHud {
 	border: 0.1em;
 }
 
-#creatureImg {
-
-}
-
-#creatureBx {
-
-}
 
 #monstHealth {
     width: 100%;
@@ -183,6 +200,7 @@ button {
 
 #monstImage {
 	height: 100%;
+	margin-right: 18%;
 }
 
 #healt {
@@ -246,4 +264,9 @@ button {
 
 .bold {
 	font-weight: bold;
+}
+
+.courier {
+	font-family: 'CourierRegularNew', monospace;
+	font-size: 0.7em;
 }
