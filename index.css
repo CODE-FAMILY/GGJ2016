@@ -15,9 +15,10 @@ div.Game {
 	background-color: #2a2b2e;
 	position: center;
 	margin: auto;
-	width: 1280px;
-	height: 720px;
-	border-radius: 12px;	
+	width: 95vw;
+	height: 89vh;
+	border: 5px solid red;
+	border-radius: 12px ;	
 }
 
 div.Inventory {
@@ -28,8 +29,9 @@ div.Inventory {
 }
 
 div.ItemFrame{
-    margin: auto;
+    margin: 7% 6% 7% 6%;
     width: 80%;
+	height: 20vh;
     border: 3px solid #73AD21;
     padding: 10px;
 	border-radius: 12px;
