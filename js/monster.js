@@ -6,6 +6,7 @@ function monster(name,hp,drop,imageName,lvl){
 	this.cons = hp;
     this.drop = drop;
 	this.enemyImg = imageName;
+	this.startTime = 0;
 	this.nowTime = 0;
 	this.desc = "";
 
@@ -31,10 +32,14 @@ function monster(name,hp,drop,imageName,lvl){
 		this.hp = Math.floor((Math.random() * Math.log(this.lvl)*10 + 1) * hp);
 		this.cons = this.hp;
 	}
+	this.setTime = function(){
+		this.startTime = 0;
+		this.nowTime = new Date();
+	}
 	
 //Methods
 	this.dealDmg = function(){
-		playa.takeDmg(10);
+		playa.takeDmg(Math.floor(Math.log(this.lvl)*10));
 	}
 	
 	this.takeDmg = function(){
@@ -44,8 +49,14 @@ function monster(name,hp,drop,imageName,lvl){
 		} else {
 			document.getElementById("monstHealth").style.width = (this.hp / (this.cons))*100 + "%";
 		}
-        if (new Date().getMilliseconds() - this.timeStart > 10000){
+		if (this.startTime == 0){
+			this.startTime = new Date();
+		}
+        if (new Date().getTime() - this.startTime.getTime() > Math.ceil(10000 / this.lvl)){
+			if (new Date().getTime() - this.nowTime.getTime() > 3000){
+			this.nowTime = new Date();
 			this.dealDmg();
+			}
 		}
 	}
     
@@ -58,7 +69,7 @@ function monster(name,hp,drop,imageName,lvl){
     this.clone = function(){
         var second = new monster(this.name,this.hp,this.drop,this.enemyImg,playa.enemyLvl);
 		second.setHp();
-		
+		second.setTime();
         /*
         second.name = this.name;
         second.lvl = this.lvl;

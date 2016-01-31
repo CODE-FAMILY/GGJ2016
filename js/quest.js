@@ -2,7 +2,7 @@ function quest(){
 	this.id = 1;
 	this.limit = 1;
     this.done = 0;
-	this.monster;
+	this.monster = skeleton;
 	this.questString = "example";
 	this.pointReward = 100;
     
@@ -23,7 +23,7 @@ function quest(){
     }
     
 	this.compare = function(){
-		if (this.monster == commonEnemy.name){
+		if (this.monster.name == commonEnemy.name){
 			return true;
 		} else {
 			return false;
