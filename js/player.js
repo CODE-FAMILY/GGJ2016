@@ -27,8 +27,10 @@ function char(){
 //Items
     var items = [];
 	
-	this.takeItem = function(thing){
-		items.push(commonEnemy.dropItem);
+	this.takeItem = function(){
+		if (commonEnemy.dropItem != null){
+			items.push(commonEnemy.dropItem);
+		}
 	}
     
 //Skills
@@ -117,8 +119,6 @@ function char(){
 			commonEnemy.die();
 			this.addKill();
 			this.enemyLvlUp();
-			if (commonEnemy.dropItem){
-			}
 		}
 		document.getElementById("points").innerHTML = ("Score: " + this.getScore() + " Points: " + this.getPoints());
     }
