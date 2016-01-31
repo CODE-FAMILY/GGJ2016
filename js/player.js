@@ -52,7 +52,7 @@ function char(){
 		return this.item;
 	}
 	this.getDmg = function(){
-		return this.power * this.power;
+		return this.power;
 	}
 	
 //Methods
@@ -114,7 +114,7 @@ function char(){
 			this.addKill();
 			this.enemyLvlUp();
 		}
-		document.getElementById("score").innerHTML = ("Score: " + this.getScore() + "Points: " + this.getPoints());
+		document.getElementById("score").innerHTML = ("Score: " + this.getScore() + " Points: " + this.getPoints());
     }
 	
     /*
