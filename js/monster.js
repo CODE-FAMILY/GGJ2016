@@ -23,7 +23,7 @@ function monster(name,hp,drop,imageName,lvl){
 	
 //Setters
 	this.setHp = function() {
-		this.hp = Math.floor((Math.random() * Math.log(this.lvl + 1)*10 + 1) * hp);
+		this.hp = Math.floor((Math.random() * Math.log(this.lvl)*10 + 1) * hp);
 		this.cons = this.hp;
 	}
 	
@@ -41,7 +41,8 @@ function monster(name,hp,drop,imageName,lvl){
 	}
     
     this.clone = function(){
-        var second = new monster(this.name,this.hp,this.drop,this.enemyImg,this.lvl);
+        var second = new monster(this.name,this.hp,this.drop,this.enemyImg,playa.enemyLvl);
+		second.setHp();
         /*
         second.name = this.name;
         second.lvl = this.lvl;
