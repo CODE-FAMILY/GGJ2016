@@ -46,4 +46,5 @@ var pokeMonsters = [ bunny,unicorn]; //, unicorn
 var pokeBoss = [dragon,pikachu]; //pikachu
 
 var tomeMonsters = [zombie, zombieNazi, ghost,skeleton]; //skeleton, 
+
 var tomeBoss = [hitler];

@@ -127,19 +127,13 @@ body {
 	border-radius: 1em;
 	border: 0.03em solid #2A2B2E;
 	background-color: #252628;
-	height: 2em;
-
+	padding: 0.5em;
 }
 
-#inventory-items td:even {
-	padding-left: 5em;
+#inventory-items img {
+	height: 8em;
+	width: 8em;
 }
-
-#inventory-items td:odd {
-	padding-right: 5em;
-	position: absolute;
-}
-
 
 #inventory-items td:hover {
 	border: 0.03em solid snow;
@@ -147,6 +141,10 @@ body {
 
 #pay-box {
 	margin-top: 2em;
+}
+
+#pay-box button {
+	margin-top: 1em;
 }
 
 /**---------- Health Pane ---------**/
@@ -188,7 +186,7 @@ body {
 #quest fieldset {
 	border: none;
 	border-radius: 1em;
-	background: rgba( 37, 38, 40, 0.78 ); #252628ff;
+	background: rgba( 37, 38, 40, 0.78 );
 }
 
 #quest legend {
@@ -279,18 +277,18 @@ button {
 #monstHealth {
     width: 100%;
 }
-@-webkit-keyframes shakeelement {
+@keyframes shakeelement {
 	0% { -webkit-transform: translate(2px, 1px) rotate(0deg); }
-	10% { -webkit-transform: translate(-1px, -2px) rotate(-1deg); }
-	20% { -webkit-transform: translate(-3px, 0px) rotate(1deg); }
-	30% { -webkit-transform: translate(0px, 2px) rotate(0deg); }
-	40% { -webkit-transform: translate(1px, -1px) rotate(1deg); }
-	50% { -webkit-transform: translate(-1px, 2px) rotate(-1deg); }
-	60% { -webkit-transform: translate(-3px, 1px) rotate(0deg); }
-	70% { -webkit-transform: translate(2px, 1px) rotate(-1deg); }
-	80% { -webkit-transform: translate(-1px, -1px) rotate(1deg); }
-	90% { -webkit-transform: translate(2px, 2px) rotate(0deg); }
-	100% { -webkit-transform: translate(1px, -2px) rotate(-1deg); }
+	10% { transform: translate(-1px, -2px) rotate(-1deg); }
+	20% { transform: translate(-3px, 0px) rotate(1deg); }
+	30% { transform: translate(0px, 2px) rotate(0deg); }
+	40% { transform: translate(1px, -1px) rotate(1deg); }
+	50% { transform: translate(-1px, 2px) rotate(-1deg); }
+	60% { transform: translate(-3px, 1px) rotate(0deg); }
+	70% { transform: translate(2px, 1px) rotate(-1deg); }
+	80% { transform: translate(-1px, -1px) rotate(1deg); }
+	90% { transform: translate(2px, 2px) rotate(0deg); }
+	100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
 
