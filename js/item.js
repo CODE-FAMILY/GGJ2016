@@ -18,7 +18,7 @@ function item() {
 		return this.speed;
 	}
 	
-	this.clone = funciton(){
+	this.clone = function(){
 		var box = new item();
 		box.name = this.name;
 		box.power = this.power;
