@@ -80,12 +80,7 @@ function char(){
 			this.points -= this.skillLvl * 100;
 			this.temp = this.skillLvl;
 			this.skillLvl += this.skillLvlTail;
-			this.skillLvlTail = this.temp;
-			document.getElementById("power").innerHTML = this.power + "/5 Cost: " + this.skillLvl * 100 * (this.power % 5) / this.power;
-			document.getElementById("speed").innerHTML = this.speed + "/5 Cost: " + this.skillLvl * 100 * (this.speed % 5) / this.speed;
-			document.getElementById("cons").innerHTML = this.cons + "/5 Cost: " + this.skillLvl * 100 * (this.cons % 5) / this.cons;
-			//document.getElementById("item").innerHTML = this.item + "/5 Cost: " + this.skillLvl * 100 * (this.item % 5) / this.item;
-	}
+			this.skillLvlTail = this.temp;}
 
 	this.addPower = function(){
 		if (this.points >= this.skillLvl * 100 && this.power < 5){
@@ -158,7 +153,7 @@ function char(){
 		//Game Over!!!
 	}
 	
-	this.addItem = function() {
+	this.addItemToList = function() {
 		weapons.push("item");
 	}
 	
