@@ -1,12 +1,3 @@
-<!DOCTYPE html>
-<html>
-	<meta charset="UTF-8" />
-	<head>
-		<title>TITLE - Main Menu</title>
-				<link rel="stylesheet" href="High_Scores.css">
-	</head>
-	<body>
-		<script>
 var highscores = "100-tomy-200-tomyshadow-300-ellescuba-400-joe\\-burns\\-the\\-html\\-master"; // change this variable to whatever highscores there are, you may choose to save this in a cookie and put the results in this variable, or store the information in a database and use a server side language such as PHP to get the information
 var currentname = "";
 var namearray = new Array();
@@ -164,7 +155,3 @@ for(i=0;i<=highscores.length-1;i++) {
 
 document.write("</ol>");
 getscores();
-		</script>
-		<a href="game_page.html">TO GAME</a>
-	</body>
-</html> 
