@@ -1,19 +1,19 @@
 body {
 	background-color: #252628;
 	color: #f3f3f3;
-	margin: 0px;
+	margin: auto;
 	text-align: center;
 	padding: 1em;
 }
 
 div {
 	background: #2a2b2e;
-	height: 100px;
-	width: 200px;
+	vh: 95%;
+	vw: 90%;
 	margin: 5em;
 }
 
-image {
-	vh: 90%;
-	vw: 85%;
+img {
+	height: 50%;
+	width: 50%;
 }
