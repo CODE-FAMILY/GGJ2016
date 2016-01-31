@@ -43,7 +43,7 @@ function char(){
 	}
 	this.takeItem = function(box){
 		if (box != null){
-			if (items.length() <= 5){
+			if (items.length <= 5){
 				items.push(box);
 			}
 		}

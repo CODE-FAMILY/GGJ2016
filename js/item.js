@@ -19,6 +19,19 @@ function item() {
 		return this.speed;
 	}
 	
+	this.setName = function(name) {
+		this.name = name;
+	}
+	this.setPower = function(pwr) {
+		this.power = pwr;
+	}
+	this.setCond =  function(cond) {
+		this.cond = cond;
+	}
+	this.setSpeed = function(spd) {
+		this.speed = spd;
+	}
+	
 	this.clone = function(){
 		var box = new item();
 		box.name = this.name;
