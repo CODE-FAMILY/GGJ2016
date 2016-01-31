@@ -1,6 +1,6 @@
 @font-face {
-	font-family: 'BlanchCaps';
-	src: url('fonts/BLANCH_CAPS.otf');
+	font-family: 'LeagueGothic-Regular';
+	src: url('fonts/LeagueGothic-Regular.otf');
 }
 @font-face {
 	font-family: 'CourierRegularNew';
@@ -12,8 +12,7 @@ body {
 	margin: 0px;
 	text-align: center;
 	padding: 1em;
-	font-family: Verdana, Arial, sans-serif;
-
+	font-family: Helvetica, Arial, sans-serif;
 }
 
 #Game {
@@ -84,6 +83,10 @@ body {
 
 #button-pane button {
 
+}
+
+#upgrade-buttons button {
+	width: 5.2em;
 }
 
 /**---------- Health Pane ---------**/
