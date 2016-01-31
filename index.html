@@ -11,9 +11,11 @@
 		<h1>The Summoning</h1>
 		
 		<!-- Game -->
-		<div class ="Game">
+		<table id="Game">
 			<!-- Inventory Pane -->
-			<div class ="Inventory">
+		  <tbody>
+		  <tr>
+			<td id="Inventory" class="small-pane">
 				<div class="ItemFrame">
 					<div class="ItemScroll">
 					</div>
@@ -23,47 +25,63 @@
 				<script> upgrade();</script>
 				<script> summonMenu();</script>
 
-			</div>
-			
+			</td>
+
 			<!-- Creature Pane -->
-			<div class="Creature">
+			<td id="Creature" class="large-pane">
 				<div id="CreatureHud">
 					<img src="images/skullHp.png" />
 					<div class="meter orange">
 					    <span id="monstHealth"></span>
 					</div>
 				</div>
-				<br/>
-				<br/>
 				<div id="spawn">
                     <img onclick="playa.click()" id="monstImage" />
 				</div>
-			
-				<!-- Score Calc -->
-			</div>
 
-			<!-- Health Pane --> 
-			<div class ="Health">
-                
+				<!-- Score Calc -->
+			</td>
+		    </tr>
+		  <tr>
+
+			<!-- Health Pane -->
+			<td id="Health" class="small-pane">
+
 			<div class="meter">
                     		<span id="health"></span>
                 	</div>
 				<br/>
                 <br/>
                 <p id="score" syle="">Score: 0</p>
-				
+
 				<script id="HScore" class="btnHScore"> </script>
-			</div>
-			
+			</td>
+
 			<!-- Quest Pane -->
-			<div class ="Quest">
-				<div>
-					<img src="images/Placeholder.png"></img>
-				</div>		
-				<div>
-					<img src="images/Placeholder.png"></img>
-				</div>				
-			</div>
-		</div>
+			<td id="Quest" class="large-pane">
+			  <fieldset>
+				<legend align="center">Quest</legend>
+				<p id="questStory">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+				  	Donec a diam lectus. Sed sit amet ipsum mauris.
+				  	Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit.
+				  	Donec et mollis dolor. Praesent et diam eget libero egestas mattis
+				  	sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia
+				  	consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor.
+				  	Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+				  	Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed,
+				  	adipiscing id dolor. Pellentesque auctor nisi id magna consequat
+				  	sagittis. Curabitur dapibus enim sit amet elit pharetra tincidunt
+				  	feugiat nisl imperdiet. Ut convallis libero in urna ultrices accumsan.
+				   	Donec sed odio eros. Donec viverra mi quis quam pulvinar at malesuada
+				  	arcu rhoncus. Cum sociis natoque penatibus et magnis dis parturient
+				  	montes, nascetur ridiculus mus. In rutrum accumsan ultricies.
+				  	Mauris vitae nisi at sem facilisis semper ac in est.
+				</p>
+			    </fieldset>
+			</td>
+		    </tr>
+		    </tbody>
+		</table>
 	</body>
 </html> 

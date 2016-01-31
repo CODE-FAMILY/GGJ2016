@@ -110,6 +110,9 @@ function char(){
 		if (commonEnemy.hp <= 0){
 			this.score += 100;
 			this.points += 100;
+			if (runningQuest.compare()){
+				runningQuest.killedOne();
+			}
 			commonEnemy.die();
 			this.addKill();
 			this.enemyLvlUp();
@@ -130,7 +133,7 @@ function char(){
 		}
 	}
 	
-	this.takeDamage = function(dmg){
+	this.takeDmg = function(dmg){
 		if (this.hp - dmg <= 0) {
 			this.die();
 		} else {

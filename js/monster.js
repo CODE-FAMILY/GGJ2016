@@ -6,6 +6,7 @@ function monster(name,hp,drop,imageName,lvl){
 	this.cons = hp;
     this.drop = drop;
 	this.enemyImg = imageName;
+	this.nowTime = 0;
 
 //Getters
 	this.getName = function(){
@@ -28,14 +29,20 @@ function monster(name,hp,drop,imageName,lvl){
 	}
 	
 //Methods
-	this.takeDmg = function() {
+	this.dealDmg = function(){
+		playa.takeDmg(10);
+	}
+	
+	this.takeDmg = function(){
 		this.hp -= playa.getDmg();
 		if (this.hp <= 0){
 			document.getElementById("monstHealth").style.width = "0%";
 		} else {
 			document.getElementById("monstHealth").style.width = (this.hp / (this.cons))*100 + "%";
 		}
-        console.log("shit happened");
+        if (Date.getTime() - this.timeStart > 10000){
+			this.dealDmg();
+		}
 	}
     
 	this.die = function() {
@@ -47,6 +54,7 @@ function monster(name,hp,drop,imageName,lvl){
     this.clone = function(){
         var second = new monster(this.name,this.hp,this.drop,this.enemyImg,playa.enemyLvl);
 		second.setHp();
+		
         /*
         second.name = this.name;
         second.lvl = this.lvl;
