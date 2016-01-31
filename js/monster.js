@@ -7,6 +7,7 @@ function monster(name,hp,drop,imageName,lvl){
     this.drop = drop;
 	this.enemyImg = imageName;
 	this.startTime = 0;
+	this.nowTime = 0;
 	this.desc = "";
 
 //Getters
@@ -33,11 +34,12 @@ function monster(name,hp,drop,imageName,lvl){
 	}
 	this.setTime = function(){
 		this.startTime = 0;
+		this.nowTime = new Date();
 	}
 	
 //Methods
 	this.dealDmg = function(){
-		playa.takeDmg(10);
+		playa.takeDmg(Math.floor(Math.log(this.lvl)*10));
 	}
 	
 	this.takeDmg = function(){
@@ -51,7 +53,10 @@ function monster(name,hp,drop,imageName,lvl){
 			this.startTime = new Date();
 		}
         if (new Date().getTime() - this.startTime.getTime() > Math.ceil(10000 / this.lvl)){
+			if (new Date().getTime() - this.nowTime.getTime() > 3000){
+			this.nowTime = new Date();
 			this.dealDmg();
+			}
 		}
 	}
     
