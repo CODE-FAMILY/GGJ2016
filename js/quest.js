@@ -6,15 +6,13 @@ function quest(){
     this.done = 0;
 	this.monster = skeleton;
 	this.questString = "example";
-    
+	
     this.completed = function(){
         var selected = Math.floor(Math.random() * tomeBoss.length);
         while (adventures[selected].id == this.id){
             var selected = Math.floor(Math.random() * tomeBoss.length);
         }
-        
-        
-        
+ 
         this.clone(adventure[selected]);
     }
     
