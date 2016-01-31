@@ -33,6 +33,7 @@ body {
 
 #dynamic-box {
 	text-align: left;
+	width: 22em;
 }
 
 #dynamic-box h3 {
@@ -63,7 +64,7 @@ body {
 }
 
 #spawn {
-	height: 36em;
+	height: 29em;
 }
 
 
@@ -133,7 +134,7 @@ body {
 }
 
 #button-pane > button {
-	margin: 0em 1.2em;
+	margin: 0em 4%;
 	display: inline-block;
 	text-align: left;
 	white-space: nowrap;
