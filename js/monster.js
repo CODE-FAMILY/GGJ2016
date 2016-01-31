@@ -65,9 +65,10 @@ function monster(name,hp,drop,imageName,lvl){
 	}
     
     this.dropItem = function(){
-        var dropRate = Math.floor(Math.random * 10) +1;
-        if(dropRate == 10){
-            return drop.clone();
+        var dropRate = Math.floor(Math.random() * 3) +1;
+        if(dropRate == 2){
+            //return drop.clone();
+			playa.takeItem(this.drop)
         }
         else if(dropRate == 1){
             //return potion.clone();
