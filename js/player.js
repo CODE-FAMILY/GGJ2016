@@ -24,13 +24,11 @@ function char(){
 		return this.enemyLvl;
 	}
     
-    //items
-    var weapons = [];
-	//var potions = [];
-	//var artifacts = [];
+//Items
+    var items = [];
     
 //Skills
-	this.power = 1;
+	this.power = 25;
 	this.cons = 1;
 	this.speed = 1;
 	this.item = 1;
@@ -74,7 +72,7 @@ function char(){
 			document.getElementById("power").innerHTML = this.power + "/5 Cost: " + this.skillLvl * 100 * (this.power % 5) / this.power;
 			document.getElementById("speed").innerHTML = this.speed + "/5 Cost: " + this.skillLvl * 100 * (this.speed % 5) / this.speed;
 			document.getElementById("cons").innerHTML = this.cons + "/5 Cost: " + this.skillLvl * 100 * (this.cons % 5) / this.cons;
-			document.getElementById("item").innerHTML = this.item + "/5 Cost: " + this.skillLvl * 100 * (this.item % 5) / this.item;
+			//document.getElementById("item").innerHTML = this.item + "/5 Cost: " + this.skillLvl * 100 * (this.item % 5) / this.item;
 	}
 
 	this.addPower = function(){
@@ -82,7 +80,6 @@ function char(){
 			this.power += 1;
 			this.updateCost();
 		}
-		console.log("Hello power time");
 	}
 	this.addCons = function(){
 		if (this.points >= this.skillLvl * 100 && this.cons < 5){
@@ -133,12 +130,13 @@ function char(){
 		}
 	}
 	
-	this.takeDamage = function(dmg){
+	this.takeDmg = function(dmg){
 		if (this.hp - dmg <= 0) {
 			this.die();
 		} else {
 			this.hp -= dmg;
 		}
+		console.log("I'm hit!" + dmg);
 	}
 	
 	this.die = function(){
