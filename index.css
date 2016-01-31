@@ -26,7 +26,6 @@ body {
 
 
 #info-container {
-	width: 30%;
 	width: 35%;
 }
 
@@ -48,12 +47,10 @@ body {
 }
 
 #item {
-	display: none;
 	display: s;
 }
 
 #upgrade {
-	display: visible;
 	display: none;
 }
 
@@ -64,8 +61,6 @@ body {
 #summon {
 	display: none;
 }
-
-#health-pane {
 
 #spawn {
 	height: 36em;
@@ -80,20 +75,20 @@ body {
 
 }
 
-#score-hud {
+/**---------- Health Pane ---------**/
+#health-heart {
+	float: left;
+}
 
 #score-hud {
 	padding-top: 2em;
 }
 
-#score-hud > p {
-	display: inline;
 .float-button-box  p {
 	text-align: left;
 	float: left;
 }
 
-#score-hud > button {
 .float-button-box button {
 	float: right;
 }
@@ -104,8 +99,6 @@ body {
 
 /** enemy container **/
 #enemy-container {
-	width: 70%;
-
 	width: 65%;
 	background-image: url("images/monster_background.svg");
 	background-size: cover;
@@ -165,7 +158,6 @@ button {
 }
 
 #monstImage {
-	width: 25%;
 	height: 25%;
 }
 
@@ -176,7 +168,6 @@ button {
 /*HP bar*/
 
 .meter {
-	height: 1.2em;  /* Can be anything */
 	height: 1.2em;
 	background: #252628;
 	border-radius: 1em;
@@ -196,7 +187,6 @@ button {
   overflow: hidden;
 }
 
-/** color **/
 /**------------ color -----------**/
 .red {
   background-color: #A42941;
@@ -222,7 +212,6 @@ button {
 	background-color: #2A2B2E;
 }
 
-/** Text **/
 .lightgrey{
     background-color:#454546;
 }

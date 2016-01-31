@@ -114,14 +114,6 @@ function char(){
 	}
 	
     this.click = function(){
-        this.score += this.power;
-        this.points += this.power;
-		commonEnemy.takeDmg();
-		if (commonEnemy.hp <= 0){
-			this.score += 100;
-			this.points += 100;
-			if (runningQuest.compare()){
-				runningQuest.killedOne();
 		var i;
 		for(i = 0; i < this.speed; i++){
 			this.score += this.power;
