@@ -12,6 +12,7 @@ function header(){
     document.write("<script src=\"js/menu.js\"></script>");
     document.write("<script src=\"js/summon.js\"></script>");
 	document.write("<script src=\"js/questMenu.js\"></script>");
+    document.write("<script src=\"js/itemMenu.js\"></script>");
     
     document.write("<script src=\"js/basic.js\"></script>");
 }

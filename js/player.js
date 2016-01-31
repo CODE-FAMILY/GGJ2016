@@ -30,6 +30,8 @@ function char(){
 	items.push(new item());
 	this.setEquiped = function(x){
 		this.equipedIndex = x;
+        document.getElementById("item-image").setAttribute("href",this.items[x].filePath);
+        document.getElementById("weapon-name").innerText=this.items[x].name;
 	}
 	this.getEquiped = function(){
 		return items[this.equipedIndex];
