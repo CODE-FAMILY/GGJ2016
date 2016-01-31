@@ -175,7 +175,7 @@ button.btnSum {
 	border: 0.1em;
 }
 
-#CreatureHud > img {
+#CreatureHud  img {
 	width: 10%;
 	height: 15%;
 	float: left;

@@ -2,8 +2,6 @@ body {
 	background-color: #252628;
 	color: #f3f3f3;
 	margin: 0px;
-	text-align: center;
-	padding: 1em;
 }
 
 hr {
@@ -12,66 +10,24 @@ hr {
 	display: absolute;
 }
 
-#Game {
-	/*border: 1em solid #2a2b2e;
-	border-radius: 2em;*/
-	width: 90%;
-	margin: auto;
-	height: 90%;
-	/*border-collapse: collapse;*/
-}
-
-#Game td {
-	background: #2a2b2e;
-	padding: 2em 4em;
-	border: 0.125em solid #252628;
-}
-
-.large-pane {
-	width: 70%;
-}
-
-.small-pane {
-	width: 30%;
-}
-
-#Inventory {
-	border-top-left-radius: 2em;
-
-}
-
-#Creature {
-	border-top-right-radius: 2em;
-}
-
-#Health {
-	border-bottom-left-radius: 2em;
-}
-
-#Quest {
-	border-bottom-right-radius: 2em;
-}
-
-#Quest fieldset {
-	border: none;
-	border-radius: 1em;
-	background: grey;
-}
-
-#Quest legend {
-	border-radius: 0.5em;
-	padding: 0.5em;
-	background: red;
-}
-
-button {
-	padding: 0.5em;
-	border-radius: 0.5em;
-	background: grey;
-	border: none;
-}
-
 /*Game Areas*/
+div.Game {
+	background-color: #2a2b2e;
+	position: center;
+	margin: auto;
+	width: 95vw;
+	height: 89vh;
+	border: 5px solid red;
+	border-radius: 12px ;
+}
+
+div.Inventory {
+	float: left;
+	width: 630px;
+	height: 350px;
+	/**border-top-left-radius: 12px;**/
+	border: 2em solid yellow;
+}
 
 div.ItemFrame{
     margin: 7% 6% 7% 6%;
@@ -90,9 +46,36 @@ div.ItemScroll{
     border-radius: 12px;
 }
 
+
+div.Creature {
+	float: right;
+	width: 630px;
+	height: 350px;
+	/**border-top-right-radius: 12px;**/
+	border: 2em solid blue;
+}
+
+div.Health {
+	float: left;
+	width: 630px;
+	height: 350px;
+	margin-top: 8px;
+	/**border-bottom-left-radius: 12px;**/
+	border: 2em solid pink;
+}
+
+div.Quest {
+	float: right;
+	width: 630px;
+	height: 350px;
+	margin-top: 8px;
+	/**border-bottom-right-radius: 12px;**/
+	border: 2em solid green;
+}
+
 /*Buttons /  Image Clicks*/
 button.CreatureImg {
-
+	
 }
 
 button.btnInv {
@@ -139,16 +122,6 @@ button.btnSum {
     z-index: 9005;
 }
 
-#questPopUp {
-    position:absolute;
-    /*background:url(pop-back.jpg) no-repeat;*/
-    background-color: black;
-    width:400;
-    height:400;
-    border: 5px solid #000;
-    z-index: 9005;
-}
-
 #Inv {
     position:absolute;
     /*background:url(pop-back.jpg) no-repeat;*/
@@ -171,10 +144,6 @@ button.btnSum {
 
 /**-------- Creature Box ----------**/
 
-#CreatureHud {
-	border: 0.1em;
-}
-
 #CreatureHud > img {
 	width: 10%;
 	height: 15%;
@@ -196,7 +165,7 @@ button.btnSum {
 
 /*HP bar*/
 
-.meter {
+.meter { 
 	height: 20px;  /* Can be anything */
 	position: relative;
 	background: #555;
@@ -208,7 +177,6 @@ button.btnSum {
 	width: 80%;
 	float: left;
 }
-
 .meter > span {
   display: block;
   height: 100%;
@@ -222,7 +190,7 @@ button.btnSum {
     rgb(43,194,83) 37%,
     rgb(84,240,84) 69%
   );
-  box-shadow:
+  box-shadow: 
     inset 0 2px 9px  rgba(255,255,255,0.3),
     inset 0 -2px 6px rgba(0,0,0,0.4);
   position: relative;
@@ -237,8 +205,7 @@ button.btnSum {
 .orange {
 	width: 50%;
 	text-align: center;
-	display: inline;
-	/*float: left*/
+	float: left
 }
 
 .orange > span {
