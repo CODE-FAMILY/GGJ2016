@@ -27,12 +27,10 @@ function char(){
 	}
     
 //Items
-    var items = [];
-	//items.push(new item());
 	this.setEquiped = function(x){
 		this.equipedIndex = x;
-        	changeSVGImage( this.items[x].filePath, "item-image" );
-        	updateSVGText( this.items[x].name, "weapon-name" );
+        	changeSVGImage(items[this.equipedIndex].filePath, "item-image" );
+        	updateSVGText(items[this.equipedIndex].name, "weapon-name" );
 	}
 	this.getEquiped = function(){
 		return items[this.equipedIndex];
@@ -45,16 +43,16 @@ function char(){
 	this.takeItem = function(box){
 		if (box != null){
 			if (items.length < 5){
-				items.push(box);
+				items[items.length] = box;
 			}
 		}
-	}
-	this.equip = function(bank){
-		this.equipedOn = bank.clone();
 	}
 	
 	this.dropItem = function(thing){
 		items.splice(items.indexOf(thing), 1);
+	}
+	this.equip = function(box){
+		this.equipedOn = box;
 	}
     
 //Skills

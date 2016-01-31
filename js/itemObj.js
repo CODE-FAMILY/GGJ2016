@@ -40,13 +40,13 @@ wand.power = 2;
 wand.speed = 4;
 wand.cond = 5;
 
-var pistol = new item("Pistol",3,3,5);
-//pistol.name = "Pistol";
-//pistol.filePath = "images/pistolImg.svg";
+var pistol = new item();
+pistol.name = "Pistol";
+pistol.filePath = "images/pistolImg.svg";
 //fist.soundPath = ["sound/pistol1.ogg", "sound/pistol2.ogg", "sound/pistol3.ogg"];
-//pistol.power = 3;
-//pistol.speed = 3;
-//pistol.cond = 5;
+pistol.power = 3;
+pistol.speed = 3;
+pistol.cond = 5;
 
 var rifle = new item();
 rifle.name = "Rifle";
@@ -72,5 +72,6 @@ rayGun.power = 2;
 rayGun.speed = 5;
 rayGun.cond = 5;
 
-var weapons = [fist, dagger, fish, whip, wand, pistol, rifle, rocket, rayGun];
+var items = [fist]; //, dagger, fish, whip, wand, pistol, rifle, rocket, rayGun
+var myWeapon = new item();
 playa.equipedOn = fist.clone();
