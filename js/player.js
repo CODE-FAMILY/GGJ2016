@@ -26,6 +26,18 @@ function char(){
     
 //Items
     var items = [];
+	
+	this.takeItem = function(){
+		if (commonEnemy.getDrop() != null){
+			if (commonEnemy.clickDrop() && items.length() <= 5){
+				items.push(commonEnemy.getDrop());
+			}
+		}
+	}
+	
+	this.dropItem = function(thing){
+		items.splice(items.indexOf(thing), 1);
+	}
     
 //Skills
 	this.power = 25;
@@ -110,11 +122,12 @@ function char(){
 			if (runningQuest.compare()){
 				runningQuest.killedOne();
 			}
+			commonEnemy.dropItem();
 			commonEnemy.die();
 			this.addKill();
 			this.enemyLvlUp();
 		}
-		document.getElementById("score").innerHTML = ("Score: " + this.getScore() + " Points: " + this.getPoints());
+		document.getElementById("points").innerHTML = ("Score: " + this.getScore() + " Points: " + this.getPoints());
     }
 	
     /*

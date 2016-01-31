@@ -59,6 +59,23 @@ function monster(name,hp,drop,imageName,lvl){
 			}
 		}
 	}
+	
+	this.dropClick = function(){
+		playa.takeItem();
+	}
+    
+    this.dropItem = function(){
+        var dropRate = Math.floor(Math.random * 10) +1;
+        if(dropRate == 10){
+            return drop.clone();
+        }
+        else if(dropRate == 1){
+            //return potion.clone();
+        }
+        else{
+            
+        }
+    }
     
 	this.die = function() {
         document.getElementById("monstImage").src = ("");
