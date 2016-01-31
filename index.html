@@ -20,48 +20,46 @@
 		    			<td id="info-container">
 		    			  	<h3>Just Keep Clicking</h3>
 		    			  	<div id="dynamic-box" class="pane">
+		    			  	  	<div id="item">
+		    			  	  		<h3>Item</h3>
+								<div id="item-selected">
+
+								</div>
+		    			  	  	</div>
 		    			  		<div id="upgrade">
 		    			  		  <h3>Upgrades</h3>
 		    			  		  <p>
 		    			  		    bla
 		    			  		  </p>
 		    			  		  <div>
-		    			  		    	<p></p><button></button>
+		    			  		    	<p>Points: <span id="upgrade-points"></span></span></p><button id="upgrade-done">Done</button>
 		    			  		  </div>
 		    			  		</div>
+		    			  		<div id="inventory">
+		    			  		  <h3>Inventory</h3>
+		    			  		</div>
+		    			  		<div id="summon">
+		    			  		  <h3>Summon</h3>
+
+		    			  		</div>
 		    			  	</div>
-						<!--<div id="Inventory">
-							<div class="ItemFrame">
-								<div class="ItemScroll">
-								</div>
-							</div>
-
-							<script> questPopup(); </script>
-							<script> upgrade();</script>
-							<script> summonMenu();</script>
-
-						</div>-->
 
 		    			  	<div id="button-pane">
-		    			  		<button class="blue">Inventory</button>
-		    			  	  	<button class="green">Upgrade</button>
-		    			  	  	<button class="red">Summon</button>
+		    			  		<button class="blue" onclick="">Inventory</button>
+		    			  	  	<button class="green" onclick="">Upgrade</button>
+		    			  	  	<button class="red" onclick="summonMenu">Summon</button>
 		    			  	</div>
 
 						<!-- Health Pane -->
 						<div id="health-pane" class="pane">
 							<div class="meter">
-					    			<span id="health"></span>
+					    			<span id="health" class="green"></span>
 							</div>
 
 						  	<div id="score-hud">
 						  	  <p>Points: <span id="points">0</span></p>
 						  	  <button>Scores</button>
 						  	</div>
-
-
-							<!--<p id="score" syle="">Score: 0</p>
-							<script id="HScore" class="btnHScore"> </script>-->
 						</div>
 
 		    			</td>
@@ -71,8 +69,8 @@
 						<div id="Creature">
 							<div id="CreatureHud">
 								<!--<img src="images/skullHp.png" />-->
-								<div class="meter red">
-								    <span id="monstHealth"></span>
+								<div class="meter">
+								    <span id="monstHealth" class="red"></span>
 								</div>
 							</div>
 						</div>

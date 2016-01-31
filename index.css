@@ -32,6 +32,8 @@ body {
 	width: 30%;
 }
 
+/**----- item, upgrade, inventory, summon ------**/
+
 #health-pane {
 
 }
@@ -90,42 +92,6 @@ button {
 	border: none;
 }
 
-/*Game Areas*/
-
-div.ItemFrame{
-    margin: 7% 6% 7% 6%;
-    width: 80%;
-    height: 20vh;
-    border: 3px solid #73AD21;
-    padding: 10px;
-    /**border-radius: 12px;**/
-}
-
-div.ItemScroll{
-    margin: auto;
-    width: 80%;
-    border: 3px solid #73AD21;
-    padding: 10px;
-    border-radius: 12px;
-}
-
-/*Buttons /  Image Clicks*/
-button.CreatureImg {
-
-}
-
-button.btnInv {
-	background-color: blue;
-}
-
-button.btnUpg {
-	background-color: green;
-}
-
-button.btnSum {
-	background-color: red;
-}
-
 #blanket {
 	background-color:#111;
 	opacity: 0.65;
@@ -174,7 +140,6 @@ button.btnSum {
   border-bottom-right-radius: 8px;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;*/
-  background-color: rgb(43,194,83);
   background-image: linear-gradient(
     center bottom,
     rgb(43,194,83) 37%,
@@ -186,11 +151,11 @@ button.btnSum {
   overflow: hidden;
 }
 
-.red > span {
+.red {
   background-color: crimson;
 }
 
-.orange > span {
+.orange {
   background-color: #f1a165;
 }
 
