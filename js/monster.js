@@ -51,4 +51,6 @@ function monster(name,hp,drop,imageName,lvl){
         */
         return second;
     }
+    
+    
 }

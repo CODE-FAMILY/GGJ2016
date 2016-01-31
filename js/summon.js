@@ -18,27 +18,38 @@ function summonRand(type) {
     switch(type){
         case 1:
             if(boss != 1){
-                
                 console.log("chose Pentagram - Minion");
+                select = Math.floor(Math.random() * pentMonsters.length);
+                commonEnemy = pentMonsters[select].clone();
             }
             else{
                 console.log("chose Pentagram - Boss");
+                select = Math.floor(Math.random() * pentBoss.length);
+                commonEnemy = pentBoss[select].clone();
             }
             break;
         case 2:
             if(boss != 1){
                 console.log("chose Pokeball - Minion");
+                select = Math.floor(Math.random() * pokeMonsters.length);
+                commonEnemy = pokeMonsters[select].clone();
             }
             else{
                 console.log("chose Pokeball - Boss");
+                select = Math.floor(Math.random() * pokeBoss.length);
+                commonEnemy = pokeBoss[select].clone();
             }
             break;
         case 3:
             if(boss != 1){
                 console.log("chose Tome of Death - Minion");
+                select = Math.floor(Math.random() * tomeMonsters.length);
+                commonEnemy = tomeMonsters[select].clone();
             }
             else{
                 console.log("chose Tome of Death - Boss");
+                select = Math.floor(Math.random() * tomeBoss.length);
+                commonEnemy = tomeBoss[select].clone();
             }
             break;
     }

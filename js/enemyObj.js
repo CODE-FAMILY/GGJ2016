@@ -1,6 +1,9 @@
 //Enemy Objects
 var commonEnemy;
 
+//TODO!!!!!!!!!!!
+var starter = new monster("Blob", 5, 0, "images/starter.png",playa.enemyLvl);
+
 //Monsters
 var skeleton = new monster("Skeletor", 100, 1, "images/skeletonImg.png",playa.enemyLvl);
 var ghost = new monster("Ghost", 100, 3, "images/ghostImg.png",playa.enemyLvl);
