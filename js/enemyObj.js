@@ -59,4 +59,4 @@ var pokeMonsters = [ bunny, unicorn];
 var pokeBoss = [pikachu, dragon];
 
 var tomeMonsters = [skeleton, zombie, zombieNazi, ghost];
-var tomeBoss = [hitler, howard, graham];
+var tomeBoss = [hitler];
