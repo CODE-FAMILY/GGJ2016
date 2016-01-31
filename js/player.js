@@ -31,12 +31,12 @@ function char(){
 //Items
 	this.setEquiped = function(x){
 		this.equipedIndex = x;
-        	changeSVGImage(items[this.equipedIndex].filePath, "item-image" );
-        	updateSVGText(items[this.equipedIndex].name, "weapon-name" );
-            this.audio = items[this.equipedIndex].soundPath;
+        	changeSVGImage(this.equipedOn.filePath, "item-image" );
+        	updateSVGText(this.equipedOn.name, "weapon-name" );
+            this.audio = this.equipedOn.soundPath;
 	}
 	this.getEquiped = function(){
-		return items[this.equipedIndex];
+		return this.equipedOn;
 	}
 	this.dmgEquiped = function(){
 		/*if (items[this.equipedIndex].name != "Fist"){
