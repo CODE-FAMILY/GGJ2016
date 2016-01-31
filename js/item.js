@@ -4,7 +4,7 @@ function item(name,power,speed,cond) {
 	this.power = 1;
 	this.speed = 1;
 	this.cond = 5;
-	//this.filePath = "image/fist1.ogg";
+	//this.filePath = "image/fistImg.ogg";
 	var soundPath = [];
 	this.getName = function() {
 		return this.name;
@@ -32,12 +32,12 @@ function item(name,power,speed,cond) {
 		this.speed = spd;
 	}
 	
-	this.clone = function(name,power,speed,cond){
+	this.clone = function(){
 		var box = new item();
-		box.name = name;
-		box.power = power;
-		box.speed = speed;
-		box.cond = cond;
+		box.name = this.name;
+		box.power = this.power;
+		box.speed = this.speed;
+		box.cond = this.cond;
 		//box.soundPath = this.soundPath;
 		return box;
 	}

@@ -27,7 +27,7 @@ function char(){
 	}
     
 //Items
-    var items = [];
+    /*var items = [];
 	//items.push(new item());
 	this.setEquiped = function(x){
 		this.equipedIndex = x;
@@ -49,12 +49,12 @@ function char(){
 			}
 		}
 	}
-	this.equip = function(bank){
-		this.equipedOn = bank.clone();
-	}
 	
 	this.dropItem = function(thing){
 		items.splice(items.indexOf(thing), 1);
+	}*/
+	this.equip = function(box){
+		return box.name;
 	}
     
 //Skills
