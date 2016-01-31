@@ -108,7 +108,6 @@ body {
 }
 
 #enemy-inner-container {
-
 	padding: 1em;
 }
 
@@ -126,15 +125,19 @@ body {
 
 .icon {
 	float: left;
-	background: #555;
+	height: 1.6em;
 }
 
 #button-pane {
-	display: table;
+
 }
 
-#button-pane button {
-	display: table-row;
+#button-pane > button {
+	margin: 0em 1.2em;
+	display: inline-block;
+	text-align: left;
+	white-space: nowrap;
+	height: 3.5em;
 }
 
 button {
