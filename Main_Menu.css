@@ -8,7 +8,12 @@ body {
 
 div {
 	background: #2a2b2e;
-	vh: 95%;
-	vw:90%;
+	height: 100px;
+	width: 200px;
 	margin: 5em;
+}
+
+image {
+	vh: 90%;
+	vw: 85%;
 }
