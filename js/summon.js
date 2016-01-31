@@ -59,11 +59,9 @@ function summonRand(type) {
     //stop intro
     //document.getElementById("bgsound").muted = true;
     //sets battle music every monster summoning
-    var x = document.createElement("AUDIO");
-    x.setAttribute("src","sound/battlesequence_intro.mp3");
-    x.play();
-    
-    document.body.appendChild(x);
+	if(document.getElementById("bgsound").ended && document.getElementById("loopsound").ended){
+		document.getElementById("bgsound").play;
+	}
     
     //send player to item screen afterwards
 }
