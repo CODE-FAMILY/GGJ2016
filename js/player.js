@@ -117,9 +117,10 @@ function char(){
 			commonEnemy.die();
 			this.addKill();
 			this.enemyLvlUp();
-			//if (commonEnemy.dropItem)
+			if (commonEnemy.dropItem){
+			}
 		}
-		document.getElementById("score").innerHTML = ("Score: " + this.getScore() + " Points: " + this.getPoints());
+		document.getElementById("points").innerHTML = ("Score: " + this.getScore() + " Points: " + this.getPoints());
     }
 	
     /*
