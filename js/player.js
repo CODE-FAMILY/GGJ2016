@@ -49,12 +49,12 @@ function char(){
 			}
 		}
 	}
-	this.equip = function(bank){
-		this.equipedOn = bank.clone();
-	}
 	
 	this.dropItem = function(thing){
 		items.splice(items.indexOf(thing), 1);
+	}
+	this.equip = function(box){
+		this.equipedOn = box;
 	}
     
 //Skills
