@@ -15,4 +15,5 @@ function header(){
     document.write("<script src=\"js/itemMenu.js\"></script>");
     
     document.write("<script src=\"js/basic.js\"></script>");
+    document.write("<script src=\"js/helper.js\"></script>");
 }
