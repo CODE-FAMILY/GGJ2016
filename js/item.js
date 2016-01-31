@@ -1,4 +1,4 @@
-function item() {
+function item(name,power,speed,cond) {
 	//basic
 	this.name = "Fist";
 	this.power = 1;
@@ -32,12 +32,13 @@ function item() {
 		this.speed = spd;
 	}
 	
-	this.clone = function(){
+	this.clone = function(name,power,speed,cond){
 		var box = new item();
-		box.name = this.name;
-		box.power = this.power;
-		box.speed = this.speed;
-		box.cond = this.cond;
+		box.name = name;
+		box.power = power;
+		box.speed = speed;
+		box.cond = cond;
 		//box.soundPath = this.soundPath;
+		return box;
 	}
 }
