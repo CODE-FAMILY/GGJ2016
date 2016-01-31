@@ -8,6 +8,7 @@ function char(){
 	this.enemyLvl = 1;
 	this.equipedIndex = 0;
 	this.equipedOn;
+    this.clicked = 0;
 	
 //Basic Getters
 	this.getScore = function(){
@@ -31,6 +32,7 @@ function char(){
 		this.equipedIndex = x;
         	changeSVGImage(items[this.equipedIndex].filePath, "item-image" );
         	updateSVGText(items[this.equipedIndex].name, "weapon-name" );
+            this.audio = items[this.equipedIndex].soundPath;
 	}
 	this.getEquiped = function(){
 		return items[this.equipedIndex];
@@ -150,6 +152,7 @@ function char(){
 				this.addKill();
 				this.enemyLvlUp();
 				console.log("He's dead");
+                this.clicked = 0;
 				break;
 			}
 			document.getElementById("points").innerHTML = (this.getScore());
@@ -158,6 +161,16 @@ function char(){
         if(document.getElementById("bgsound").ended){
             document.getElementById("loopsound").play();
             document.getElementById("loopsound").loop = true;
+            document.getElementById("loopsound").volume = 0;
+        }
+        if(this.equipedOn.cooldown == this.clicked){
+            var play = new Audio(this.equipedOn.soundPath);
+            play.volume = .9999;
+            play.play();
+            this.clicked = 0;
+            console.log("played sound");
+        }else{
+            this.clicked ++;
         }
 		document.getElementById("points").innerHTML = (this.getScore());
 		document.getElementById("upgrade-points").innerHTML = (this.getPoints());
@@ -191,6 +204,8 @@ function char(){
 	
 	this.die = function(){
 		//Game Over!!!
+        alert("You Have Died in combat with the" + commonEnemy.getName());
+        location.href = 'Credits.html';
 	}
 	
 	this.addItemToList = function() {

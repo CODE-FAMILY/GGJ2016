@@ -65,5 +65,6 @@ function summonRand(type) {
 	    document.getElementById("summon").style.display = "none";
         document.getElementById("item").style.display = "block";
 
+    playa.clicked = 0;
     //send player to item screen afterwards
 }
