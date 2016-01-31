@@ -39,7 +39,7 @@ function monster(name,hp,drop,imageName,lvl){
 	
 //Methods
 	this.dealDmg = function(){
-		playa.takeDmg(Math.floor(Math.log(this.lvl)*10));
+		playa.takeDmg(Math.floor(Math.log(this.lvl)*5));
 	}
 	
 	this.takeDmg = function(){
@@ -53,7 +53,7 @@ function monster(name,hp,drop,imageName,lvl){
 			this.startTime = new Date();
 		}
         if (new Date().getTime() - this.startTime.getTime() > Math.ceil(10000 / this.lvl)){
-			if (new Date().getTime() - this.nowTime.getTime() > 3000){
+			if (new Date().getTime() - this.nowTime.getTime() > 7000){
 			this.nowTime = new Date();
 			this.dealDmg();
 			}
