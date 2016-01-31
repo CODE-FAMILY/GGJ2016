@@ -15,8 +15,20 @@
 			<!-- Inventory Pane -->
 			<tbody>
 		  		<tr>
-		    			<td class="small-pane">
-						<div id="Inventory">
+		  		  	<h1>Just Keep Clicking</h1>
+		    			<td id="info-container">
+		    			  	<div id="dynamic-box" class="pane">
+		    			  		<div id="upgrade">
+		    			  		  <h3>Upgrades</h3>
+		    			  		  <p>
+		    			  		    bla
+		    			  		  </p>
+		    			  		  <div>
+		    			  		    	<p></p><button></button>
+		    			  		  </div>
+		    			  		</div>
+		    			  	</div>
+						<!--<div id="Inventory">
 							<div class="ItemFrame">
 								<div class="ItemScroll">
 								</div>
@@ -26,37 +38,51 @@
 							<script> upgrade();</script>
 							<script> summonMenu();</script>
 
-						</div>
+						</div>-->
+
+		    			  	<div id="button-pane">
+		    			  		<button class="blue">Inventory</button>
+		    			  	  	<button class="green">Upgrade</button>
+		    			  	  	<button class="red">Summon</button>
+		    			  	</div>
+
 						<!-- Health Pane -->
-						<div id="Health">
+						<div id="health-pane" class="pane">
 							<div class="meter">
 					    			<span id="health"></span>
 							</div>
-							<p id="score" syle="">Score: 0</p>
-							<script id="HScore" class="btnHScore"> </script>
+
+						  	<div id="score-hud">
+						  	  <p>Points: <span id="points">0</span></p>
+						  	  <button>Scores</button>
+						  	</div>
+
+
+							<!--<p id="score" syle="">Score: 0</p>
+							<script id="HScore" class="btnHScore"> </script>-->
 						</div>
 
 		    			</td>
-		  		  	<td class="large-pane">
+		  		  	<td id="enemy-container" class="pane">
 
 						<!-- Creature Pane -->
 						<div id="Creature">
 							<div id="CreatureHud">
-								<img src="images/skullHp.png" />
-								<div class="meter orange">
+								<!--<img src="images/skullHp.png" />-->
+								<div class="meter red">
 								    <span id="monstHealth"></span>
 								</div>
 							</div>
-							<div id="spawn">
-					    			<img onclick="playa.click()" id="monstImage" />
-							</div>
-
-							<!-- Score Calc -->
 						</div>
+
+		  				<div id="spawn">
+					    		<img onclick="playa.click()" id="monstImage" />
+						</div>
+
 		  		  	  	<!-- Quest section -->
 						<div id="Quest">
 						  <fieldset>
-							<legend align="center">Quest</legend>
+							<legend>Quest</legend>
 							<p id="questStory">
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 							  	Donec a diam lectus. Sed sit amet ipsum mauris.
