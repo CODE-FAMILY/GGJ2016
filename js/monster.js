@@ -6,12 +6,8 @@ function monster(name,hp,drop,imageName,lvl){
 	this.cons = hp;
     this.drop = drop;
 	this.enemyImg = imageName;
-<<<<<<< HEAD
 	this.startTime = 0;
-=======
-	this.nowTime = 0;
 	this.desc = "";
->>>>>>> origin/master
 
 //Getters
 	this.getName = function(){
