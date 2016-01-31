@@ -151,9 +151,9 @@ function char(){
 			document.getElementById("points").innerHTML = (this.getScore());
 			document.getElementById("upgrade-points").innerHTML = (this.getPoints());
 		}
-        if(document.getElementById("bgsound").ended()){
+        if(document.getElementById("bgsound").ended){
             document.getElementById("loopsound").play();
-            document.getElementById("loopsound").loop();
+            document.getElementById("loopsound").loop = true;
         }
 		document.getElementById("points").innerHTML = (this.getScore());
 		document.getElementById("upgrade-points").innerHTML = (this.getPoints());
