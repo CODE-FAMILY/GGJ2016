@@ -101,6 +101,8 @@ function char(){
 			this.score += 100;
 			this.points += 100;
 			commonEnemy.die();
+			this.addKill();
+			this.enemyLvlUp();
 		}
     }
 	

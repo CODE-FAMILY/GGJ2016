@@ -23,7 +23,7 @@ function monster(name,hp,drop,imageName,lvl){
 	
 //Setters
 	this.setHp = function() {
-		this.hp = Math.floor((Math.random() * this.lvl + 1) * hp);
+		this.hp = Math.floor((Math.random() * Math.log(this.lvl + 1)*10 + 1) * hp);
 		this.cons = this.hp;
 	}
 	
