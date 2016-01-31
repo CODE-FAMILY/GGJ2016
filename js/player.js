@@ -27,7 +27,7 @@ function char(){
     
 //Items
     var items = [];
-	//items.push(fist);
+	items.push(new item());
 	this.setEquiped = function(x){
 		this.equipedIndex = x;
 	}
