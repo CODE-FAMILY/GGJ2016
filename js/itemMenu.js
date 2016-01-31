@@ -1,8 +1,12 @@
 function itemScreen(){
     displayNone();
-    document.getElementById("item-image").setAttribute("href",playa.items[playa.getEquiped()].filePath);
-    document.getElementById("weapon-name").innerText=playa.items[playa.getEquiped()].name;
-    document.getElementById("item").style.display = "block";
+
+    var itemImage = document.getElementById("item-image");
+    var weaponName = document.getElementById("weapon-name");
+
+    //itemImage.href.setAttribute("baseVal", playa.items[playa.getEquiped()].filePath);
+    weaponName.text = "hello"; //playa.items[playa.getEquiped()].name;
+    //document.getElementById("item").style.display = "block";
 }
 
 function inventoryScreen(){
