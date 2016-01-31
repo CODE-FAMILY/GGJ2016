@@ -66,23 +66,25 @@ function monster(name,hp,drop,imageName,lvl){
     
     this.dropItem = function(){
         var dropRate = Math.floor(Math.random() * 3) +1;
-        if(dropRate == 2){
-            return getDrop();
-			playa.takeItem(this.drop)
+        if(dropRate == 1){
+            return 1;
         }
-        else if(dropRate == 1){
-            //return potion.clone();
+        else if(dropRate == 2){
+            return 2;
         }
         else{
-            
+            return 3;
         }
     }
     
 	this.die = function() {
-        //
-        if(){
-            document.getElementById("monstImage").src = ("");
-        }else{
+        var dropRate = Math.floor(Math.random() * 3) +1;
+        if(dropRate == 1){
+            document.getElementById("monstImage").src = (this.getDrop().filePath);
+			playa.takeItem(this.getDrop());
+        }else if(dropRate == 2){
+			playa.addHp(Math.floor(this.getHp() / 2));
+		}else{
             document.getElementById("spawn").innerHTML = "";
         }
 		//this.enemyImg.parentNode.removeChild(this.name);
