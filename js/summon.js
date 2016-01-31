@@ -71,7 +71,7 @@ function summonRand(type) {
     //stop intro
     //document.getElementById("bgsound").muted = true;
     //sets battle music every monster summoning
-    if(toggleMute){
+    if(!toggleMute){
         if(document.getElementById("bgsound").ended && document.getElementById("loopsound").ended){
             document.getElementById("bgsound").play;
         }

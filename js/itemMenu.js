@@ -19,12 +19,12 @@ function itemScreen(){
 function inventoryScreen(){
     displayNone();
     document.getElementById("inventory").style.display = "inline";
-        document.getElementById("upgrade-points-inv").innerHTML = (playa.getPoints());
+        document.getElementById("upgrade-points-inv").innerHTML = playa.getPoints().toString();
 }
 
 function purchaseHealing(){
     if(playa.getPoints() >= 500){
-        playa.addHp(100);
+        playa.addHp(25);
         playa.points -= 500;
     }
     document.getElementById("upgrade-points-inv").innerHTML = (playa.getPoints());
