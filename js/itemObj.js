@@ -2,7 +2,7 @@ var playa = new char();
 
 var fist = new item();
 fist.name = "Fist";
-//fist.filePath = "images/fistImg.svg";
+fist.filePath = "images/fistImg.svg";
 fist.soundPath = "sound/punch.ogg";
 fist.power = 1;
 fist.speed = 1;

@@ -38,20 +38,34 @@ function char(){
 		return items[this.equipedIndex];
 	}
 	this.dmgEquiped = function(){
-		if (items[this.equipedIndex].name != "Fist"){
+		/*if (items[this.equipedIndex].name != "Fist"){
 			items[this.equipedIndex].cond -= 1;
 		}
 		if (items[this.equipedIndex].cond <= 0){
-			items.pop();
+			items.splice(this.equipedIndex,1);
+			if (items.length > 1){
+				this.setEquiped(1);
+			}else{
+				this.setEquiped(0);
+			}
+		}*/
+		if (equipedOn.name != "Fist"){
+			equipedOn.cond -= 1;
+		}
+		if (equipedOn.cond <= 0){
+			this.equip(fist)
 		}
 	}
 	this.takeItem = function(box){
 		if (box != null){
 			if (items.length >= 5){
-				items.pop();
+				items.splice(1,1);
 				items[items.length] = box;
 			}else{
 				items[items.length] = box;
+			}
+			if(items.length > 1){
+				this.setEquiped(1);
 			}
 		}
 	}
@@ -61,6 +75,9 @@ function char(){
 	}
 	this.equip = function(box){
 		this.equipedOn = box;
+		changeSVGImage(items[this.equipedIndex].filePath, "item-image" );
+		updateSVGText(items[this.equipedIndex].name, "weapon-name" );
+		this.audio = items[this.equipedIndex].soundPath;
 	}
     
 //Skills
@@ -143,7 +160,7 @@ function char(){
 			this.score += this.power;
 			this.points += this.power;
 			commonEnemy.takeDmg();
-			if (Math.floor(Math.random() * 50) + 1){
+			if (Math.floor(Math.random() * 25) + 1 == 1){
 				this.dmgEquiped();
 			}
 			if (commonEnemy.hp <= 0){
