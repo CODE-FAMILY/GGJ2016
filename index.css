@@ -23,16 +23,29 @@ body {
 	border: none;
 }
 
-#enemy-container {
-	width: 70%;
 
-}
 
 #info-container {
 	width: 30%;
 }
 
 /**----- item, upgrade, inventory, summon ------**/
+
+#item {
+	display: none;
+}
+
+#upgrade {
+	display: none;
+}
+
+#inventory {
+	display: none;
+}
+
+#summon {
+	display: none;
+}
 
 #health-pane {
 
@@ -58,26 +71,20 @@ body {
 	float: right;
 }
 
-#Inventory {
-	border-top-left-radius: 2em;
+/** enemy container **/
+#enemy-container {
+	width: 70%;
 
 }
 
-#Creature {
-	border-top-right-radius: 2em;
-}
 
-#Quest {
-	border-bottom-right-radius: 2em;
-}
-
-#Quest fieldset {
+#quest fieldset {
 	border: none;
 	border-radius: 1em;
 	background: rgba( 80, 80, 80, 0.7);
 }
 
-#Quest legend {
+#quest legend {
 	border-radius: 1em;
 	padding: 0.5em 1em;
 	background: red;
@@ -152,17 +159,17 @@ button {
 }
 
 .red {
-  background-color: crimson;
-}
-
-.orange {
-  background-color: #f1a165;
+  background-color: #A42941;
 }
 
 .blue {
-	background-color: blue;
+	background-color: #4A94D0;
 }
 
 .green {
-	background-color: lightgreen;
+	background-color: #30BF5B;
 }
+
+.purple {
+	background-color: #684782;
+} 
