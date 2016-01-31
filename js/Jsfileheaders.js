@@ -7,6 +7,7 @@ function header(){
     
     document.write("<script src=\"js/itemObj.js\"></script>");
     document.write("<script src=\"js/enemyObj.js\"></script>");
+    document.write("<script src=\"js/questObj.js\"></script>");
     document.write("<script src=\"js/highscores.js\"></script>");
     document.write("<script src=\"js/menu.js\"></script>");
     document.write("<script src=\"js/summon.js\"></script>");

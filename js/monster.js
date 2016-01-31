@@ -40,7 +40,7 @@ function monster(name,hp,drop,imageName,lvl){
 		} else {
 			document.getElementById("monstHealth").style.width = (this.hp / (this.cons))*100 + "%";
 		}
-        if (Date.getTime() - this.timeStart > 10000){
+        if (new Date() - this.timeStart > 10000){
 			this.dealDmg();
 		}
 	}
