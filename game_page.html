@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="UTF-8" />
+	<head>
+		<title>The Summoning</title>
+		<link rel="stylesheet" href="index.css">
+		<link rel="stylesheet" href="popUps.css">
+		<script src="js/Jsfileheaders.js"></script>
+        <script>header()</script>
+	</head>
+	<body class="darkgrey">
+	
+		<audio autoplay>
+			<source src="sound/battlesequence_intro.mp3" type="audio/mpeg">
+		</audio>
+
+		<h1 class="uppercase">The Summoning</h1>
+
+		<!-- Game -->
+		<table id="Game">
+			<!-- Inventory Pane -->
+			<tbody>
+		  		<tr>
+		    			<td id="info-container">
+		    			  	<h3>Just Keep Clicking</h3>
+		    			  	<div id="dynamic-box" class="pane">
+		    			  	  	<div id="item">
+		    			  	  		<h3>Item</h3>
+								<div id="item-selected">
+
+								</div>
+		    			  	  	</div>
+
+		    			  		<div id="upgrade">
+		    			  		  <h3 class="uppercase">Upgrades</h3>
+		    			  		  <p class="description darkgrey uppercase">
+								Cost goes up every time you upgrade
+		    			  		        current cost per upgrade: <span id="upgrade-costs">500</span> points
+		    			  		  </p>
+		    			  		  <p class="uppercase bold">
+		    			  		    Power:
+		    			  		  </p>
+		    			  		  <div id="upgrade-power">
+		    			  		    <button id="pow1"></button><button id="pow2"></button><button id="pow3"></button ><button id="pow4"></button><button id="pow5"></button>
+		    			  		  </div>
+		    			  		  <p class="uppercase bold">
+		    			  		    Speed:
+		    			  		  </p>
+		    			  		  <div id="upgrade-speed">
+		    			  		    <button id="spe1"></button><button id="spe2"></button><button id="spe3"></button ><button id="spe4"></button><button id="spe5"></button>
+		    			  		  </div>
+		    			  		  <p class="uppercase bold">
+		    			  		    Health:
+		    			  		  </p>
+		    			  		  <div id="upgrade-health">
+		    			  		    <button id="const1"></button><button id="const2"></button><button id="const3"></button ><button id="const4"></button><button id="const5"></button>
+		    			  		  </div>
+		    			  		  <p class="uppercase bold">
+		    			  		    Weapon Health:
+		    			  		  </p>
+		    			  		  <div id="upgrade-weapon-health">
+		    			  		    <button id="wep1" onclick="playa.addItem()"></button><button id="wep2"onclick="playa.addItem()"></button><button id="wep3" onclick="playa.addItem()"></button ><button id="wep4" onclick="playa.addItem()"></button><button id="wep5" onclick="playa.addItem()"></button>
+		    			  		  </div>
+		    			  		  <div>
+		    			  		    	<p>Points: <span id="upgrade-points"></span></span></p><button id="upgrade-done">Done</button>
+		    			  		  </div>
+		    			  		</div>
+		    			  		<div id="inventory">
+		    			  		  <h3>Inventory</h3>
+		    			  		</div>
+		    			  		<div id="summon">
+		    			  		  <h3>Summon</h3>
+		    			  		  <button onclick="summonRand(1)">Pentagram</button>
+		    			  		  <button onclick="summonRand(2)">Pokeball</button>
+		    			  		  <button onclick="summonRand(3)">Tome of Death</button>
+		    			  		</div>
+		    			  	</div>
+
+		    			  	<div id="button-pane">
+		    			  		<button class="blue" onclick="">Inventory</button>
+		    			  	  	<button class="green" onclick="upgrade()">Upgrade</button>
+		    			  	  	<button class="red" onclick="summonMenu()">Summon</button>
+		    			  	</div>
+
+						<!-- Health Pane -->
+						<div id="health-pane" class="pane">
+							<div class="meter">
+					    			<span id="health" class="green"></span>
+							</div>
+
+						  	<div id="score-hud">
+						  	  <p>Points: <span id="points">0</span></p>
+						  	  <button class="purple">Scores</button>
+						  	</div>
+						</div>
+
+		    			</td>
+		  		  	<td id="enemy-container" class="pane">
+
+						<!-- Creature Pane -->
+						<div id="Creature">
+							<div id="CreatureHud">
+								<!--<img src="images/skullHp.png" />-->
+								<div class="meter">
+								    <span id="monstHealth" class="red"></span>
+								</div>
+							</div>
+						</div>
+
+		  				<div id="spawn">
+					    		<img onclick="playa.click()" id="monstImage" />
+						</div>
+
+		  		  	  	<!-- Quest section -->
+						<div id="quest">
+						  <fieldset>
+							<legend class="bold red">Quest</legend>
+							<p id="questStory">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							  	Donec a diam lectus. Sed sit amet ipsum mauris.
+							  	Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit.
+							  	Donec et mollis dolor. Praesent et diam eget libero egestas mattis
+							  	sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia
+							  	consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor.
+							  	Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							  	Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed,
+							  	adipiscing id dolor. Pellentesque auctor nisi id magna consequat
+							  	sagittis. Curabitur dapibus enim sit amet elit pharetra tincidunt
+							  	feugiat nisl imperdiet. Ut convallis libero in urna ultrices accumsan.
+							   	Donec sed odio eros. Donec viverra mi quis quam pulvinar at malesuada
+							  	arcu rhoncus. Cum sociis natoque penatibus et magnis dis parturient
+							  	montes, nascetur ridiculus mus. In rutrum accumsan ultricies.
+							  	Mauris vitae nisi at sem facilisis semper ac in est.
+							</p>
+						    </fieldset>
+						</div>
+		  		  	</td>
+
+		  		</tr>
+			</tbody>
+		</table>
+	</body>
+</html> 

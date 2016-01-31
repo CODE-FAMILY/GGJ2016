@@ -5,3 +5,10 @@ body {
 	text-align: center;
 	padding: 1em;
 }
+
+div {
+	background: #2a2b2e;
+	vh: 95%;
+	vw:90%;
+	margin: 5em;
+}
