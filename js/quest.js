@@ -6,6 +6,7 @@ function quest(){
     this.done = 0;
 	this.monster = skeleton;
 	this.questString = "example";
+<<<<<<< HEAD
 	this.pointReward = 100;
     
 	this.getmonster = function() {
@@ -14,6 +15,8 @@ function quest(){
 		this.getquestString = function() {
 		return this.questString;
 	}
+=======
+>>>>>>> origin/master
 	
     this.completed = function(){
 		playa.points += this.pointReward;
@@ -21,7 +24,12 @@ function quest(){
         while (adventures[selected].id == this.id){
             var selected = Math.floor(Math.random() * adventures.length);
         }
+<<<<<<< HEAD
         this.clone(adventures[selected]);
+=======
+ 
+        this.clone(adventure[selected]);
+>>>>>>> origin/master
     }
     
 	this.compare = function(){
