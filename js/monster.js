@@ -23,14 +23,18 @@ function monster(name,hp,drop,imageName,lvl){
 	
 //Setters
 	this.setHp = function() {
-		this.hp = Math.floor((Math.random() * Math.log(this.lvl + 1)*10 + 1) * hp);
+		this.hp = Math.floor((Math.random() * Math.log(this.lvl)*10 + 1) * hp);
 		this.cons = this.hp;
 	}
 	
 //Methods
 	this.takeDmg = function() {
 		this.hp -= playa.getDmg();
-		document.getElementById("monstHealth").style.width = (this.hp / (this.cons))*100 + "%";
+		if (this.hp <= 0){
+			document.getElementById("monstHealth").style.width = "0%";
+		} else {
+			document.getElementById("monstHealth").style.width = (this.hp / (this.cons))*100 + "%";
+		}
         console.log("shit happened");
 	}
     
@@ -41,7 +45,8 @@ function monster(name,hp,drop,imageName,lvl){
 	}
     
     this.clone = function(){
-        var second = new monster(this.name,this.hp,this.drop,this.enemyImg,this.lvl);
+        var second = new monster(this.name,this.hp,this.drop,this.enemyImg,playa.enemyLvl);
+		second.setHp();
         /*
         second.name = this.name;
         second.lvl = this.lvl;

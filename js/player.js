@@ -34,7 +34,9 @@ function char(){
 	this.cons = 1;
 	this.speed = 1;
 	this.item = 1;
-	//this.damage = 1;
+	this.skillLvl = 1;
+	this.skillLvlTail = 1;
+	this.temp = 1;
 		
 //Skill Getters
 	this.getPower = function() {
@@ -63,40 +65,47 @@ function char(){
 	this.setHpBar = function(){
 		document.getElementById("health").style.width = (this.hp / (this.cons)) + "%";
 	}
+	
+	this.updateCost = function(){
+			this.points -= this.skillLvl * 100;
+			this.temp = this.skillLvl;
+			this.skillLvl += this.skillLvlTail;
+			this.skillLvlTail = this.temp;
+			document.getElementById("power").innerHTML = this.power + "/5 Cost: " + this.skillLvl * 100 * (this.power % 5) / this.power;
+			document.getElementById("speed").innerHTML = this.speed + "/5 Cost: " + this.skillLvl * 100 * (this.speed % 5) / this.speed;
+			document.getElementById("cons").innerHTML = this.cons + "/5 Cost: " + this.skillLvl * 100 * (this.cons % 5) / this.cons;
+			document.getElementById("item").innerHTML = this.item + "/5 Cost: " + this.skillLvl * 100 * (this.item % 5) / this.item;
+	}
 
 	this.addPower = function(){
-		if (this.power < 5){
-			if (this.points >= Math.pow(this.power, 3) * 100 && this.power < 5){
-				this.power += 1;
-				document.getElementById("power").innerHTML = this.power + "/5 Cost: " + (Math.pow(this.power, 2) * 100 * (this.power % 5));
-			}
+		if (this.points >= this.skillLvl * 100 && this.power < 5){
+			this.power += 1;
+			this.updateCost();
 		}
 		console.log("Hello power time");
 	}
 	this.addCons = function(){
-		if (this.points >= Math.pow(this.cons, 3) * 100 && this.cons < 5){
+		if (this.points >= this.skillLvl * 100 && this.cons < 5){
 			this.cons += 1;
-			document.getElementById("cons").innerHTML = this.cons + "/5 Cost: " + (Math.pow(this.cons, 2) * 100 * (this.cons % 5));
+			this.updateCost();
 		}
 	}
 	this.addSpeed = function(){
-		if (this.points >= Math.pow(this.speed, 3) * 100 && this.speed < 5){
+		if (this.points >= this.skillLvl * 100 && this.speed < 5){
 			this.speed += 1;
-			document.getElementById("speed").innerHTML = this.speed + "/5 Cost: " + (Math.pow(this.speed, 2) * 100 * (this.speed % 5));
+			this.updateCost();
 		}
 	}
 	this.addItem = function(){
-		if (this.points >= Math.pow(this.item, 3) * 100 && this.item < 5){
+		if (this.points >= this.skillLvl * 100 && this.item < 5){
 			this.item += 1;
-			document.getElementById("item").innerHTML = this.item + "/5 Cost: " + (Math.pow(this.item, 2) * 100 * (this.item % 5));
+			this.updateCost();
 		}
 	}
 	
     this.click = function(){
         this.score += this.power;
         this.points += this.power;
-		document.getElementById("score").innerHTML = ("Score: " + this.getScore());
-		commonEnemy.takeDmg();
 		if (commonEnemy.hp <= 0){
 			this.score += 100;
 			this.points += 100;
@@ -104,6 +113,8 @@ function char(){
 			this.addKill();
 			this.enemyLvlUp();
 		}
+		document.getElementById("score").innerHTML = ("Score: " + this.getScore() + "Points: " + this.getPoints());
+		commonEnemy.takeDmg();
     }
 	
     /*
