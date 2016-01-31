@@ -7,6 +7,7 @@ function monster(name,hp,drop,imageName,lvl){
     this.drop = drop;
 	this.enemyImg = imageName;
 	this.nowTime = 0;
+	this.desc = "";
 
 //Getters
 	this.getName = function(){
@@ -20,6 +21,9 @@ function monster(name,hp,drop,imageName,lvl){
 	}
 	this.getDrop = function() {
 		return this.drop;
+	}
+	this.getDesc = function(){
+		return this.desc;
 	}
 	
 //Setters
