@@ -7,7 +7,7 @@ var starter = new monster("Blob", 5, 0, "images/starter.png",playa.enemyLvl);
 //Monsters
 var skeleton = new monster("Skeletor", 100, 1, "images/skeletonImg.png",playa.enemyLvl);
 var ghost = new monster("Ghost", 100, 3, "images/ghostImg.png",playa.enemyLvl);
-var zombie = new monster("Zombie", 100, 5, "images/zombieImg.png",playa.enemyLvl);
+var zombie = new monster("Zombie", 100, 5, "images/emo-zombie.svg",playa.enemyLvl);
 var zombieNazi = new monster("Nazi Zombie", 100, 6, "images/zombieNaziImg.png",playa.enemyLvl);
 var mermaid = new monster("Mermaid", 100, 4, "images/mermaidImg/png",playa.enemyLvl);
 var minitaur = new monster("Minitaur", 100, 3, "images/minitaurImg.png",playa.enemyLvl);
