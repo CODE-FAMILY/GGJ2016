@@ -91,7 +91,7 @@ body {
 }
 
 #upgrade-buttons button:hover {
-	border: 0.03em solid white;
+	border: 0.03em solid snow;
 }
 
 /**---------- Health Pane ---------**/
@@ -179,6 +179,22 @@ button {
 	top:0px;
 	left:0px;
 	width:100%;
+}
+
+#summon-buttons button {
+	background-color: #2A2B2E !important;
+}
+
+#summon-buttons p {
+	font-family: 'CourierRegularNew', monospace;
+	font-size: 0.9em;
+}
+
+#summon-buttons img {
+	border: 0.1em solid snow;
+	background-color: #252628;
+	border-radius: 1em;
+	padding: 0.5em;
 }
 
 
