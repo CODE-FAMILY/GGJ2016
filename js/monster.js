@@ -81,7 +81,6 @@ function monster(name,hp,drop,imageName,lvl){
         var dropRate = Math.floor(Math.random() * 3) +1; //Rand between 1 and 3
         if(dropRate == 1){
             document.getElementById("monstImage").src = (this.getDrop().filePath);
-			//playa.takeItem(this.getDrop());
 			playa.equip(this.getDrop());
 			console.log("Got a weapon!");
         }else if(dropRate == 2){
