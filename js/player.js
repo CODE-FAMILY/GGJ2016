@@ -150,8 +150,8 @@ function char(){
 			this.die();
 		} else {
 			this.hp -= dmg;
+			document.getElementById("health").style.width = (this.hp / (this.cons * 100))*100 + "%";
 		}
-		document.getElementById("health").style.width = (this.hp / (this.cons * 100))*100 + "%";
 	}
 	
 	this.die = function(){
