@@ -28,9 +28,15 @@ function char(){
     var items = [];
 	
 	this.takeItem = function(){
-		if (commonEnemy.dropItem != null){
-			items.push(commonEnemy.dropItem);
+		if (commonEnemy.getDrop() != null){
+			if (commonEnemy.clickDrop() && items.length() <= 5){
+				items.push(commonEnemy.dropItem);
+			}
 		}
+	}
+	
+	this.dropItem = function(thing){
+		items.splice(items.indexOf(thing), 1);
 	}
     
 //Skills
