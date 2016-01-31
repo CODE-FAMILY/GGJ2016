@@ -30,7 +30,7 @@ function char(){
 	this.takeItem = function(){
 		if (commonEnemy.getDrop() != null){
 			if (commonEnemy.clickDrop() && items.length() <= 5){
-				items.push(commonEnemy.dropItem);
+				items.push(commonEnemy.getDrop());
 			}
 		}
 	}
@@ -122,6 +122,7 @@ function char(){
 			if (runningQuest.compare()){
 				runningQuest.killedOne();
 			}
+			commonEnemy.dropItem();
 			commonEnemy.die();
 			this.addKill();
 			this.enemyLvlUp();
