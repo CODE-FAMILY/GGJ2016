@@ -1,12 +1,4 @@
-body {
-	background-color: #252628;
-	color: #f3f3f3;
-	margin: auto;
-	text-align: center;
+div {
+	margin: 2em;
 }
 
-a {
-	background-color: #2a2b2e;
-	border-radius: 1.5em;
-	border-color: #2a2b2e;
-}
