@@ -1,7 +1,5 @@
 var runningQuest = new quest();
 
-var adventures = [q1,q2,q3,q4,q5,q6,q7,q8];
-
 var q1 = new quest();
 q1.id = 1;
 q1.name = "Unburied Bones";
@@ -65,3 +63,5 @@ q8.limit = 1;
 q1.pointReward = 500;
 q8.monster = trump;
 q8.questString = "Summon Trump with the pentagon. Make him wish he built a wall around you.";
+
+var adventures = [q1,q2,q3,q4,q5,q6,q7,q8];

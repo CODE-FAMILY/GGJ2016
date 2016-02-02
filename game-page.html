@@ -141,9 +141,9 @@
 
 						<!-- Health Pane -->
 						<div id="health-pane" class="pane">
-							    <img src="images/heart.svg" style="width: 7%"></img>
-							    <div class="meter" syle="float: right;" style="float: right;">
-					    			<span id="health" class="green" style="width:100%;"></span>
+							    <img src="images/heart.svg"></img>
+							    <div class="meter">
+					    			<span id="health" class="green"></span>
 							</div>
 							<div id="CreatureHud">
 
@@ -163,14 +163,14 @@
 							<div id="CreatureHud">
 							  	<div id="creatureBx">
 							  	  <h4 id="monsterName">emo zombie</h4>
-                                 <div id="creatureImg">
-      								<div>
-								        <img src="images/skull_icon.svg" style="float: left;padding-left:20%; padding-right: 0.8em;"/>
-								    </div>
-                                    <div class="meter" syle="float: right;" style="float: left;width:50%">
-                                                <span id="monstHealth" class="red" style="width: 100%"></span>
-                                    </div>
-							  	</div>
+                                 				<div id="creatureImg">
+      							<div>
+							<img id="enemy-img" src="images/skull_icon.svg"/>
+						</div>
+		                            	<div id="monst-health-meter" class="meter">
+		                                        <span id="monstHealth" class="red"></span>
+		                            	</div>
+								  	</div>
 							  	<br class="clearfix" />
 							</div>
 						</div>
@@ -184,21 +184,7 @@
 						  <fieldset>
 							<legend class="bold red uppercase">Quest</legend>
 							<p id="questStory" class="courier">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-							  	Donec a diam lectus. Sed sit amet ipsum mauris.
-							  	Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit.
-							  	Donec et mollis dolor. Praesent et diam eget libero egestas mattis
-							  	sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia
-							  	consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor.
-							  	Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-							  	Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed,
-							  	adipiscing id dolor. Pellentesque auctor nisi id magna consequat
-							  	sagittis. Curabitur dapibus enim sit amet elit pharetra tincidunt
-							  	feugiat nisl imperdiet. Ut convallis libero in urna ultrices accumsan.
-							   	Donec sed odio eros. Donec viverra mi quis quam pulvinar at malesuada
-							  	arcu rhoncus. Cum sociis natoque penatibus et magnis dis parturient
-							  	montes, nascetur ridiculus mus. In rutrum accumsan ultricies.
-							  	Mauris vitae nisi at sem facilisis semper ac in est.
+								Select a new monster under <em>Summon</em> and click him to death.
 							</p>
 						    </fieldset>
 						</div>
