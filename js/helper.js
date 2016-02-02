@@ -1,17 +1,21 @@
-function changeSVGImage( newPath, elementId ) {
-	var element = document.getElementById(elementId);
+function changeSVGImage( newPath, elementId, svgId ) {
+	var svgdoc = document.getElementById( svgId ).getSVGDocument();
+	var element = svgdoc.getElementById(elementId);
 	element.href.baseVal = newPath;
 }
 
-function updateSVGText( newText, elementId ) {
-	var element = document.getElementById( elementId );
+function updateSVGText( newText, elementId, svgId ) {
+	var svgdoc = document.getElementById( svgId ).getSVGDocument();
+	var element = svgdoc.getElementById( elementId );
 	element.textContent = newText;
 }
 
-function getSVGText( elementId ) {
-	return document.getElementById( elementId ).textContent;
+function getSVGText( elementId, svgId ) {
+	var svgdoc = document.getElementById( svgId ).getSVGDocument();
+	return svgdoc.getElementById( elementId ).textContent;
 }
 
-function getSVGImagePath( elementId ) {
-	return document.getElementById( elementId ).href.baseVal;
+function getSVGImagePath( elementId, svgId ) {
+	var svgdoc = document.getElementById( svgId ).getSVGDocument();
+	return svgdoc.getElementById( elementId ).href.baseVal;
 }

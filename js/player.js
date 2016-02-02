@@ -31,11 +31,11 @@ function char(){
 //Items
 	this.setEquiped = function(){
         if(!toggleAni){
-		  changeSVGImage(this.equipedOn.aniPath, "item-image" );
+		  changeSVGImage(this.equipedOn.aniPath, "item-image", "item-box" );
         }else{
-            changeSVGImage(this.equipedOn.filePath, "item-image");
+            changeSVGImage(this.equipedOn.filePath, "item-image", "item-box" );
         }
-		updateSVGText(this.equipedOn.name, "weapon-name" );
+		updateSVGText(this.equipedOn.name, "weapon-name", "item-box" );
 		this.audio = this.equipedOn.soundPath;
 	}
 	this.getEquiped = function(){
@@ -80,9 +80,9 @@ function char(){
 	this.equip = function(box){
 		this.equipedOn = box;
 		if(!toggleAni){
-		  changeSVGImage(this.equipedOn.aniPath, "item-image" );
+		  changeSVGImage(this.equipedOn.aniPath, "item-image", "item-box" );
         }else{
-            changeSVGImage(this.equipedOn.filePath, "item-image");
+            changeSVGImage(this.equipedOn.filePath, "item-image", "item-box" );
         }
 		this.audio = this.equipedOn.soundPath;
 	}

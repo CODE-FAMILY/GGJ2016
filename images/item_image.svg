@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+										 width="374px" height="389.333px" viewBox="0 0 374 389.333" enable-background="new 0 0 374 389.333" xml:space="preserve">
+								    	<image id="item-image" x="1" y="1" width="100%" height="90%" xlink:href="fistImg.svg" />
+									<g>
+										<text id="weapon-name" transform="matrix(1 0 0 1 37.2778 353.0254)" fill="#EFEFEF" font-family="'Blanch-Caps'" font-size="18">Fist</text>
+									</g>
+									<g>
+										<text id="weapon-speed" transform="matrix(1 0 0 1 228.4741 349.9922)" fill="#F3F3F3" font-family="'CenturyGothic'" font-size="10.1368">1</text>
+									</g>
+									<g>
+										<text id="weapon-power" transform="matrix(1 0 0 1 287.2212 349.9922)" fill="#F3F3F3" font-family="'CenturyGothic'" font-size="10.1368">2</text>
+									</g>
+									<g>
+										<text id="weapon-health" transform="matrix(1 0 0 1 335.02 352.021)" fill="#F3F3F3" font-family="'CenturyGothic'" font-size="10.1368">5</text>
+									</g>
+									<path fill="#EE3A5B" d="M328.844,344.173c0,1.498-0.607,2.861-1.586,3.848l-0.013,0.014l-0.298,0.275l-8.037,7.439l-8.038-7.436
+										l-0.302-0.279l-0.014-0.014c-0.979-0.986-1.586-2.35-1.586-3.848c0-3.015,2.446-5.461,5.461-5.461c1.853,0,3.49,1.409,4.479,2.82
+										c0.982-1.411,2.621-2.82,4.474-2.82C326.403,338.712,328.844,341.159,328.844,344.173z"/>
+									<polygon fill="#FDF056" points="221.137,330.082 210.181,344.233 217.942,348.503 212.007,361.582 225.475,346.059 217.829,341.722
+										"/>
+									<g>
+
+											<line fill="none" stroke="#6D7075" stroke-width="1.819" stroke-miterlimit="10" x1="253.631" y1="353.195" x2="255.354" y2="355.47"/>
+
+											<line fill="none" stroke="#525459" stroke-width="1.819" stroke-miterlimit="10" x1="253.844" y1="349.491" x2="259.199" y2="356.56"/>
+
+											<line fill="none" stroke="#525459" stroke-width="1.819" stroke-miterlimit="10" x1="253.989" y1="345.507" x2="263.049" y2="357.47"/>
+
+											<line fill="none" stroke="#525459" stroke-width="1.819" stroke-miterlimit="10" x1="255.989" y1="343.944" x2="265.05" y2="355.907"/>
+
+											<line fill="none" stroke="#6D7075" stroke-width="1.819" stroke-miterlimit="10" x1="278.895" y1="334.058" x2="280.619" y2="336.333"/>
+
+											<line fill="none" stroke="#525459" stroke-width="1.819" stroke-miterlimit="10" x1="275.272" y1="333.261" x2="280.625" y2="340.33"/>
+
+											<line fill="none" stroke="#525459" stroke-width="1.819" stroke-miterlimit="10" x1="271.399" y1="332.32" x2="280.459" y2="344.283"/>
+
+											<line fill="none" stroke="#525459" stroke-width="1.819" stroke-miterlimit="10" x1="269.352" y1="333.823" x2="278.413" y2="345.785"/>
+
+											<line fill="none" stroke="#525459" stroke-width="1.819" stroke-miterlimit="10" x1="261.796" y1="349.005" x2="272.616" y2="340.811"/>
+									</g>
+								</svg>
