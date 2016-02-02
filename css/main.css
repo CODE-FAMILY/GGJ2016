@@ -1,0 +1,69 @@
+@font-face {
+	font-family: 'LeagueGothic-Regular';
+	src: url('../fonts/LeagueGothic-Regular.otf');
+}
+@font-face {
+	font-family: 'CourierRegularNew';
+	src: url('../fonts/curr.ttf');
+}
+
+body {
+	color: #f3f3f3;
+	margin: 0px;
+	text-align: center;
+	padding: 1em;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+.button {
+	padding: 0.5em;
+	border-radius: 0.5em;
+	background: grey;
+	border: none;
+	color: white;
+	font-weight: bold;
+	font-size: small;
+	text-transform: uppercase;
+}
+
+/**------------ color -----------**/
+.red {
+  background-color: #A42941;
+}
+
+.blue {
+	background-color: #4A94D0;
+}
+
+.green {
+	background-color: #30BF5B;
+}
+
+.purple {
+	background-color: #684782;
+}
+
+.darkgrey {
+	background-color: #252628;
+}
+
+.grey {
+	background-color: #2A2B2E;
+}
+
+.lightgrey{
+    background-color:#454546;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.courier {
+	font-family: 'CourierRegularNew', monospace;
+	font-size: 0.7em;
+}
