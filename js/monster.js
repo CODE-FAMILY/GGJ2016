@@ -1,13 +1,15 @@
-//Monster Class
+/**
+  Monster Class
+*/
 function monster(name,hp,drop,imageName,imageTwo,lvl){
-    this.name = name;
-    this.lvl = lvl;
+	this.name = name;
+	this.lvl = lvl;
 	this.hp = hp;
 	this.cons = hp;
-    this.drop = drop;
+	this.drop = drop;
 	this.enemyImg = imageName;
-    this.enemyImgT = imageTwo;
-    this.toggle = 0;
+	this.enemyImgT = imageTwo;
+	this.toggle = 0;
 	this.startTime = 0;
 	this.nowTime = 0;
 	this.desc = "";

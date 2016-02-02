@@ -250,7 +250,7 @@ function char(){
 	
 	this.die = function(){
 		//Game Over!!!
-        alert("You Have Died in combat with the" + commonEnemy.getName());
+        alert("You Have Died in combat with the " + commonEnemy.getName());
         location.href = 'Credits.html';
 	}
 	

@@ -1,7 +1,7 @@
 function quest(){
 	this.id = 1;
 	this.limit = 1;
-    this.done = 0;
+	this.done = 0;
 	this.monster = skeleton;
 	this.questString = "example";
 	this.pointReward = 100;
@@ -39,7 +39,7 @@ function quest(){
 	
     this.clone = function(other){
         this.id = other.id;
-		this.name = other.name;
+	this.name = other.name;
         this.limit = other.limit;
         this.monster = other.monster;
         this.questString = other.questString;
