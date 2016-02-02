@@ -13,11 +13,11 @@
 	<body class="darkgrey">
 
 		<div id="distraction-control" class="darkgrey pane">
-		  <button onclick="mute()" class="darkgrey" id="no-sound" title="mute sound">
+		  <button onclick="mute()" class="darkgrey button" id="no-sound" title="mute sound">
 		    	<img id="mutingBtn" src="images/volume_button_1-1.svg" />
 		    	<p>Mute</p>
 		  </button>
-		  <button onclick="animation()" class="darkgrey" id="no-animation" title="no animations">
+		  <button onclick="animation()" class="darkgrey button" id="no-animation" title="no animations">
 		    	<img id="aniBtn" src="images/gif_button_1-2.svg" />
 		    	<p>No Animation</p>
 		  </button>
@@ -25,9 +25,11 @@
 
 
 		<audio id="bgsound" autoplay>
+		  	<source src="sound/battlesequence_intro.ogg" type="audio/ogg">
 			<source src="sound/battlesequence_intro.mp3" type="audio/mpeg">
 		</audio>
-        	<audio id="loopsound">
+        	<audio id="loopsound" autoplay loop>
+        	  	<source src="sound/battlesequence_loop.ogg" type="audio/ogg">
 			<source src="sound/battlesequence_loop.mp3" type="audio/mpeg">
 		</audio>
 
@@ -114,11 +116,11 @@
 		    			  	  	  <div id="pay-box" class="float-button-box">
 
 		    			  		    	<p class="bold uppercase">Points: <span id="upgrade-points-inv">0</span></span></p>
-		    			  	  	  	<button id="purchase-healing" class="red" onclick="purchaseHealing()">
+		    			  	  	  	<button id="purchase-healing" class="red button" onclick="purchaseHealing()">
 
 		    			  	  	  	  Pay for healing: <span id="inventory-price">500</span>
 		    			  	  	  	</button>
-		    			  		  	<br class="clearfix" />
+		    			  		  	<br class="clearfix button" />
 		    			  		  </div>
 		    			  		</div>
 
@@ -133,25 +135,25 @@
 			    			  		    Power:
 			    			  		  </p>
 			    			  		  <div id="upgrade-power">
-			    			  		    <button id="pow1" onclick="playa.addPower()"></button><button id="pow2" onclick="playa.addPower()"></button><button id="pow3" onclick="playa.addPower()"></button ><button id="pow4" onclick="playa.addPower()"></button><button id="pow5" onclick="playa.addPower()"></button>
+			    			  		    <button id="pow1" class="button" onclick="playa.addPower()"></button><button id="pow2" class="button" onclick="playa.addPower()"></button><button id="pow3" class="button" onclick="playa.addPower()"></button ><button id="pow4" class="button" onclick="playa.addPower()"></button><button id="pow5" class="button" onclick="playa.addPower()"></button>
 			    			  		  </div>
 			    			  		  <p class="uppercase bold">
 			    			  		    Speed:
 			    			  		  </p>
 			    			  		  <div id="upgrade-speed">
-			    			  		    <button id="spe1" onclick="playa.addSpeed()"></button><button id="spe2" onclick="playa.addSpeed()"></button><button id="spe3" onclick="playa.addSpeed()"></button ><button id="spe4" onclick="playa.addSpeed()"></button><button id="spe5" onclick="playa.addSpeed()"></button>
+			    			  		    <button id="spe1" class="button" onclick="playa.addSpeed()"></button><button id="spe2" class="button" onclick="playa.addSpeed()"></button><button id="spe3" class="button" onclick="playa.addSpeed()"></button ><button id="spe4" class="button" onclick="playa.addSpeed()"></button><button id="spe5" class="button" onclick="playa.addSpeed()"></button>
 			    			  		  </div>
 			    			  		  <p class="uppercase bold">
 			    			  		    Health:
 			    			  		  </p>
 			    			  		  <div id="upgrade-health">
-			    			  		    <button id="const1" onclick="playa.addCons()"></button><button id="const2" onclick="playa.addCons()"></button><button id="const3" onclick="playa.addCons()"></button ><button id="const4" onclick="playa.addCons()"></button><button id="const5" onclick="playa.addCons()"></button>
+			    			  		    <button id="const1" class="button" onclick="playa.addCons()"></button><button id="const2" class="button" onclick="playa.addCons()"></button><button id="const3" class="button" onclick="playa.addCons()"></button ><button id="const4" class="button" onclick="playa.addCons()"></button><button id="const5" class="button" onclick="playa.addCons()"></button>
 			    			  		  </div>
 			    			  		  <p class="uppercase bold">
 			    			  		    Weapon Health:
 			    			  		  </p>
 			    			  		  <div id="upgrade-weapon-health">
-			    			  		    <button id="wep1" onclick="playa.addItem()"></button><button id="wep2" onclick="playa.addItem()"></button><button id="wep3" onclick="playa.addItem()"></button ><button id="wep4" onclick="playa.addItem()"></button><button id="wep5" onclick="playa.addItem()"></button>
+			    			  		    <button id="wep1" class="button" onclick="playa.addItem()"></button><button id="wep2" class="button" onclick="playa.addItem()"></button><button id="wep3" class="button" onclick="playa.addItem()"></button ><button id="wep4" class="button" onclick="playa.addItem()"></button><button id="wep5" class="button" onclick="playa.addItem()"></button>
 			    			  		  </div>
 		    			  		  </div>
 		    			  		  <div class="float-button-box">
@@ -165,23 +167,23 @@
 		    			  		    Choose your summoning technique
 		    			  		  </p>
 		    			  		  <div id="summon-buttons">
-		    			  		  	<button onclick="summonRand(1)"><img src="images/pentegram_icon.svg" /><p>Pentagram</p></button>
-		    			  		  	<button onclick="summonRand(2)"><img src="images/pokeball_icon.svg" /><p>Pokeball</p></button>
-		    			  		  	<button onclick="summonRand(3)"><img src="images/tome_icon.svg" /><p>Tome of Death</p></button>
+		    			  		  	<button class="button" onclick="summonRand(1)"><img src="images/pentegram_icon.svg" /><p>Pentagram</p></button>
+		    			  		  	<button class="button" onclick="summonRand(2)"><img src="images/pokeball_icon.svg" /><p>Pokeball</p></button>
+		    			  		  	<button class="button" onclick="summonRand(3)"><img src="images/tome_icon.svg" /><p>Tome of Death</p></button>
 		    			  		  </div>
 		    			  		</div>
 		    			  	</div>
 
 		    			  	<div id="button-pane">
-		    			  		<button class="blue" onclick="inventoryScreen()"><img class="icon" src="images/inventory_button_icon.svg" />Inventory</button>
-		    			  	  	<button class="green" onclick="upgrade()"><img class="icon" src="images/upgrade_button_icon.svg" />Upgrade</button>
-		    			  	  	<button class="red" onclick="summonMenu()"><img class="icon" src="images/summon_button_icon.svg" />Summon</button>
+		    			  		<button class="blue button" onclick="inventoryScreen()"><img class="icon" src="images/inventory_button_icon.svg" />Inventory</button>
+		    			  	  	<button class="green button" onclick="upgrade()"><img class="icon" src="images/upgrade_button_icon.svg" />Upgrade</button>
+		    			  	  	<button class="red button" onclick="summonMenu()"><img class="icon" src="images/summon_button_icon.svg" />Summon</button>
 		    			  	</div>
 
 						<!-- Health Pane -->
 						<div id="health-pane" class="pane">
-                            <img src="images/heart.svg" style="width: 7%"></img>
-                            <div class="meter" syle="float: right;" style="float: right;">
+							    <img src="images/heart.svg" style="width: 7%"></img>
+							    <div class="meter" syle="float: right;" style="float: right;">
 					    			<span id="health" class="green" style="width:100%;"></span>
 							</div>
 							<!--<object id ="health-img" type="image/svg+xml" data="images/heart_healthbar.svg">
@@ -191,7 +193,7 @@
 
 						  	<div id="score-hud" class="float-button-box">
 						  	  <p class="bold uppercase">Score: <span id="points">0</span></p>
-						  	  <button class="purple">Scores</button>
+						  	  <a class="button purple" href="high-scores.html">Scores</a>
 						  	  <br class="clearfix" />
 						  	</div>
 						</div>

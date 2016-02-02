@@ -5,13 +5,6 @@ body {
 	text-align: center;
 }
 
-div {
-	background: #2a2b2e;
-	vh: 95%;
-	vw:90%;
-	margin: 1em;
-}
-
 a {
 	background-color: #2a2b2e;
 	border-radius: 1.5em;

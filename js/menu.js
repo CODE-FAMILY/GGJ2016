@@ -28,7 +28,7 @@ function showAll(){
             if(stats[j] >= i){
                 document.getElementById(types[j]+i).style.display = "inline";
                 document.getElementById(types[j]+i).disabled = true;
-                document.getElementById(types[j]+i).className = "lightgrey";
+                document.getElementById(types[j]+i).className = "button lightgrey";
             }
             else{
                 document.getElementById(types[j]+i).style.display = "none";
@@ -36,7 +36,7 @@ function showAll(){
         }
         if(stats[j] != 5){
             document.getElementById(types[j]+(stats[j]+1)).style.display = "inline";
-            document.getElementById(types[j]+(stats[j]+1)).className = "purple";
+            document.getElementById(types[j]+(stats[j]+1)).className = "button purple";
             document.getElementById(types[j]+(stats[j]+1)).disabled = false;
         }
     }

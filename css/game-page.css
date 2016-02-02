@@ -8,15 +8,6 @@
 	padding: 2em 4em;
 }
 
-.pane {
-	border-radius: 1.2em;
-	background: #2a2b2e;
-	padding: 2em;
-	border: none;
-}
-
-
-
 #info-container {
 	width: 35%;
 }
@@ -146,6 +137,11 @@
 
 .float-button-box button {
 	float: right;
+}
+
+.float-button-box a {
+	float: right;
+	text-decoration: none;
 }
 
 #score-hud .clearfix {
