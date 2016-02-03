@@ -1,313 +1,279 @@
 #Game {
-	width: 90%;
-	margin: auto;
-	height: 90%;
+  width: 90%;
+  margin: auto;
+  height: 90%;
 }
-
 #Game td {
-	padding: 2em 4em;
+  padding: 2em 4em;
 }
-
 #info-container {
-	width: 35%;
+  width: 35%;
 }
-
-
 #distraction-control {
-	margin-left: 70%;
-	margin-bottom: 2em;
-	margin-top: 2em;
-	padding: 0ex;
+  margin-left: 70%;
+  margin-bottom: 2em;
+  margin-top: 2em;
+  padding: 0ex;
 }
-
 #distraction-control button {
-	width: 12em;
-	border: 0.4em solid #313233;
-
+  width: 12em;
+  border: 0.4em solid #313233;
 }
-
 #distraction-control button:hover {
-	border: 0.4em solid #44454A;
+  border: 0.4em solid #44454A;
 }
 
 /**----- item, upgrade, inventory, summon ------**/
 
 #dynamic-box {
-	text-align: left;
-	width: 22em;
+  text-align: left;
+  width: 22em;
 }
-
 #dynamic-box h3 {
-	text-align: center;
-	color: #30BF5B;
+  text-align: center;
+  color: #30BF5B;
 }
-
 .description {
-	text-align: center;
-	padding: 0.5em;
-	border-radius: 0.5em;
+  text-align: center;
+  padding: 0.5em;
+  border-radius: 0.5em;
 }
-
-
 #item {
-	display: block;
+  display: block;
 }
-
 #upgrade {
-	display: none;
+  display: none;
 }
-
 #inventory {
-	display: none;
+  display: none;
 }
-
 #summon {
-	display: none;
+  display: none;
 }
-
 #spawn {
-	height: 37em;
+  height: 37em;
 }
-
-
 #button-pane {
-	margin: 2em 0em;
+  margin: 2em 0em;
 }
-
-#button-pane button {
-
-}
-
+#button-pane button {}
 #upgrade-buttons button {
-	width: 5.2em;
-	border: 0.03em solid #2A2B2E;
+  width: 5.2em;
+  border: 0.03em solid #2A2B2E;
 }
-
 #upgrade-buttons button:hover {
-	border: 0.03em solid snow;
+  border: 0.03em solid snow;
 }
 
 /**---------- Inventory ---------**/
 
 #inventory h3 {
-	color: #4A94D0;
+  color: #4A94D0;
 }
-
 #inventory-items {
-	border-spacing: 1.2em;
+  border-spacing: 1.2em;
 }
-
 #inventory-items td {
-	border-radius: 1em;
-	border: 0.03em solid #2A2B2E;
-	background-color: #252628;
-	padding: 0.5em;
+  border-radius: 1em;
+  border: 0.03em solid #2A2B2E;
+  background-color: #252628;
+  padding: 0.5em;
 }
-
 #inventory-items img {
-	height: 8em;
-	width: 8em;
+  height: 8em;
+  width: 8em;
 }
-
 #inventory-items td:hover {
-	border: 0.03em solid snow;
+  border: 0.03em solid snow;
 }
-
 #pay-box {
-	margin-top: 2em;
+  margin-top: 2em;
 }
-
 #pay-box button {
-	margin-top: 1em;
+  margin-top: 1em;
 }
 
 /**---------- Health Pane ---------**/
+
 #health-pane img {
-	width: 7%;
+  width: 7%;
 }
-
 #score-hud {
-	padding-top: 2em;
+  padding-top: 2em;
 }
-
-.float-button-box  p {
-	text-align: left;
-	float: left;
+.float-button-box p {
+  text-align: left;
+  float: left;
 }
-
 .float-button-box button {
-	float: right;
+  float: right;
 }
-
 .float-button-box a {
-	float: right;
-	text-decoration: none;
+  float: right;
+  text-decoration: none;
 }
-
 #score-hud .clearfix {
-	clear: both;
+  clear: both;
 }
 
 /** enemy container **/
+
 #enemy-container {
-	width: 65%;
-	background-image: url("../images/monster_background.svg");
-	background-size: 200%;
-	background-position: center;
-	border-radius: 2em;
-	background-repeat: no-repeat;
+  width: 65%;
+  background-image: url("../images/monster_background.svg");
+  background-size: 200%;
+  background-position: center;
+  border-radius: 2em;
+  background-repeat: no-repeat;
 }
-
 #enemy-inner-container {
-	padding: 1em;
+  padding: 1em;
 }
-
 #quest fieldset {
-	border: none;
-	border-radius: 1em;
-	background: rgba( 37, 38, 40, 0.78 );
+  border: none;
+  border-radius: 1em;
+  background: rgba( 37, 38, 40, 0.78);
 }
-
 #quest legend {
-	border-radius: 1em;
-	padding: 0.5em 1em;
-	margin-left: 3em;
+  border-radius: 1em;
+  padding: 0.5em 1em;
+  margin-left: 3em;
 }
-
 .icon {
-	float: left;
-	height: 1.6em;
+  float: left;
+  height: 1.6em;
 }
-
-#button-pane {
-
-}
-
+#button-pane {}
 #button-pane > button {
-	margin: 0em 4%;
-	display: inline-block;
-	text-align: left;
-	white-space: nowrap;
-	height: 3.5em;
+  margin: 0em 4%;
+  display: inline-block;
+  text-align: left;
+  white-space: nowrap;
+  height: 3.5em;
 }
-
 #blanket {
-	background-color:#111;
-	opacity: 0.65;
-	*background:none;
-	position:absolute;
-	z-index: 9001;
-	top:0px;
-	left:0px;
-	width:100%;
+  background-color: #111;
+  opacity: 0.65;
+  *background: none;
+  position: absolute;
+  z-index: 9001;
+  top: 0px;
+  left: 0px;
+  width: 100%;
 }
-
 #summon-buttons button {
-	background-color: #2A2B2E !important;
+  background-color: #2A2B2E !important;
 }
-
 #summon-buttons p {
-	font-family: 'CourierRegularNew', monospace;
-	font-size: 0.9em;
+  font-family: 'CourierRegularNew', monospace;
+  font-size: 0.9em;
 }
-
 #summon-buttons img {
-	border: 0.1em solid snow;
-	background-color: #252628;
-	border-radius: 1em;
-	padding: 0.5em;
+  border: 0.1em solid snow;
+  background-color: #252628;
+  border-radius: 1em;
+  padding: 0.5em;
 }
-
 #summon h3 {
-	color: #A42941;
+  color: #A42941;
 }
 
 /**-------- Heading --------**/
+
 #heading {
-	height: 5rem;
-	background: url( "../images/title.svg" );
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 100%;
-	margin-bottom: 1em;
+  height: 5rem;
+  background: url("../images/title.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  margin-bottom: 1em;
+}
+#heading h3 {
+  visibility: hidden;
 }
 
-#heading h3 {
-	visibility: hidden;
-}
 /**-------- Creature Box ----------**/
 
 #enemy-img {
-	float: left;
-	padding-left:20%;
-	padding-right: 0.8em;
+  float: left;
+  padding-left: 20%;
+  padding-right: 0.8em;
 }
-
 #monst-health-meter {
-	float: left;
-	width: 50%;
+  float: left;
+  width: 50%;
 }
-
 #CreatureHud {
-	border: 0.1em;
+  border: 0.1em;
 }
-
-
 #monstHealth {
-    width: 100%;
+  width: 100%;
 }
 @keyframes shakeelement {
-	0% { -webkit-transform: translate(2px, 1px) rotate(0deg); }
-	10% { transform: translate(-1px, -2px) rotate(-1deg); }
-	20% { transform: translate(-3px, 0px) rotate(1deg); }
-	30% { transform: translate(0px, 2px) rotate(0deg); }
-	40% { transform: translate(1px, -1px) rotate(1deg); }
-	50% { transform: translate(-1px, 2px) rotate(-1deg); }
-	60% { transform: translate(-3px, 1px) rotate(0deg); }
-	70% { transform: translate(2px, 1px) rotate(-1deg); }
-	80% { transform: translate(-1px, -1px) rotate(1deg); }
-	90% { transform: translate(2px, 2px) rotate(0deg); }
-	100% { transform: translate(1px, -2px) rotate(-1deg); }
+  0% {
+    -webkit-transform: translate(2px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(0px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(2px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(2px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
 }
-
-
-#monstImage:ACTIVE
-{
-	animation-name: shakeelement;
-	animation-duration: 200ms;
-	transform-origin:50% 50%;
-	animation-iteration-count: 2;
-	animation-timing-function: linear;
+#monstImage:ACTIVE {
+  animation-name: shakeelement;
+  animation-duration: 200ms;
+  transform-origin: 50% 50%;
+  animation-iteration-count: 2;
+  animation-timing-function: linear;
 }
 #monstImage {
-	height: 100%;
-	margin-right: 18%;
+  height: 100%;
+  margin-right: 18%;
 }
-
 #healt {
-	width: 100%
+  width: 100%
 }
 
 /*HP bar*/
 
 .meter {
-	height: 1.2em;
-	background: #252628;
-	border-radius: 1em;
-	box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
-	width: 89%;
-	float: right;
+  height: 1.2em;
+  background: #252628;
+  border-radius: 1em;
+  box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
+  width: 89%;
+  float: right;
 }
-
 .meter > span {
   display: block;
   height: 100%;
   border-radius: 0.6em;
-  background-image: linear-gradient(
-    center bottom,
-    rgb(43,194,83) 37%,
-    rgb(84,240,84) 69%
-  );
+  background-image: linear-gradient( center bottom, rgb(43, 194, 83) 37%, rgb(84, 240, 84) 69%);
   overflow: hidden;
   width: 100%;
 }

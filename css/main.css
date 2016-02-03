@@ -1,86 +1,73 @@
 @font-face {
-	font-family: 'LeagueGothic-Regular';
-	src: local('../fonts/LeagueGothic-Regular.otf');
+  font-family: 'LeagueGothic-Regular';
+  src: local('../fonts/LeagueGothic-Regular.otf');
 }
 @font-face {
-	font-family: 'CourierRegularNew';
-	src: local('../fonts/curr.ttf');
+  font-family: 'CourierRegularNew';
+  src: local('../fonts/curr.ttf');
 }
-
 body {
-	color: #f3f3f3;
-	margin: 0px;
-	text-align: center;
-	padding: 1em;
-	font-family: Helvetica, Arial, sans-serif;
+  color: #f3f3f3;
+  margin: 0px;
+  text-align: center;
+  padding: 1em;
+  font-family: Helvetica, Arial, sans-serif;
 }
-
 .pane {
-	border-radius: 1.2em;
-	background: #2a2b2e;
-	padding: 2em;
-	border: none;
+  border-radius: 1.2em;
+  background: #2a2b2e;
+  padding: 2em;
+  border: none;
 }
-
 .button {
-	padding: 0.5em;
-	border-radius: 0.5em;
-	background: grey;
-	border: none;
-	color: white;
-	font-weight: bold;
-	font-size: small;
-	text-transform: uppercase;
-	text-decoration: none;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  background: grey;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: small;
+  text-transform: uppercase;
+  text-decoration: none;
 }
-
 .strong {
-	font-style: normal;
-	font-weight: bold;
+  font-style: normal;
+  font-weight: bold;
 }
-
 .list.no.bullets {
-	list-style: none;
+  list-style: none;
 }
 
 /**------------ color -----------**/
+
 .red {
   background-color: #A42941;
 }
-
 .blue {
-	background-color: #4A94D0;
+  background-color: #4A94D0;
 }
-
 .green {
-	background-color: #30BF5B;
+  background-color: #30BF5B;
 }
-
 .purple {
-	background-color: #684782;
+  background-color: #684782;
 }
-
 .darkgrey {
-	background-color: #252628;
+  background-color: #252628;
 }
-
 .grey {
-	background-color: #2A2B2E;
+  background-color: #2A2B2E;
 }
-
-.lightgrey{
-    background-color:#454546;
+.lightgrey {
+  background-color: #454546;
 }
-
 .uppercase {
-	text-transform: uppercase;
+  text-transform: uppercase;
 }
-
 .bold {
-	font-weight: bold;
+  font-weight: bold;
 }
-
 .courier {
-	font-family: 'CourierRegularNew', monospace;
-	font-size: 0.7em;
+  font-family: 'CourierRegularNew', monospace;
+  font-size: 0.7em;
 }
